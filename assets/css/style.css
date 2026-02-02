@@ -1,0 +1,383 @@
+/* =============================================================================
+   FRAMEWORK CSS : LES MOUSSAILLONS NUMÉRIQUES
+   ============================================================================= */
+
+:root {
+    --primary: #10b981;
+    --secondary: #f59e0b;
+    --danger: #ef4444;
+    --bg-app: #fefce8;
+    --text: #451a03;
+    --card-bg: #ffffff;
+    --bois: #92400e;
+    --shadow-relief: 0 10px 0 #e5e7eb;
+}
+
+/* 1. BASE & ALIGNEMENT */
+body {
+    background-color: var(--bg-app);
+    color: var(--text);
+    font-family: 'Fredoka', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* 2. COMPOSANTS DE FORMULAIRE */
+.card {
+    background: var(--card-bg);
+    padding: 40px;
+    border-radius: 40px;
+    box-shadow: var(--shadow-relief);
+    border-bottom: 8px solid #d1d5db;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    border: 3px solid #e2e8f0;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    font-family: 'Fredoka', sans-serif;
+    outline: none;
+    margin: 10px 0;
+}
+
+input:focus {
+    border-color: var(--primary);
+}
+
+button {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 20px;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 6px 0 #059669;
+    transition: all 0.1s;
+    width: 100%;
+}
+
+button:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px 0 #059669;
+}
+
+/* 3. LE PORT : PHYSIQUE & Z-INDEX */
+#ciel {
+    position: relative;
+    width: 100vw;
+    height: 70vh;
+    background: linear-gradient(#022b3b, #ffffff);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.navire-hd {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    display: grid;
+    place-items: center;
+    animation: tangageLent 5s ease-in-out infinite;
+    z-index: 10;
+}
+
+@keyframes tangageLent {
+
+    0%,
+    100% {
+        transform: translateX(-50%) rotate(-2deg);
+    }
+
+    50% {
+        transform: translateX(-50%) rotate(2deg);
+    }
+}
+
+/* 4. UTILITAIRES */
+.hidden {
+    display: none !important;
+}
+
+/* =============================================================================
+   SECTION : INTERFACE GRILLE & PORT (RESTRUCTURATION LOGIQUE)
+   ============================================================================= */
+
+body.layout-grid {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: var(--bg-app);
+    overflow: hidden;
+    /* Annule les alignements du body standard */
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+.status-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: white;
+    border-bottom: 5px solid var(--secondary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    z-index: 1000;
+}
+
+.ship-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.ship-img {
+    height: 60px;
+}
+
+.main-container {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 80px;
+    box-sizing: border-box;
+    min-height: 0;
+}
+
+/* --- UNIVERS --- */
+.universe-container {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Force strictement 3 colonnes */
+    gap: 30px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 80px auto 0 auto;
+    /* 80px pour la nav bar, auto pour centrer la grille */
+    overflow-y: auto;
+    /* Permet le défilement vertical si plus d'une ligne */
+    min-height: 0;
+    /* Important pour le comportement flex */
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+}
+
+.universe-card {
+    background: var(--card-bg);
+    border-radius: 25px;
+    overflow: hidden;
+    border: 4px solid var(--bois);
+    box-shadow: 0 8px 0 rgba(146, 64, 14, 0.15);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.card-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 4px solid var(--bois);
+}
+
+.matiere-tag {
+    color: #0ea5e9;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.locked {
+    filter: grayscale(1) contrast(0.8);
+    opacity: 0.8;
+    cursor: not-allowed;
+}
+
+.lock-badge {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    z-index: 10;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+}
+
+.card-link:not(.locked):hover {
+    transform: scale(1.05) translateY(-5px);
+}
+
+.btn-port {
+    background: var(--primary);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: 0 4px 0 #059669;
+}
+
+/* --- VIEWPORT DU PORT --- */
+.viewport {
+    flex: 2;
+    position: relative;
+    background: linear-gradient(to bottom, #2680d4ff 0%, #ffffff 50%);
+    border: 10px solid var(--bois);
+    border-radius: 40px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.img-fond,
+.img-nuages-animes,
+.img-mer-reflets {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-fond {
+    z-index: 2;
+}
+
+.img-nuages-animes {
+    z-index: 1;
+    opacity: 0.5;
+    animation: defilementNuages 400s linear infinite;
+    animation-delay: -90s;
+}
+
+.img-mer-reflets {
+    z-index: 3;
+    animation: fonduReflets 4s ease-in-out infinite;
+}
+
+.navire-actuel {
+    position: absolute;
+    z-index: 10;
+    bottom: 5%;
+    left: 50%;
+    width: 80%;
+    height: auto;
+    transform: translateX(-50%) rotate(0deg);
+    animation: tangage 4s ease-in-out infinite;
+    pointer-events: none;
+}
+
+.sidebar-navires {
+    flex: 0 0 350px;
+    background: var(--card-bg);
+    border-radius: 30px;
+    border: 4px solid var(--primary);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.scroll-list {
+    overflow-y: auto;
+    flex: 1;
+    margin-top: 15px;
+}
+
+.ship-card {
+    background: #f8fafc;
+    border: 2px solid #e2e8f0;
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.ship-preview {
+    width: 120px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.btn-acheter {
+    display: inline-block;
+    background: var(--success);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    box-shadow: 0 4px 0 #059669;
+}
+
+.limiteur-espace {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45%;
+    z-index: 5;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+/* 5. ANIMATIONS */
+@keyframes tangage {
+
+    0%,
+    100% {
+        transform: translateX(-50%) rotate(1deg) translateY(0);
+    }
+
+    50% {
+        transform: translateX(-50%) rotate(-0.5deg) translateY(2px);
+    }
+}
+
+@keyframes defilementNuages {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes fonduReflets {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
