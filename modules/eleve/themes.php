@@ -46,10 +46,11 @@ if ($theme_selectionne) {
                 $titre = ($affichage === 'themes') ? $item['theme'] : $item['title'];
             ?>
             <a href="<?php echo $lien; ?>" class="card-link">
-                <div class="universe-card">
+                <div class="theme-card">
+                    <img src="" class="card-img" alt="">
                     <div class="card-label">
                         <span class="matiere-tag"><?php echo htmlspecialchars($affichage === 'themes' ? $matiere : $item['theme']); ?></span><br>
-                        <strong><?php echo htmlspecialchars($titre); ?></strong>
+                        <strong class="card-titre"><?php echo htmlspecialchars($titre); ?></strong>
                     </div>
                 </div>
             </a>

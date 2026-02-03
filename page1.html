@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Le Port - Départ</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* L'écran de transition */
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #87CEEB;
+            display: none;
+            /* Caché au début */
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .boat {
+            font-size: 80px;
+            transition: transform 2s ease-in;
+        }
+
+        .sea-line {
+            width: 300px;
+            height: 4px;
+            background: #0077b6;
+            margin-top: -10px;
+        }
+
+        /* Classe ajoutée par JS pour lancer le départ */
+        .sailing {
+            transform: translateX(120vw);
+        }
+
+        .btn-depart {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            background: #f4a261;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="page2.html" class="btn-depart" id="link-to-page2">Lever l'ancre vers la Page 2</a>
+
+    <div id="overlay">
+        <div id="boat-element" class="boat">🚢</div>
+        <div class="sea-line"></div>
+        <h2 style="color: white; margin-top: 20px;">Le bateau quitte le port...</h2>
+    </div>
+
+    <script>
+        document.getElementById('link-to-page2').addEventListener('click', function (e) {
+            // 1. On empêche le changement de page immédiat
+            e.preventDefault();
+            const destination = this.href;
+
+            // 2. On affiche l'overlay
+            const overlay = document.getElementById('overlay');
+            const boat = document.getElementById('boat-element');
+            overlay.style.display = 'flex';
+
+            // 3. On lance l'animation (petit délai pour laisser le navigateur afficher l'overlay)
+            setTimeout(() => {
+                boat.classList.add('sailing');
+            }, 50);
+
+            // 4. On change de page après l'animation (2 secondes)
+            setTimeout(() => {
+                window.location.href = destination;
+            }, 2000);
+        });
+    </script>
+</body>
+
+</html>

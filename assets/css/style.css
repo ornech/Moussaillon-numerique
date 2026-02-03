@@ -9,6 +9,7 @@
     --bg-app: #fefce8;
     --text: #451a03;
     --card-bg: #ffffff;
+    --card-question: #b8f7e4;
     --bois: #92400e;
     --shadow-relief: 0 10px 0 #e5e7eb;
 }
@@ -198,11 +199,26 @@ body.layout-grid {
     padding-bottom: 20px;
 }
 
+.theme-card {
+    background: var(--card-question);
+    border-radius: 25px;
+    overflow: hidden;
+    border: 4px solid var(--bois);
+    box-shadow: 6px 6px 0 rgba(146, 64, 14, 0.15);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
 .card-img {
     width: 100%;
     height: 180px;
     object-fit: cover;
     border-bottom: 4px solid var(--bois);
+}
+.card-titre {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 15px 0 5px 0;
 }
 
 .matiere-tag {
@@ -380,4 +396,66 @@ body.layout-grid {
     50% {
         opacity: 1;
     }
+}
+
+
+/*----------------------------------------------------------------*/
+/* Style de l'écran de transition  de page*/
+/*----------------------------------------------------------------*/
+.transition-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, #2680d4 0%, #ffffff 100%);
+    z-index: 9999;
+    display: none;
+    /* Caché par défaut */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#transition-ship {
+    width: 300px;
+    height: auto;
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.2));
+}
+
+/* L'animation de départ vers la droite */
+.ship-departing {
+    animation: sailAway 1.8s forwards cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+@keyframes sailAway {
+    0% {
+        transform: translateX(-20vw) rotate(0deg);
+    }
+
+    20% {
+        transform: translateX(0vw) rotate(-2deg);
+    }
+
+    100% {
+        transform: translateX(120vw) rotate(2deg);
+        opacity: 0;
+    }
+}
+
+.transition-text {
+    font-family: 'Fredoka', sans-serif;
+    color: var(--bois);
+    margin-top: 30px;
+    font-size: 2rem;
+}
+
+.wave-line {
+    width: 400px;
+    height: 8px;
+    background: var(--primary);
+    border-radius: 10px;
+    margin-top: -20px;
+    opacity: 0.6;
 }

@@ -40,7 +40,7 @@ $activities = $stmt->fetchAll();
         ?>
             <a href="<?php echo $is_locked ? '#' : 'themes.php?matiere=' . urlencode($act['matiere']); ?>" 
             class="card-link <?php echo $is_locked ? 'locked' : ''; ?>"
-            onclick="<?php if($is_locked) echo "alert('Votre navire est trop faible pour atteindre cet univers !'); return false;"; ?>">
+            onclick="if(<?php echo $is_locked ? 'true' : 'false'; ?>) { alert('Votre navire est trop faible !'); return false; } else { return lancerTransition(event, this); }">
                 
                 <?php if($is_locked): ?>
                     <div class="lock-badge">🔒</div>
@@ -58,6 +58,6 @@ $activities = $stmt->fetchAll();
             </a>
         <?php endforeach; ?>
     </div>
-
+<?PHP include './transition.php'; ?>
 </body>
 </html>
