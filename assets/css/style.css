@@ -76,11 +76,21 @@ button:active {
 }
 
 /* 3. LE PORT : PHYSIQUE & Z-INDEX */
-#ciel {
+/* #ciel {
     position: relative;
     width: 100vw;
     height: 70vh;
-    background: linear-gradient(#022b3b, #ffffff);
+    background: linear-gradient(#00a2e2, #ffffff 50%);
+    overflow: hidden;
+    z-index: 1;
+} */
+
+/* Modifiez cette section aux alentours de la ligne 74 */
+#ciel {
+    position: relative;
+    width: 100vw;
+    /* Supprimez height: 70vh; */
+    background: linear-gradient(#00a2e2, #ffffff 50%);
     overflow: hidden;
     z-index: 1;
 }
@@ -155,7 +165,7 @@ body.layout-grid {
     height: 60px;
 }
 
-.main-container {
+/* .main-container {
     flex: 1;
     display: flex;
     gap: 20px;
@@ -163,6 +173,28 @@ body.layout-grid {
     margin-top: 80px;
     box-sizing: border-box;
     min-height: 0;
+} */
+
+/* Applique ces réglages pour stabiliser l'ensemble */
+.main-container {
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+    /* Force les deux colonnes à avoir la même hauteur */
+    gap: 20px;
+    padding: 20px;
+    margin-top: 80px;
+    box-sizing: border-box;
+    min-height: 0;
+    /* Important pour que le scroll interne fonctionne */
+}
+
+
+.viewport {
+    flex: 2;
+    /* Le port prendra 2 fois plus de place que la sidebar */
+    position: relative;
+    /* ... supprime le height: 90% ici ... */
 }
 
 /* --- UNIVERS --- */
@@ -260,13 +292,13 @@ body.layout-grid {
 
 /* --- VIEWPORT DU PORT --- */
 .viewport {
-    flex: 2;
+    flex: 1 1 auto ;
     position: relative;
     background: linear-gradient(to bottom, #2680d4ff 0%, #ffffff 50%);
     border: 10px solid var(--bois);
     border-radius: 40px;
     overflow: hidden;
-    height: 100%;
+    height: 95%;
 }
 
 .img-fond,
@@ -291,6 +323,46 @@ body.layout-grid {
     animation-delay: -90s;
 }
 
+/* .img-mer-reflets {
+    z-index: 3;
+    animation: fonduReflets 4s ease-in-out infinite;
+} */
+
+/* --- VIEWPORT DU PORT --- */
+.viewport {
+    flex: 2;
+    /* Ratio de largeur */
+    position: relative;
+    background: linear-gradient(to bottom, #2680d4ff 0%, #ffffff 50%);
+    border: 10px solid var(--bois);
+    border-radius: 40px;
+    overflow: hidden;
+    /* On ne met PAS de height ici, Flexbox gère ! */
+}
+
+.img-fond,
+.img-nuages-animes,
+.img-mer-reflets {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom center;
+    /* Garde la mer visible en bas */
+}
+
+.img-fond {
+    z-index: 2;
+}
+
+.img-nuages-animes {
+    z-index: 1;
+    opacity: 0.5;
+    animation: defilementNuages 400s linear infinite;
+}
+
 .img-mer-reflets {
     z-index: 3;
     animation: fonduReflets 4s ease-in-out infinite;
@@ -301,21 +373,28 @@ body.layout-grid {
     z-index: 10;
     bottom: 5%;
     left: 50%;
-    width: 80%;
-    height: auto;
-    transform: translateX(-50%) rotate(0deg);
+    width: 85%;
+    height: 55%;
+    /* Zone de sécurité pour tous types de bateaux */
+    object-fit: contain;
+    object-position: bottom center;
+    transform: translateX(-50%);
     animation: tangage 4s ease-in-out infinite;
     pointer-events: none;
 }
 
 .sidebar-navires {
-    flex: 0 0 350px;
+    flex: 0 1 350px;
+    min-width: 280px;
     background: var(--card-bg);
+    /* POINT-VIRGULE AJOUTÉ */
     border-radius: 30px;
     border: 4px solid var(--primary);
     display: flex;
     flex-direction: column;
     padding: 20px;
+    box-sizing: border-box;
+    /* Crucial pour le calcul de taille */
 }
 
 .scroll-list {
