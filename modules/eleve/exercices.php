@@ -78,8 +78,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['score'])) {
         }
 
         body {
-            background: var(--bg-app); font-family: 'Fredoka', sans-serif;
-            margin: 0; padding-top: 120px;
+            background: url('../../assets/img/ui/bg-ile01.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Fredoka', sans-serif;
+            margin: 0;
+            padding-top: 120px;
         }
 
         .header-aventure {
@@ -128,14 +131,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['score'])) {
         button#btn-start { background: var(--secondary); color: white; border: none; border-radius: 20px; font-weight: bold; cursor: pointer; }
     </style>
 </head>
-<body>
 
-    <div class="header-aventure">
+<body>
+        <div class="header-aventure">
         <div style="display: flex; align-items: center; gap: 15px; background: rgba(255,255,255,0.8); padding: 10px 20px; border-radius: 50px;">
             <div style="font-size: 30px; cursor:pointer;" onclick="window.location.href='parcours.php'">🏠</div>
             <div>
-                <h2 style="margin:0; color: #4E2A1E;"><?php echo htmlspecialchars($user['username']); ?></h2>
-                <small style="color: var(--secondary); font-weight: bold;"><?php echo htmlspecialchars($activite['title']); ?></small>
+                <button onclick="history.back()" style="width: auto; padding: 15px 40px; background: var(--primary); color:white; border:none; border-radius:20px; font-weight:bold; cursor:pointer; box-shadow: 0 6px 0 0 #059669;">RETOUR AU PARCOURS 🏠</button>
             </div>
         </div>
         <div class="score-badge">
@@ -167,8 +169,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['score'])) {
                 <div style="font-size: 80px; margin-bottom: 20px;">🏆</div>
                 <h1 id="titre-victoire" style="color: var(--primary); margin: 0;">BIEN JOUÉ !</h1>
                 <p style="font-size: 1.2rem; margin: 20px 0;">Score final : <span id="etoiles-finales" style="color: var(--secondary); font-size: 2rem; font-weight: 900;">0</span> étoiles</p>
-                <button onclick="window.location.href='parcours.php'" style="width: auto; padding: 15px 40px; background: var(--primary); color:white; border:none; border-radius:20px; font-weight:bold; cursor:pointer; box-shadow: 0 6px 0 0 #059669;">RETOUR AU PARCOURS 🏠</button>
-            </div>
+                <button onclick="history.back()" style="width: auto; padding: 15px 40px; background: var(--primary); color:white; border:none; border-radius:20px; font-weight:bold; cursor:pointer; box-shadow: 0 6px 0 0 #059669;">RETOUR AU PARCOURS 🏠</button>            </div>
         </div>
     </div>
 
