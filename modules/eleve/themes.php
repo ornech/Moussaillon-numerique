@@ -45,7 +45,9 @@ if ($theme_selectionne) {
                 
                 $titre = ($affichage === 'themes') ? $item['theme'] : $item['title'];
             ?>
-            <a href="<?php echo $lien; ?>" class="card-link">
+                <a href="<?php echo $lien; ?>" 
+                    class="card-link" 
+                    <?php echo ($affichage === 'themes') ? 'onclick="return lancerTransition(event, this);"' : ''; ?>>
                 <div class="theme-card">
                     <img src="" class="card-img" alt="">
                     <div class="card-label">
@@ -57,3 +59,6 @@ if ($theme_selectionne) {
         <?php endforeach; ?>
     <?php endif; ?>
 </div>
+<?PHP include './transition.php'; ?>
+</body>
+</html>
