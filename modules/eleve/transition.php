@@ -3,7 +3,7 @@
         position: fixed;
         top: 0; left: 0;
         width: 100vw; height: 100vh;
-        background: #4facfe;
+        background: #6bc4ef;
         z-index: 10000;
         display: none; 
         overflow: hidden;
@@ -92,13 +92,63 @@
         0%, 100% { transform: translateY(0) rotate(6deg); }
         50% { transform: translateY(-0px) rotate(-6deg); }
     }
+
+    /* Conteneur des nuages */
+.clouds-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40%; /* On limite les nuages au haut de l'écran */
+    z-index: 10002;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+/* Apparition quand l'overlay est actif */
+.is-active .clouds-container {
+    opacity: 1;
+}
+
+.cloud {
+    position: absolute;
+    fill: white;
+    filter: drop-shadow(0 5px 15px rgba(0,0,0,0.1));
+    animation: drift linear infinite;
+}
+
+/* Différentes tailles et vitesses */
+.cloud-1 { width: 200px; top: 10%; animation-duration: 25s; opacity: 0.9; }
+.cloud-2 { width: 150px; top: 25%; animation-duration: 40s; opacity: 0.7; animation-delay: -5s; }
+.cloud-3 { width: 250px; top: 5%; animation-duration: 35s; opacity: 0.8; animation-delay: -15s; }
+
+@keyframes drift {
+    from { transform: translateX(-300px); }
+    to { transform: translateX(100vw); }
+}
 </style>
 
 <div id="transition-overlay">
     <div class="transition-text">On lève l'ancre, moussaillon...</div>
+
+    <div class="clouds-container">
+        <svg class="cloud cloud-1" viewBox="0 0 240 120" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50,100 Q20,100 20,70 Q20,40 50,40 Q50,10 80,10 Q110,10 120,30 Q140,10 170,10 Q210,10 210,50 Q230,50 230,80 Q230,110 200,110 Z" />
+        </svg>
+        
+        <svg class="cloud cloud-2" viewBox="0 0 240 120" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50,100 Q20,100 20,70 Q20,40 50,40 Q50,10 80,10 Q110,10 120,30 Q140,10 170,10 Q210,10 210,50 Q230,50 230,80 Q230,110 200,110 Z" />
+        </svg>
+
+        <svg class="cloud cloud-3" viewBox="0 0 240 120" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50,100 Q20,100 20,70 Q20,40 50,40 Q50,10 80,10 Q110,10 120,30 Q140,10 170,10 Q210,10 210,50 Q230,50 230,80 Q230,110 200,110 Z" />
+        </svg>
+    </div>
+
     <img id="transition-ship" src="../../assets/img/ui/transition-bateau.png" alt="Navire">
     
-    <div class="sea-container">
+    <div class="sea-container">    
         <div class="wave-layer wave-back"></div>
         <div class="wave-layer wave-mid"></div>
         <div class="wave-layer wave-front"></div>

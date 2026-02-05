@@ -125,12 +125,12 @@ if ($theme_selectionne) {
         /* CSS SPÉCIFIQUE CARTE (EXERCICES) */
         <?php if ($affichage_carte): ?>
         body.map-mode {
-            background-color: #0077b6;
+            background-color: #f8ea84;
             overflow: hidden; /* Pas de scroll sur la carte */
         }
         #map-container {
             width: 100vw; height: 100vh;
-            background: radial-gradient(circle, #0096c7 0%, #0077b6 100%);
+            background: radial-gradient(circle, #00bcc5 0%, #51b2b5 100%);
             display: flex; justify-content: center; align-items: center;
         }
         #world-map { width: 100%; height: 100%; object-fit: contain; }
@@ -168,7 +168,7 @@ if ($theme_selectionne) {
         
         /* Optionnel : changer la couleur du texte au survol */
         .archipel-group:hover .island-label { 
-            fill: #ffeaa7; /* Jaune clair */
+            fill: #f8ea84; /* Jaune clair */
             stroke: #000; 
         }
         <?php endif; ?>
@@ -208,124 +208,172 @@ if ($theme_selectionne) {
 
         <?php include './transition.php'; ?>
 
-        <script>
-            const mapData = <?php echo $jsonMap; ?>;
-            const CONFIG = {
-                width: <?php echo $largeurMer; ?>,
-                height: <?php echo $hauteurMer; ?>,
-                colors: { LAGOON: "#4cc9f0", SAND: "#fefae0", JUNGLE: "#2d6a4f", MOUNTAIN: "#1b4332", STROKE: "#001219" }
-            };
+<script>
+    const mapData = <?php echo $jsonMap; ?>;
+    const CONFIG = {
+        width: <?php echo $largeurMer; ?>,
+        height: <?php echo $hauteurMer; ?>,
+        colors: { 
+            LAGOON: "#2be0ce", 
+            SAND: "#f8ea84", 
+            JUNGLE: "#3b9926", 
+            MOUNTAIN: "#1b4332", 
+            STROKE: "#001219",
+            WAVE: "rgba(255, 255, 255, 0.3)"
+        }
+    };
 
-            function createPath(cx, cy, radius, complexity, chaos, seedOffset, tension) {
-                const points = [];
-                const step = (Math.PI * 2) / complexity;
-                for (let i = 0; i < complexity; i++) {
-                    const angle = i * step;
-                    let noise = Math.sin((i + seedOffset) * 4.5) * 0.5 + Math.cos((i + seedOffset * 2) * 2.2) * 0.5;
-                    let finalChaos = tension > 0.3 ? chaos * 0.3 : chaos; 
-                    const r = radius + (noise * finalChaos); 
-                    points.push({ x: cx + Math.cos(angle) * r, y: cy + Math.sin(angle) * r });
+    function createPath(cx, cy, radius, complexity, chaos, seedOffset, tension) {
+        const points = [];
+        const step = (Math.PI * 2) / complexity;
+        for (let i = 0; i < complexity; i++) {
+            const angle = i * step;
+            let noise = Math.sin((i + seedOffset) * 4.5) * 0.5 + Math.cos((i + seedOffset * 2) * 2.2) * 0.5;
+            let finalChaos = tension > 0.3 ? chaos * 0.3 : chaos; 
+            const r = radius + (noise * finalChaos); 
+            points.push({ x: cx + Math.cos(angle) * r, y: cy + Math.sin(angle) * r });
+        }
+        let d = `M ${points[0].x},${points[0].y}`;
+        for (let i = 0; i < points.length; i++) {
+            const p0 = points[i];
+            const p1 = points[(i + 1) % points.length];
+            const pPrev = points[(i - 1 + points.length) % points.length];
+            const pNext = points[(i + 2) % points.length];
+            const cp1x = p0.x + (p1.x - pPrev.x) * tension; 
+            const cp1y = p0.y + (p1.y - pPrev.y) * tension;
+            const cp2x = p1.x - (pNext.x - p0.x) * tension;
+            const cp2y = p1.y - (pNext.y - p0.y) * tension;
+            d += ` C ${cp1x},${cp1y} ${cp2x},${cp2y} ${p1.x},${p1.y}`;
+        }
+        return d + " Z";
+    }
+
+    function generateWaves(count) {
+        let wavesSVG = "";
+        const d = "M-20,0 Q0,15 20,0 T60,0 M0,20 Q20,30 40,20"; 
+        
+        for(let i = 0; i < count; i++) {
+            let wx, wy, validPosition = false;
+            let attempts = 0;
+            while (!validPosition && attempts < 20) {
+                wx = Math.random() * CONFIG.width;
+                wy = Math.random() * CONFIG.height;
+                validPosition = true;
+                for (let item of mapData) {
+                    const dx = wx - item.main.x;
+                    const dy = wy - item.main.y;
+                    const dist = Math.sqrt(dx*dx + dy*dy);
+                    if (dist < 250) {
+                        validPosition = false;
+                        break;
+                    }
                 }
-                let d = `M ${points[0].x},${points[0].y}`;
-                for (let i = 0; i < points.length; i++) {
-                    const p0 = points[i];
-                    const p1 = points[(i + 1) % points.length];
-                    const pPrev = points[(i - 1 + points.length) % points.length];
-                    const pNext = points[(i + 2) % points.length];
-                    const cp1x = p0.x + (p1.x - pPrev.x) * tension; 
-                    const cp1y = p0.y + (p1.y - pPrev.y) * tension;
-                    const cp2x = p1.x - (pNext.x - p0.x) * tension;
-                    const cp2y = p1.y - (pNext.y - p0.y) * tension;
-                    d += ` C ${cp1x},${cp1y} ${cp2x},${cp2y} ${p1.x},${p1.y}`;
-                }
-                return d + " Z";
+                attempts++;
             }
-
-            function renderWorld() {
-                let svgContent = "";
-
-                mapData.forEach(item => {
-                    let localLagoon = "", localSand = "", localJungle = "", localDecor = "";
-                    const chaos = 25;
-
-                    item.archipel.forEach(isl => {
-                        localLagoon += createPath(isl.x, isl.y, isl.size * 2.2, 8, chaos, isl.seed, 0.35);
-                        localSand += createPath(isl.x, isl.y, isl.size * 1.1 + 18, 10, chaos, isl.seed + 10, 0.2);
-                        localJungle += createPath(isl.x, isl.y, isl.size * 1.1, 10, chaos * 1.1, isl.seed + 20, 0.18);
-                        
-                        let thisDecor = "";
-                        const isAtoll = isl.size > 50 && (isl.seed % 10 > 3);
-                        if (isAtoll) {
-                            const hole = createPath(isl.x, isl.y, isl.size * 0.5, 8, 5, isl.seed + 30, 0.2);
-                            thisDecor += `<path d="${hole}" fill="${CONFIG.colors.LAGOON}" stroke="${CONFIG.colors.STROKE}" stroke-width="2"/>`;
-                        } else {
-                            const mount = createPath(isl.x, isl.y, isl.size * 0.4, 7, 5, isl.seed + 40, 0.2);
-                            thisDecor += `<path d="${mount}" fill="${CONFIG.colors.MOUNTAIN}" opacity="0.6"/>`;
-                        }
-                        localDecor += `<g>${thisDecor}</g>`;
-                    });
-
-                    // Clic sur l'archipel
-                    // Clic sur l'archipel
-                    const clickAction = `handleClick(event, '${item.info.url}')`;
-
-                    svgContent += `
-                        <g class="archipel-group" onclick="${clickAction}">
-                            <g filter="url(#dropShadow)" opacity="0.2"><path d="${localLagoon}" fill="black" /></g>
-                            <g filter="url(#goo)"><path d="${localLagoon}" fill="${CONFIG.colors.LAGOON}" opacity="0.9"/></g>
-                            <g filter="url(#goo)"><path d="${localSand}" fill="${CONFIG.colors.SAND}" /></g>
-                            <g filter="url(#goo)"><path d="${localJungle}" fill="${CONFIG.colors.JUNGLE}" /></g>
-                            <g>${localDecor}</g>
-                            
-                            <text x="${item.main.x}" y="${item.main.y}" class="island-label">
-                                ${item.info.title}
-                            </text>
-                        </g>
-                    `;
-                });
-
-                const svgHTML = `
-                    <svg id="world-map" viewBox="0 0 ${CONFIG.width} ${CONFIG.height}" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                            <filter id="goo">
-                                <feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blur" />
-                                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
-                                <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
-                            </filter>
-                            <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
-                                <feGaussianBlur in="SourceAlpha" stdDeviation="10"/>
-                                <feOffset dx="10" dy="15" result="offsetblur"/>
-                                <feComponentTransfer><feFuncA type="linear" slope="0.5"/></feComponentTransfer>
-                                <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
-                            </filter>
-                        </defs>
-                        ${svgContent}
-                    </svg>
-                `;
-                document.getElementById('svg-wrapper').innerHTML = svgHTML;
+            if (validPosition) {
+                const rot = (Math.random() * 20) - 10;
+                const scale = 0.8 + Math.random() * 0.4;
+                wavesSVG += `<path d="${d}" 
+                    transform="translate(${wx}, ${wy}) scale(${scale}) rotate(${rot})" 
+                    fill="none" stroke="${CONFIG.colors.WAVE}" stroke-width="5" stroke-linecap="round" opacity="0.6" />`;
             }
+        }
+        return wavesSVG;
+    }
 
-            function handleClick(event, url) {
-                event.preventDefault();
-                // On déclenche la transition JS (si incluse)
-                if (typeof lancerTransition === 'function') {
-                    const dummyLink = document.createElement('a');
-                    dummyLink.href = url;
-                    lancerTransition(event, dummyLink);
+    function renderWorld() {
+        let svgContent = "";
+
+        // 1. GÉNÉRATION DES VAGUES (ARRIÈRE-PLAN)
+        const waveCount = 150; 
+        svgContent += generateWaves(waveCount);
+
+        // 2. GÉNÉRATION DES ÎLES
+        mapData.forEach(item => {
+            let localLagoon = "", localSand = "", localJungle = "", localDecor = "";
+            const chaos = 25;
+
+            item.archipel.forEach(isl => {
+                localLagoon += createPath(isl.x, isl.y, isl.size * 2.2, 8, chaos, isl.seed, 0.35);
+                localSand += createPath(isl.x, isl.y, isl.size * 1.1 + 18, 10, chaos, isl.seed + 10, 0.2);
+                localJungle += createPath(isl.x, isl.y, isl.size * 1.1, 10, chaos * 1.1, isl.seed + 20, 0.18);
+                
+                let thisDecor = "";
+                const isAtoll = isl.size > 50 && (isl.seed % 10 > 3);
+                if (isAtoll) {
+                    const hole = createPath(isl.x, isl.y, isl.size * 0.5, 8, 5, isl.seed + 30, 0.2);
+                    thisDecor += `<path d="${hole}" fill="${CONFIG.colors.LAGOON}" stroke="${CONFIG.colors.STROKE}" stroke-width="2"/>`;
                 } else {
-                    window.location.href = url;
+                    const mount = createPath(isl.x, isl.y, isl.size * 0.4, 7, 5, isl.seed + 40, 0.2);
+                    thisDecor += `<path d="${mount}" fill="${CONFIG.colors.MOUNTAIN}" opacity="0.6"/>`;
                 }
-            }
-            
-            // Animation d'entrée
-            document.getElementById('svg-wrapper').style.opacity = 0;
-            setTimeout(() => {
-                renderWorld();
-                document.getElementById('svg-wrapper').style.transition = "opacity 1s ease";
-                document.getElementById('svg-wrapper').style.opacity = 1;
-            }, 100);
-            
-        </script>
+                localDecor += `<g>${thisDecor}</g>`;
+            });
+
+            const clickAction = `handleClick(event, '${item.info.url}')`;
+
+            svgContent += `
+                <g class="archipel-group" onclick="${clickAction}">
+                    <g filter="url(#dropShadow)" opacity="0.15"><path d="${localLagoon}" fill="black" /></g>
+                    
+                    <g filter="url(#goo)"><path d="${localLagoon}" fill="${CONFIG.colors.LAGOON}" opacity="0.85"/></g>
+                    
+                    <g filter="url(#goo)" transform="translate(6, 6)">
+                        <path d="${localSand}" fill="white" opacity="0.5" />
+                    </g>
+
+                    <g filter="url(#goo)"><path d="${localSand}" fill="${CONFIG.colors.SAND}" /></g>
+                    
+                    <g filter="url(#goo)"><path d="${localJungle}" fill="${CONFIG.colors.JUNGLE}" /></g>
+                    <g>${localDecor}</g>
+                    
+                    <text x="${item.main.x}" y="${item.main.y}" class="island-label">
+                        ${item.info.title}
+                    </text>
+                </g>
+            `;
+        });
+
+        const svgHTML = `
+            <svg id="world-map" viewBox="0 0 ${CONFIG.width} ${CONFIG.height}" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blur" />
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                        <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+                    </filter>
+                    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+                        <feGaussianBlur in="SourceAlpha" stdDeviation="10"/>
+                        <feOffset dx="10" dy="15" result="offsetblur"/>
+                        <feComponentTransfer><feFuncA type="linear" slope="0.5"/></feComponentTransfer>
+                        <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+                    </filter>
+                </defs>
+                ${svgContent}
+            </svg>
+        `;
+        document.getElementById('svg-wrapper').innerHTML = svgHTML;
+    }
+
+    function handleClick(event, url) {
+        event.preventDefault();
+        if (typeof lancerTransition === 'function') {
+            const dummyLink = document.createElement('a');
+            dummyLink.href = url;
+            lancerTransition(event, dummyLink);
+        } else {
+            window.location.href = url;
+        }
+    }
+    
+    document.getElementById('svg-wrapper').style.opacity = 0;
+    setTimeout(() => {
+        renderWorld();
+        document.getElementById('svg-wrapper').style.transition = "opacity 1s ease";
+        document.getElementById('svg-wrapper').style.opacity = 1;
+    }, 100);
+    
+</script>
     <?php endif; ?>
 
 </body>

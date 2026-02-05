@@ -115,7 +115,7 @@ function creerSession(int $id, string $role, string $name): void {
         <?php if ($message) echo "<div class='error'>⚠️ $message</div>"; ?>
 
         <div id="selector">
-            <div style="font-size: 50px; margin-bottom: 20px;">⚓</div>
+            <img src="assets/img/ui/logo.png" alt="Logo" style="width: 250px; margin-bottom: 20px;">
             <h1>Bienvenue à Bord</h1>
             <button class="btn-choice" style="background:#3b82f6;color:white;" onclick="openForm('form-eleve')">Moussaillon (Élève)</button>
             <button class="btn-choice" style="background:#1e293b;color:white;" onclick="openForm('form-teacher')">Officier (Enseignant)</button>
