@@ -1,0 +1,670 @@
+{
+  "items": [
+    {
+      "collectionId": "pbc_activites_01",
+      "collectionName": "activites",
+      "contenu": "<h3>1. Les Grandes Découvertes</h3><p>À la fin du 15ème siècle, l'invention de la <b>boussole</b> et de la <b>caravelle</b> permet aux marins de s'aventurer sur les océans. En <b>1492</b>, Christophe Colomb atteint l'Amérique. En 1522, l'équipage de Magellan termine le premier tour du monde.</p><p>Ressource : <a href='https://www.lumni.fr/video/les-grandes-decouvertes-les-fondamentaux'>Lumni - Les Grandes Découvertes</a></p>",
+      "id": "modernes_001",
+      "quiz_json": [
+        {
+          "question": "Quel navigateur accoste en Amérique en 1492 ?",
+          "options": [
+            "Vasco de Gama",
+            "Christophe Colomb",
+            "Magellan",
+            "Jack Sparrow"
+          ],
+          "reponse": "Christophe Colomb"
+        },
+        {
+          "question": "Quel bateau est plus solide et rapide pour traverser l'Océan ?",
+          "options": [
+            "Le drakkar",
+            "La caravelle",
+            "Le paquebot",
+            "Le galion espagnol"
+          ],
+          "reponse": "La caravelle"
+        },
+        {
+          "question": "En quelle année l'Amérique a-t-elle été découverte ?",
+          "options": [
+            "1492",
+            "1515",
+            "1789",
+            "800"
+          ],
+          "reponse": "1492"
+        },
+        {
+          "question": "Quel instrument permet de trouver le Nord ?",
+          "options": [
+            "Le thermomètre",
+            "La boussole",
+            "Le sablier",
+            "L'astrolabe"
+          ],
+          "reponse": "La boussole"
+        },
+        {
+          "question": "Qui a dirigé la première expédition faisant le tour du monde ?",
+          "options": [
+            "Marco Polo",
+            "Magellan",
+            "Jacques Cartier",
+            "Christophe Colomb"
+          ],
+          "reponse": "Magellan"
+        },
+        {
+          "question": "Quel pays Colomb pensait-il avoir atteint ?",
+          "options": [
+            "Le Brésil",
+            "Le Canada",
+            "Les Indes",
+            "La Chine"
+          ],
+          "reponse": "Les Indes"
+        },
+        {
+          "question": "Quel produit inconnu en Europe a été ramené d'Amérique ?",
+          "options": [
+            "Le riz",
+            "La pomme de terre",
+            "Le blé",
+            "Le café"
+          ],
+          "reponse": "La pomme de terre"
+        },
+        {
+          "question": "Quel océan les marins traversent-ils pour aller vers l'Ouest ?",
+          "options": [
+            "La Méditerranée",
+            "La Mer du Nord",
+            "L'Océan Atlantique",
+            "La Mer Rouge"
+          ],
+          "reponse": "L'Océan Atlantique"
+        },
+        {
+          "question": "Qui a inventé l'imprimerie vers 1450 ?",
+          "options": [
+            "Gutenberg",
+            "Léonard de Vinci",
+            "François Ier",
+            "Galilée"
+          ],
+          "reponse": "Gutenberg"
+        },
+        {
+          "question": "Quelle invention permet de s'orienter grâce aux étoiles ?",
+          "options": [
+            "L'astrolabe",
+            "La montre",
+            "La lunette",
+            "Le compas"
+          ],
+          "reponse": "L'astrolabe"
+        }
+      ],
+      "rubrique": "Les Temps Modernes",
+      "titre": "Les Grandes Découvertes",
+      "univers": "Histoire"
+    },
+    {
+      "collectionId": "pbc_activites_01",
+      "collectionName": "activites",
+      "contenu": "<h3>2. François Ier et la Renaissance</h3><p>La Renaissance est un renouveau des arts et des sciences. <b>François Ier</b> encourage les artistes comme <b>Léonard de Vinci</b>. Il impose le français avec l'ordonnance de Villers-Cotterêts (1539).</p><p>Ressource : <a href='https://www.chateau-chambord.org/fr/histoire/le-chateau/'>Site officiel de Chambord - Histoire</a></p>",
+      "id": "modernes_002",
+      "quiz_json": [
+        {
+          "question": "Quel roi est le symbole de la Renaissance en France ?",
+          "options": [
+            "Louis XIV",
+            "François Ier",
+            "Henri IV",
+            "Le Roi Dagobert"
+          ],
+          "reponse": "François Ier"
+        },
+        {
+          "question": "Quel génie italien a vécu au château du Clos Lucé ?",
+          "options": [
+            "Michel-Ange",
+            "Léonard de Vinci",
+            "Raphaël",
+            "Donatello"
+          ],
+          "reponse": "Léonard de Vinci"
+        },
+        {
+          "question": "Dans quelle région se trouvent les châteaux de la Renaissance ?",
+          "options": [
+            "La Bretagne",
+            "La Vallée de la Loire",
+            "La Provence",
+            "L'Auvergne"
+          ],
+          "reponse": "La Vallée de la Loire"
+        },
+        {
+          "question": "Quel château possède un escalier à double révolution ?",
+          "options": [
+            "Versailles",
+            "Chambord",
+            "Chenonceau",
+            "Le Louvre"
+          ],
+          "reponse": "Chambord"
+        },
+        {
+          "question": "Quel célèbre tableau Léonard de Vinci a-t-il apporté ?",
+          "options": [
+            "La Joconde",
+            "Le Sacre de Napoléon",
+            "La Liberté",
+            "La Cène"
+          ],
+          "reponse": "La Joconde"
+        },
+        {
+          "question": "En quelle année a eu lieu la bataille de Marignan ?",
+          "options": [
+            "1492",
+            "1515",
+            "1789",
+            "1214"
+          ],
+          "reponse": "1515"
+        },
+        {
+          "question": "Quelle langue devient obligatoire pour les lois en 1539 ?",
+          "options": [
+            "Le latin",
+            "Le français",
+            "L'occitan",
+            "L'italien"
+          ],
+          "reponse": "Le français"
+        },
+        {
+          "question": "Quelle invention permet de diffuser les idées de la Renaissance ?",
+          "options": [
+            "La boussole",
+            "L'imprimerie",
+            "Le papier de soie",
+            "Le parchemin"
+          ],
+          "reponse": "L'imprimerie"
+        },
+        {
+          "question": "Comment s'appelle l'ordonnance qui impose le français ?",
+          "options": [
+            "Villers-Cotterêts",
+            "L'édit de Nantes",
+            "Le Code Civil",
+            "La Trêve de Dieu"
+          ],
+          "reponse": "Villers-Cotterêts"
+        },
+        {
+          "question": "Quel peuple de l'Antiquité inspire les artistes de la Renaissance ?",
+          "options": [
+            "Les Gaulois",
+            "Les Grecs et Romains",
+            "Les Vikings",
+            "Les Francs"
+          ],
+          "reponse": "Les Grecs et Romains"
+        }
+      ],
+      "rubrique": "Les Temps Modernes",
+      "titre": "La Renaissance",
+      "univers": "Histoire"
+    },
+    {
+      "collectionId": "pbc_activites_01",
+      "collectionName": "activites",
+      "contenu": "<h3>3. Louis XIV et la Monarchie Absolue</h3><p>Louis XIV, dit le <b>Roi-Soleil</b>, gouverne seul : c'est la monarchie absolue de droit divin. Il fait construire le château de <b>Versailles</b> pour surveiller la noblesse et montrer sa puissance.</p><p>Ressource : <a href='https://www.chateauversailles.fr/decouvrir/histoire'>Château de Versailles - Histoire</a></p>",
+      "id": "modernes_003",
+      "quiz_json": [
+        {
+          "question": "Quel surnom Louis XIV s'est-il donné ?",
+          "options": [
+            "Le Roi-Lune",
+            "Le Roi-Soleil",
+            "Le Roi-Lion",
+            "Le Grand Roi"
+          ],
+          "reponse": "Le Roi-Soleil"
+        },
+        {
+          "question": "Quel palais Louis XIV a-t-il fait construire ?",
+          "options": [
+            "Le Louvre",
+            "Versailles",
+            "Chambord",
+            "Fontainebleau"
+          ],
+          "reponse": "Versailles"
+        },
+        {
+          "question": "Comment appelle-t-on le pouvoir quand le roi décide de tout ?",
+          "options": [
+            "La république",
+            "La monarchie absolue",
+            "La démocratie",
+            "La féodalité"
+          ],
+          "reponse": "La monarchie absolue"
+        },
+        {
+          "question": "Comment appelait-on les nobles vivant à Versailles auprès du roi ?",
+          "options": [
+            "Les chevaliers",
+            "La cour",
+            "Les serfs",
+            "Les barons"
+          ],
+          "reponse": "La cour"
+        },
+        {
+          "question": "Qui a dessiné les jardins de Versailles ?",
+          "options": [
+            "Vauban",
+            "Le Nôtre",
+            "Molière",
+            "Mansart"
+          ],
+          "reponse": "Le Nôtre"
+        },
+        {
+          "question": "Quelle pièce de Versailles est la plus célèbre pour ses reflets ?",
+          "options": [
+            "La galerie des glaces",
+            "La chambre du roi",
+            "L'Opéra royal",
+            "Le salon d'Hercule"
+          ],
+          "reponse": "La galerie des glaces"
+        },
+        {
+          "question": "Qui était le ministre des finances de Louis XIV ?",
+          "options": [
+            "Mazarin",
+            "Colbert",
+            "Richelieu",
+            "L'inspecteur Gadget"
+          ],
+          "reponse": "Colbert"
+        },
+        {
+          "question": "Quel écrivain écrivait des pièces de théâtre pour le roi ?",
+          "options": [
+            "La Fontaine",
+            "Molière",
+            "Victor Hugo",
+            "Racine"
+          ],
+          "reponse": "Molière"
+        },
+        {
+          "question": "Comment s'appelle l'ensemble des règles de vie à la Cour ?",
+          "options": [
+            "Le code civil",
+            "L'étiquette",
+            "La bienséance",
+            "Le protocole"
+          ],
+          "reponse": "L'étiquette"
+        },
+        {
+          "question": "Qui a construit les citadelles pour protéger les frontières ?",
+          "options": [
+            "Colbert",
+            "Vauban",
+            "Lully",
+            "Turenne"
+          ],
+          "reponse": "Vauban"
+        }
+      ],
+      "rubrique": "Les Temps Modernes",
+      "titre": "La Monarchie Absolue",
+      "univers": "Histoire"
+    },
+    {
+      "collectionId": "pbc_activites_01",
+      "collectionName": "activites",
+      "contenu": "<h3>4. Colonies et Esclavage</h3><p>Les Européens créent des <b>colonies</b> en Amérique. Pour cultiver le sucre, ils organisent la <b>traite négrière</b> : des millions d'Africains sont capturés et vendus comme esclaves. C'est le commerce triangulaire.</p><p>Ressource : <a href='https://www.lumni.fr/dossier/l-esclavage-comprendre-son-histoire'>Lumni - L'Esclavage</a></p>",
+      "id": "modernes_004",
+      "quiz_json": [
+        {
+          "question": "Comment appelle-t-on le commerce entre l'Europe, l'Afrique et l'Amérique ?",
+          "options": [
+            "Le commerce circulaire",
+            "Le commerce triangulaire",
+            "Le commerce colonial",
+            "Le marché noir"
+          ],
+          "reponse": "Le commerce triangulaire"
+        },
+        {
+          "question": "Que cultivaient principalement les esclaves dans les plantations ?",
+          "options": [
+            "Du sucre et du café",
+            "Du blé et du maïs",
+            "Des pommes",
+            "Des spaghettis"
+          ],
+          "reponse": "Du sucre et du café"
+        },
+        {
+          "question": "D'où venaient les hommes et femmes réduits en esclavage ?",
+          "options": [
+            "D'Afrique",
+            "D'Asie",
+            "D'Amérique",
+            "D'Europe"
+          ],
+          "reponse": "D'Afrique"
+        },
+        {
+          "question": "Quel terme désigne le transport forcé des esclaves ?",
+          "options": [
+            "La migration",
+            "La traite négrière",
+            "Le voyage colonial",
+            "La croisière s'amuse"
+          ],
+          "reponse": "La traite négrière"
+        },
+        {
+          "question": "Quel texte de loi organisait la vie (très dure) des esclaves ?",
+          "options": [
+            "La Constitution",
+            "Le Code Noir",
+            "Le règlement royal",
+            "Le Code Civil"
+          ],
+          "reponse": "Le Code Noir"
+        },
+        {
+          "question": "Dans quel port français arrivaient les richesses coloniales ?",
+          "options": [
+            "Nantes ou Bordeaux",
+            "Paris ou Lyon",
+            "Le Havre",
+            "Brest"
+          ],
+          "reponse": "Nantes ou Bordeaux"
+        },
+        {
+          "question": "Qu'est-ce qu'une colonie ?",
+          "options": [
+            "Une ville",
+            "Un territoire occupé loin de son pays",
+            "Une ferme",
+            "Une colonie de vacances"
+          ],
+          "reponse": "Un territoire occupé loin de son pays"
+        },
+        {
+          "question": "Comment appelle-t-on le fait de posséder un être humain ?",
+          "options": [
+            "Le servage",
+            "L'esclavage",
+            "La corvée",
+            "L'emploi"
+          ],
+          "reponse": "L'esclavage"
+        },
+        {
+          "question": "Comment s'appellent les grandes fermes en Amérique ?",
+          "options": [
+            "Les fermes",
+            "Les plantations",
+            "Les usines",
+            "Les potagers"
+          ],
+          "reponse": "Les plantations"
+        },
+        {
+          "question": "Quelle était la raison principale de l'esclavage ?",
+          "options": [
+            "Avoir une main-d'œuvre gratuite",
+            "Peupler les îles",
+            "Apprendre un métier",
+            "Faire du sport"
+          ],
+          "reponse": "Avoir une main-d'œuvre gratuite"
+        }
+      ],
+      "rubrique": "Les Temps Modernes",
+      "titre": "Colonies et Esclavage",
+      "univers": "Histoire"
+    },
+    {
+      "collectionId": "pbc_activites_01",
+      "collectionName": "activites",
+      "contenu": "<h3>5. Le Siècle des Lumières</h3><p>Au 18ème siècle, des penseurs comme Voltaire, Rousseau ou Montesquieu utilisent la raison pour critiquer l'injustice. Leur grand projet est l'<b>Encyclopédie</b> : un dictionnaire géant pour partager toutes les connaissances.</p><p>Ressource : <a href='https://gallica.bnf.fr/essentiels/diderot/encyclopedie'>BNF Gallica - L'Encyclopédie</a></p>",
+      "id": "modernes_005",
+      "quiz_json": [
+        {
+          "question": "Quel était le but des philosophes des Lumières ?",
+          "options": [
+            "Obéir au roi",
+            "Utiliser la raison pour être libre",
+            "Devenir riches",
+            "Apprendre la magie"
+          ],
+          "reponse": "Utiliser la raison pour être libre"
+        },
+        {
+          "question": "Quel immense ouvrage regroupe tout le savoir de l'époque ?",
+          "options": [
+            "La Bible",
+            "L'Encyclopédie",
+            "Le dictionnaire royal",
+            "Harry Potter"
+          ],
+          "reponse": "L'Encyclopédie"
+        },
+        {
+          "question": "Qui sont les deux auteurs qui ont dirigé l'Encyclopédie ?",
+          "options": [
+            "Voltaire et Rousseau",
+            "Diderot et d'Alembert",
+            "Louis XIV et Colbert",
+            "Richelieu et Mazarin"
+          ],
+          "reponse": "Diderot et d'Alembert"
+        },
+        {
+          "question": "Quelle valeur Voltaire a-t-il défendue toute sa vie ?",
+          "options": [
+            "La tolérance religieuse",
+            "Le pouvoir absolu",
+            "La guerre",
+            "Le silence"
+          ],
+          "reponse": "La tolérance religieuse"
+        },
+        {
+          "question": "Pourquoi appelle-t-on ces penseurs les 'Lumières' ?",
+          "options": [
+            "Ils travaillaient la nuit",
+            "Ils voulaient éclairer les esprits",
+            "Ils ont inventé l'ampoule",
+            "Ils brillaient dans le noir"
+          ],
+          "reponse": "Ils voulaient éclairer les esprits"
+        },
+        {
+          "question": "Que critiquaient principalement les philosophes ?",
+          "options": [
+            "Le pouvoir absolu du roi",
+            "Les sciences",
+            "Les paysans",
+            "L'imprimerie"
+          ],
+          "reponse": "Le pouvoir absolu du roi"
+        },
+        {
+          "question": "Lequel de ces hommes est un philosophe des Lumières ?",
+          "options": [
+            "Jean-Jacques Rousseau",
+            "Napoléon",
+            "Vauban",
+            "Molière"
+          ],
+          "reponse": "Jean-Jacques Rousseau"
+        },
+        {
+          "question": "Où les gens discutaient-ils des nouvelles idées ?",
+          "options": [
+            "Dans les casernes",
+            "Dans les salons et les cafés",
+            "Dans les églises",
+            "Dans les grottes"
+          ],
+          "reponse": "Dans les salons et les cafés"
+        },
+        {
+          "question": "Quel pays était un modèle de liberté pour les philosophes ?",
+          "options": [
+            "L'Espagne",
+            "L'Angleterre",
+            "L'Italie",
+            "La Russie"
+          ],
+          "reponse": "L'Angleterre"
+        },
+        {
+          "question": "Selon Montesquieu, pourquoi faut-il séparer les pouvoirs ?",
+          "options": [
+            "Pour travailler moins",
+            "Pour éviter qu'une personne décide de tout",
+            "Pour être plus riche",
+            "Pour s'amuser"
+          ],
+          "reponse": "Pour éviter qu'une personne décide de tout"
+        }
+      ],
+      "rubrique": "Les Temps Modernes",
+      "titre": "Le Siècle des Lumières",
+      "univers": "Histoire"
+    },
+    {
+      "collectionId": "pbc_activites_01",
+      "collectionName": "activites",
+      "contenu": "<h3>6. Les débuts de l'Industrie</h3><p>À la fin du 18ème siècle, James Watt perfectionne la <b>machine à vapeur</b>. Cela permet de fabriquer des objets plus vite dans des usines et de créer des trains. C'est le début d'une grande transformation.</p><p>Ressource : <a href='https://www.lumni.fr/video/la-machine-a-vapeur-de-james-watt'>Lumni - La machine à vapeur</a></p>",
+      "id": "modernes_006",
+      "quiz_json": [
+        {
+          "question": "Quelle invention a permis le début de l'industrie ?",
+          "options": [
+            "L'automobile",
+            "La machine à vapeur",
+            "L'ordinateur",
+            "La trottinette"
+          ],
+          "reponse": "La machine à vapeur"
+        },
+        {
+          "question": "Qui a perfectionné la machine à vapeur en 1769 ?",
+          "options": [
+            "James Watt",
+            "Gutenberg",
+            "Léonard de Vinci",
+            "Newton"
+          ],
+          "reponse": "James Watt"
+        },
+        {
+          "question": "Quelle source d'énergie faisait chauffer l'eau des machines ?",
+          "options": [
+            "Le pétrole",
+            "Le charbon",
+            "Le vent",
+            "Le chocolat"
+          ],
+          "reponse": "Le charbon"
+        },
+        {
+          "question": "Où fabrique-t-on les objets en grande quantité ?",
+          "options": [
+            "Dans les jardins",
+            "Dans les usines",
+            "Dans les châteaux",
+            "À la maison"
+          ],
+          "reponse": "Dans les usines"
+        },
+        {
+          "question": "Quel transport utilise la vapeur pour avancer sur des rails ?",
+          "options": [
+            "La charrette",
+            "La locomotive",
+            "L'avion",
+            "Le vélo"
+          ],
+          "reponse": "La locomotive"
+        },
+        {
+          "question": "De quelle matière a-t-on besoin pour construire ces machines ?",
+          "options": [
+            "Le plastique",
+            "Le fer et l'acier",
+            "Le bois",
+            "Le verre"
+          ],
+          "reponse": "Le fer et l'acier"
+        },
+        {
+          "question": "Où travaillent les ouvriers à cette époque ?",
+          "options": [
+            "Au bureau",
+            "À l'usine",
+            "À la ferme",
+            "Au palais"
+          ],
+          "reponse": "À l'usine"
+        },
+        {
+          "question": "Comment appelle-t-on ce changement rapide de la société ?",
+          "options": [
+            "La révolution industrielle",
+            "Le grand dodo",
+            "La révolution verte",
+            "Le choc des cultures"
+          ],
+          "reponse": "La révolution industrielle"
+        },
+        {
+          "question": "Dans quel pays l'industrie a-t-elle commencé ?",
+          "options": [
+            "L'Italie",
+            "L'Angleterre",
+            "L'Espagne",
+            "La Chine"
+          ],
+          "reponse": "L'Angleterre"
+        },
+        {
+          "question": "Quel est l'avantage des machines ?",
+          "options": [
+            "Produire plus vite",
+            "Remplacer les récréations",
+            "Faire de la musique",
+            "Dormir davantage"
+          ],
+          "reponse": "Produire plus vite"
+        }
+      ],
+      "rubrique": "Les Temps Modernes",
+      "titre": "Débuts de l'Industrie",
+      "univers": "Histoire"
+    }
+  ]
+}

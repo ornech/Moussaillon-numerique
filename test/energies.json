@@ -1,0 +1,809 @@
+{
+  "items": [
+    {
+      "collectionId": "pbc_geo_energies",
+      "collectionName": "activites",
+      "contenu": "<h3>Activité 1 : Les besoins en énergie</h3><p>L'énergie est indispensable pour se chauffer, s'éclairer, se déplacer et faire fonctionner les usines. La consommation mondiale augmente car la population grandit.</p>",
+      "id": "geo_energies_101",
+      "quiz_json": [
+        {
+          "question": "À quoi sert principalement l'énergie dans nos maisons ?",
+          "options": [
+            "Se chauffer et s'éclairer",
+            "Faire pousser les plantes",
+            "Remplir les verres d'eau",
+            "Ouvrir les fenêtres"
+          ],
+          "reponse": "Se chauffer et s'éclairer"
+        },
+        {
+          "question": "Pourquoi la consommation d'énergie augmente-t-elle dans le monde ?",
+          "options": [
+            "La population augmente",
+            "Il y a moins de soleil",
+            "Les machines dorment",
+            "Le vent souffle moins"
+          ],
+          "reponse": "La population augmente"
+        },
+        {
+          "question": "Quel transport consomme beaucoup d'énergie ?",
+          "options": [
+            "Le vélo",
+            "L'avion",
+            "La marche à pied",
+            "La trottinette"
+          ],
+          "reponse": "L'avion"
+        },
+        {
+          "question": "L'énergie sert à faire fonctionner les machines dans...",
+          "options": [
+            "Les forêts",
+            "Les usines",
+            "Les nuages",
+            "Les rivières"
+          ],
+          "reponse": "Les usines"
+        },
+        {
+          "question": "D'où provient l'énergie qui nous permet de bouger ?",
+          "options": [
+            "De l'électricité",
+            "De notre nourriture",
+            "Du vent",
+            "De l'essence"
+          ],
+          "reponse": "De notre nourriture"
+        },
+        {
+          "question": "Quel appareil utilise de l'énergie pour conserver les aliments ?",
+          "options": [
+            "Le four",
+            "Le réfrigérateur",
+            "Le lave-linge",
+            "Le grille-pain"
+          ],
+          "reponse": "Le réfrigérateur"
+        },
+        {
+          "question": "Dans quel domaine utilise-t-on l'énergie pour cultiver ?",
+          "options": [
+            "L'industrie",
+            "L'agriculture",
+            "Le commerce",
+            "Les loisirs"
+          ],
+          "reponse": "L'agriculture"
+        },
+        {
+          "question": "Comment appelle-t-on l'énergie qui arrive par des fils ?",
+          "options": [
+            "L'essence",
+            "L'électricité",
+            "Le gaz",
+            "Le charbon"
+          ],
+          "reponse": "L'électricité"
+        },
+        {
+          "question": "Que se passe-t-il si on manque d'énergie ?",
+          "options": [
+            "Tout fonctionne mieux",
+            "Les machines s'arrêtent",
+            "Le soleil s'éteint",
+            "L'eau devient rose"
+          ],
+          "reponse": "Les machines s'arrêtent"
+        },
+        {
+          "question": "Lequel de ces objets n'a pas besoin d'énergie pour fonctionner ?",
+          "options": [
+            "La voiture",
+            "Le livre",
+            "La télévision",
+            "L'ordinateur"
+          ],
+          "reponse": "Le livre"
+        },
+        {
+          "question": "D'où provient l'énergie utilisée pour chauffer l'eau ?",
+          "options": [
+            "Le gaz ou l'électricité",
+            "Le sel",
+            "Le sable",
+            "La glace"
+          ],
+          "reponse": "Le gaz ou l'électricité"
+        },
+        {
+          "question": "Comment appelle-t-on l'énergie fournie par le soleil ?",
+          "options": [
+            "Lunaire",
+            "Solaire",
+            "Éolienne",
+            "Hydraulique"
+          ],
+          "reponse": "Solaire"
+        },
+        {
+          "question": "Quel pays consomme le plus d'énergie par habitant ?",
+          "options": [
+            "Les pays développés",
+            "Les pays pauvres",
+            "Les pays sans usines",
+            "Les pays sans voitures"
+          ],
+          "reponse": "Les pays développés"
+        },
+        {
+          "question": "Quelle invention a changé nos besoins en énergie au 19ème siècle ?",
+          "options": [
+            "La machine à vapeur",
+            "Le téléphone portable",
+            "L'avion",
+            "Le feu"
+          ],
+          "reponse": "La machine à vapeur"
+        },
+        {
+          "question": "Peut-on vivre aujourd'hui sans aucune source d'énergie ?",
+          "options": [
+            "Oui, facilement",
+            "Non, c'est devenu indispensable",
+            "Seulement le dimanche",
+            "Uniquement en ville"
+          ],
+          "reponse": "Non, c'est devenu indispensable"
+        }
+      ],
+      "rubrique": "L'Énergie",
+      "titre": "Nos besoins en énergie",
+      "univers": "Géographie"
+    },
+    {
+      "collectionId": "pbc_geo_energies",
+      "collectionName": "activites",
+      "contenu": "<h3>Activité 2 : Les énergies fossiles</h3><p>Le pétrole, le charbon et le gaz sont des énergies fossiles. Elles polluent et leurs stocks sont limités : ce sont des énergies <b>non-renouvelables</b>.</p>",
+      "id": "geo_energies_102",
+      "quiz_json": [
+        {
+          "question": "Laquelle est une énergie fossile ?",
+          "options": [
+            "Le vent",
+            "Le charbon",
+            "Le soleil",
+            "L'eau"
+          ],
+          "reponse": "Le charbon"
+        },
+        {
+          "question": "D'où vient le pétrole ?",
+          "options": [
+            "De la surface",
+            "De sous la terre",
+            "De l'espace",
+            "Des arbres"
+          ],
+          "reponse": "De sous la terre"
+        },
+        {
+          "question": "Pourquoi sont-elles 'non-renouvelables' ?",
+          "options": [
+            "Elles sont gratuites",
+            "Elles vont s'épuiser",
+            "Elles sont éternelles",
+            "Elles sont bleues"
+          ],
+          "reponse": "Elles vont s'épuiser"
+        },
+        {
+          "question": "Quel gaz rejettent-elles en brûlant ?",
+          "options": [
+            "Oxygène",
+            "CO2 (gaz carbonique)",
+            "Azote",
+            "Vapeur"
+          ],
+          "reponse": "CO2 (gaz carbonique)"
+        },
+        {
+          "question": "Que fabrique-t-on avec du pétrole ?",
+          "options": [
+            "Du verre",
+            "Du plastique",
+            "Du papier",
+            "Du fer"
+          ],
+          "reponse": "Du plastique"
+        },
+        {
+          "question": "Comment s'appelle l'énergie fossile gazeuse ?",
+          "options": [
+            "Le pétrole",
+            "Le gaz naturel",
+            "Le charbon",
+            "L'air"
+          ],
+          "reponse": "Le gaz naturel"
+        },
+        {
+          "question": "Où extrait-on le charbon ?",
+          "options": [
+            "Dans les champs",
+            "Dans les mines",
+            "À la mer",
+            "Dans le ciel"
+          ],
+          "reponse": "Dans les mines"
+        },
+        {
+          "question": "Quelle énergie fossile utilise-t-on pour l'essence ?",
+          "options": [
+            "Le charbon",
+            "Le pétrole",
+            "Le gaz",
+            "Le bois"
+          ],
+          "reponse": "Le pétrole"
+        },
+        {
+          "question": "Combien de temps faut-il pour créer ces énergies ?",
+          "options": [
+            "Un an",
+            "Des millions d'années",
+            "Dix ans",
+            "Un mois"
+          ],
+          "reponse": "Des millions d'années"
+        },
+        {
+          "question": "Pourquoi polluent-elles ?",
+          "options": [
+            "Elles font du bruit",
+            "Le réchauffement climatique",
+            "Elles sentent bon",
+            "Elles sont propres"
+          ],
+          "reponse": "Le réchauffement climatique"
+        },
+        {
+          "question": "Que transporte un pétrolier ?",
+          "options": [
+            "Du gaz",
+            "Du pétrole",
+            "Des voitures",
+            "Du charbon"
+          ],
+          "reponse": "Du pétrole"
+        },
+        {
+          "question": "Les énergies fossiles augmentent l'effet de...",
+          "options": [
+            "Vent",
+            "Serre",
+            "Pluie",
+            "Soleil"
+          ],
+          "reponse": "Serre"
+        },
+        {
+          "question": "Quelle énergie servait aux premières locomotives ?",
+          "options": [
+            "Pétrole",
+            "Charbon",
+            "Gaz",
+            "Électricité"
+          ],
+          "reponse": "Charbon"
+        },
+        {
+          "question": "Lequel est un pays producteur de pétrole ?",
+          "options": [
+            "Suisse",
+            "Arabie Saoudite",
+            "Belgique",
+            "Luxembourg"
+          ],
+          "reponse": "Arabie Saoudite"
+        },
+        {
+          "question": "Quel est le défaut majeur du charbon ?",
+          "options": [
+            "Il est trop beau",
+            "Il pollue beaucoup",
+            "Il est invisible",
+            "Il est liquide"
+          ],
+          "reponse": "Il pollue beaucoup"
+        }
+      ],
+      "rubrique": "L'Énergie",
+      "titre": "Les énergies fossiles",
+      "univers": "Géographie"
+    },
+    {
+      "collectionId": "pbc_geo_energies",
+      "collectionName": "activites",
+      "contenu": "<h3>Activité 3 : Les énergies renouvelables</h3><p>Ces énergies utilisent des forces naturelles qui ne s'épuisent pas : le soleil, le vent, l'eau et la chaleur de la terre.</p>",
+      "id": "geo_energies_103",
+      "quiz_json": [
+        {
+          "question": "Quelle énergie utilise le vent ?",
+          "options": [
+            "Solaire",
+            "Éolienne",
+            "Nucléaire",
+            "Fossile"
+          ],
+          "reponse": "Éolienne"
+        },
+        {
+          "question": "Que captent les panneaux solaires ?",
+          "options": [
+            "Le vent",
+            "La lumière du soleil",
+            "La pluie",
+            "La neige"
+          ],
+          "reponse": "La lumière du soleil"
+        },
+        {
+          "question": "L'énergie hydraulique utilise la force de...",
+          "options": [
+            "L'air",
+            "L'eau",
+            "La terre",
+            "Le feu"
+          ],
+          "reponse": "L'eau"
+        },
+        {
+          "question": "D'où vient la géothermie ?",
+          "options": [
+            "Du ciel",
+            "De la chaleur de la Terre",
+            "Des vagues",
+            "Des arbres"
+          ],
+          "reponse": "De la chaleur de la Terre"
+        },
+        {
+          "question": "L'énergie faite avec le bois s'appelle...",
+          "options": [
+            "La biomasse",
+            "Le pétrole",
+            "L'éolien",
+            "Le solaire"
+          ],
+          "reponse": "La biomasse"
+        },
+        {
+          "question": "Lequel est un avantage des renouvelables ?",
+          "options": [
+            "Elles polluent plus",
+            "Elles ne s'épuisent pas",
+            "Elles coûtent cher",
+            "Elles sont noires"
+          ],
+          "reponse": "Elles ne s'épuisent pas"
+        },
+        {
+          "question": "Où place-t-on souvent les barrages ?",
+          "options": [
+            "En ville",
+            "En montagne",
+            "Au désert",
+            "Sur l'autoroute"
+          ],
+          "reponse": "En montagne"
+        },
+        {
+          "question": "Une éolienne produit de l'...",
+          "options": [
+            "Eau",
+            "Électricité",
+            "Essence",
+            "Gaz"
+          ],
+          "reponse": "Électricité"
+        },
+        {
+          "question": "Quel pays utilise beaucoup la géothermie ?",
+          "options": [
+            "Angleterre",
+            "Islande",
+            "Espagne",
+            "Égypte"
+          ],
+          "reponse": "Islande"
+        },
+        {
+          "question": "Le soleil est une source d'énergie...",
+          "options": [
+            "Limitée",
+            "Inépuisable",
+            "Noire",
+            "Froide"
+          ],
+          "reponse": "Inépuisable"
+        },
+        {
+          "question": "Les déchets verts servent à créer de la...",
+          "options": [
+            "Vapeur",
+            "Biomasse",
+            "Glace",
+            "Terre"
+          ],
+          "reponse": "Biomasse"
+        },
+        {
+          "question": "Peut-on faire du solaire la nuit ?",
+          "options": [
+            "Oui",
+            "Non",
+            "Parfois",
+            "Toujours"
+          ],
+          "reponse": "Non"
+        },
+        {
+          "question": "Quelle force fait tourner les éoliennes ?",
+          "options": [
+            "L'eau",
+            "Le vent",
+            "Le moteur",
+            "La main"
+          ],
+          "reponse": "Le vent"
+        },
+        {
+          "question": "L'énergie hydraulique se fait grâce à un...",
+          "options": [
+            "Ventilateur",
+            "Barrage",
+            "Four",
+            "Poteau"
+          ],
+          "reponse": "Barrage"
+        },
+        {
+          "question": "Ces énergies rejettent-elles beaucoup de CO2 ?",
+          "options": [
+            "Oui",
+            "Non, presque pas",
+            "Autant que le pétrole",
+            "Seulement le soir"
+          ],
+          "reponse": "Non, presque pas"
+        }
+      ],
+      "rubrique": "L'Énergie",
+      "titre": "Les énergies renouvelables",
+      "univers": "Géographie"
+    },
+    {
+      "collectionId": "pbc_geo_energies",
+      "collectionName": "activites",
+      "contenu": "<h3>Activité 4 : L'énergie nucléaire</h3><p>La France produit beaucoup d'électricité avec le nucléaire. C'est puissant et peu polluant pour l'air, mais cela crée des déchets dangereux.</p>",
+      "id": "geo_energies_104",
+      "quiz_json": [
+        {
+          "question": "Quel minerai utilise-t-on pour le nucléaire ?",
+          "options": [
+            "Le fer",
+            "L'uranium",
+            "L'or",
+            "Le sel"
+          ],
+          "reponse": "L'uranium"
+        },
+        {
+          "question": "Où produit-on l'énergie nucléaire ?",
+          "options": [
+            "À la ferme",
+            "Dans une centrale",
+            "Au marché",
+            "À l'école"
+          ],
+          "reponse": "Dans une centrale"
+        },
+        {
+          "question": "Que sort des grandes tours des centrales ?",
+          "options": [
+            "De la fumée noire",
+            "De la vapeur d'eau",
+            "Des flammes",
+            "Rien"
+          ],
+          "reponse": "De la vapeur d'eau"
+        },
+        {
+          "question": "Quel est le point faible du nucléaire ?",
+          "options": [
+            "Il pollue l'air",
+            "Les déchets radioactifs",
+            "Il est trop lent",
+            "Il n'y en a pas"
+          ],
+          "reponse": "Les déchets radioactifs"
+        },
+        {
+          "question": "Le nucléaire rejette-t-il du CO2 ?",
+          "options": [
+            "Beaucoup",
+            "Presque pas",
+            "Autant que le charbon",
+            "Toujours"
+          ],
+          "reponse": "Presque pas"
+        },
+        {
+          "question": "Comment appelle-t-on les déchets du nucléaire ?",
+          "options": [
+            "Déchets verts",
+            "Déchets radioactifs",
+            "Déchets ménagers",
+            "Papiers"
+          ],
+          "reponse": "Déchets radioactifs"
+        },
+        {
+          "question": "La France a-t-elle beaucoup de centrales ?",
+          "options": [
+            "Non",
+            "Oui, c'est sa source principale",
+            "Une seule",
+            "Aucune"
+          ],
+          "reponse": "Oui, c'est sa source principale"
+        },
+        {
+          "question": "De quelle couleur est le symbole de la radioactivité ?",
+          "options": [
+            "Bleu",
+            "Jaune et noir",
+            "Vert",
+            "Rose"
+          ],
+          "reponse": "Jaune et noir"
+        },
+        {
+          "question": "Comment appelle-t-on la réaction dans le réacteur ?",
+          "options": [
+            "La fusion",
+            "La fission",
+            "La cuisson",
+            "La pression"
+          ],
+          "reponse": "La fission"
+        },
+        {
+          "question": "Le nucléaire produit surtout de l'...",
+          "options": [
+            "Essence",
+            "Électricité",
+            "Gaz",
+            "Chaleur"
+          ],
+          "reponse": "Électricité"
+        },
+        {
+          "question": "Où sont stockés les déchets dangereux ?",
+          "options": [
+            "Dans la mer",
+            "Sous terre en sécurité",
+            "À la poubelle",
+            "Dans la rue"
+          ],
+          "reponse": "Sous terre en sécurité"
+        },
+        {
+          "question": "Qui travaille dans les centrales ?",
+          "options": [
+            "Des mineurs",
+            "Des ingénieurs et techniciens",
+            "Des agriculteurs",
+            "Des marins"
+          ],
+          "reponse": "Des ingénieurs et techniciens"
+        },
+        {
+          "question": "Le nucléaire est-il une énergie renouvelable ?",
+          "options": [
+            "Oui",
+            "Non",
+            "Presque",
+            "Toujours"
+          ],
+          "reponse": "Non"
+        },
+        {
+          "question": "De quoi a-t-on besoin pour refroidir les réacteurs ?",
+          "options": [
+            "D'air chaud",
+            "D'eau",
+            "De sable",
+            "De vent"
+          ],
+          "reponse": "D'eau"
+        },
+        {
+          "question": "L'énergie nucléaire est-elle puissante ?",
+          "options": [
+            "Non",
+            "Oui, très puissante",
+            "Un petit peu",
+            "Pas du tout"
+          ],
+          "reponse": "Oui, très puissante"
+        }
+      ],
+      "rubrique": "L'Énergie",
+      "titre": "L'énergie nucléaire",
+      "univers": "Géographie"
+    },
+    {
+      "collectionId": "pbc_geo_energies",
+      "collectionName": "activites",
+      "contenu": "<h3>Activité 5 : Économiser l'énergie</h3><p>Pour protéger la planète, il faut réduire notre consommation : c'est la sobriété énergétique.</p>",
+      "id": "geo_energies_105",
+      "quiz_json": [
+        {
+          "question": "Quel geste économise l'électricité ?",
+          "options": [
+            "Allumer partout",
+            "Éteindre les lumières",
+            "Laisser la télé en veille",
+            "Ouvrir le frigo"
+          ],
+          "reponse": "Éteindre les lumières"
+        },
+        {
+          "question": "Pour moins consommer de chauffage, on peut...",
+          "options": [
+            "Ouvrir les fenêtres",
+            "Mettre un pull",
+            "Chauffer à 25°C",
+            "Dormir dehors"
+          ],
+          "reponse": "Mettre un pull"
+        },
+        {
+          "question": "Comment appelle-t-on l'étiquette sur les appareils ?",
+          "options": [
+            "Étiquette prix",
+            "Étiquette énergie",
+            "Étiquette nom",
+            "Autocollant"
+          ],
+          "reponse": "Étiquette énergie"
+        },
+        {
+          "question": "Quel transport économise l'énergie ?",
+          "options": [
+            "L'avion",
+            "Le vélo",
+            "La grosse voiture",
+            "Le scooter"
+          ],
+          "reponse": "Le vélo"
+        },
+        {
+          "question": "Quelle ampoule consomme le moins ?",
+          "options": [
+            "Ampoule classique",
+            "Ampoule LED",
+            "Bougie",
+            "Feu de bois"
+          ],
+          "reponse": "Ampoule LED"
+        },
+        {
+          "question": "Que faut-il faire des appareils en veille ?",
+          "options": [
+            "Les laisser",
+            "Les éteindre complètement",
+            "Les brancher plus",
+            "Les cacher"
+          ],
+          "reponse": "Les éteindre complètement"
+        },
+        {
+          "question": "Prendre une douche au lieu d'un bain permet d'économiser...",
+          "options": [
+            "Du temps",
+            "De l'eau et de l'énergie",
+            "Rien",
+            "Du savon"
+          ],
+          "reponse": "De l'eau et de l'énergie"
+        },
+        {
+          "question": "Comment s'appelle l'isolation de la maison ?",
+          "options": [
+            "La décoration",
+            "L'isolation thermique",
+            "La peinture",
+            "Le jardinage"
+          ],
+          "reponse": "L'isolation thermique"
+        },
+        {
+          "question": "Vaut-il mieux laver le linge à froid ?",
+          "options": [
+            "Non",
+            "Oui, ça consomme moins",
+            "C'est pareil",
+            "Toujours à 90°C"
+          ],
+          "reponse": "Oui, ça consomme moins"
+        },
+        {
+          "question": "Pourquoi économiser l'énergie ?",
+          "options": [
+            "Pour payer plus",
+            "Pour protéger la planète",
+            "Pour s'amuser",
+            "C'est inutile"
+          ],
+          "reponse": "Pour protéger la planète"
+        },
+        {
+          "question": "Quel geste faire en quittant une pièce ?",
+          "options": [
+            "Crier",
+            "Éteindre la lumière",
+            "Courir",
+            "Laisser ouvert"
+          ],
+          "reponse": "Éteindre la lumière"
+        },
+        {
+          "question": "Le covoiturage sert à économiser du...",
+          "options": [
+            "Temps",
+            "Carburant",
+            "Bruit",
+            "Soleil"
+          ],
+          "reponse": "Carburant"
+        },
+        {
+          "question": "Vaut-il mieux utiliser des piles rechargeables ?",
+          "options": [
+            "Non",
+            "Oui, c'est mieux",
+            "C'est plus nul",
+            "C'est interdit"
+          ],
+          "reponse": "Oui, c'est mieux"
+        },
+        {
+          "question": "La température idéale d'une chambre est...",
+          "options": [
+            "25°C",
+            "19°C",
+            "10°C",
+            "30°C"
+          ],
+          "reponse": "19°C"
+        },
+        {
+          "question": "Comment appelle-t-on le fait de faire attention à l'énergie ?",
+          "options": [
+            "Le gaspillage",
+            "La sobriété énergétique",
+            "La fête",
+            "Le luxe"
+          ],
+          "reponse": "La sobriété énergétique"
+        }
+      ],
+      "rubrique": "L'Énergie",
+      "titre": "Économiser l'énergie",
+      "univers": "Géographie"
+    }
+  ]
+}

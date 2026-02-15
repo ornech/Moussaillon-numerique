@@ -1,0 +1,670 @@
+{
+  "items": [
+    {
+      "collectionId": "pbc_activites_01",
+      "collectionName": "activites",
+      "contenu": "<h3>L'invention de l'écriture</h3><p>L'Antiquité commence avec l'apparition de l'écriture vers <b>3500 av. J.-C.</b> en Mésopotamie. C'est la fin de la Préhistoire.</p><ul><li><b>En Mésopotamie :</b> On écrit sur des tablettes d'argile avec des signes en forme de clous (l'écriture <b>cunéiforme</b>).</li><li><b>En Égypte :</b> On utilise des <b>hiéroglyphes</b> (dessins stylisés).</li><li><b>Les Scribes :</b> Ce sont les spécialistes de l'écriture dans l'Antiquité.</li></ul>",
+      "id": "antiquite_ecriture_001",
+      "quiz_json": [
+        {
+          "question": "Quel événement marque le passage de la Préhistoire à l'Histoire ?",
+          "options": [
+            "La découverte du feu",
+            "L'invention de l'écriture",
+            "La construction des pyramides",
+            "L'invention de la roue"
+          ],
+          "reponse": "L'invention de l'écriture"
+        },
+        {
+          "question": "Vers quelle année l'écriture a-t-elle été inventée ?",
+          "options": [
+            "800 av. J.-C.",
+            "1500 av. J.-C.",
+            "3500 av. J.-C.",
+            "2000 ap. J.-C."
+          ],
+          "reponse": "3500 av. J.-C."
+        },
+        {
+          "question": "Comment appelle-t-on l'écriture des anciens Égyptiens ?",
+          "options": [
+            "L'alphabet",
+            "Les hiéroglyphes",
+            "Le cunéiforme",
+            "Le latin"
+          ],
+          "reponse": "Les hiéroglyphes"
+        },
+        {
+          "question": "Sur quel support écrivait-on en Mésopotamie ?",
+          "options": [
+            "Des feuilles de papier",
+            "Des tablettes d'argile",
+            "Des écrans numériques",
+            "Des plaques de métal"
+          ],
+          "reponse": "Des tablettes d'argile"
+        },
+        {
+          "question": "Comment appelle-t-on l'écriture en forme de « coins » ?",
+          "options": [
+            "Cunéiforme",
+            "Calligraphie",
+            "Scribouille",
+            "Hiéroglyphe"
+          ],
+          "reponse": "Cunéiforme"
+        },
+        {
+          "question": "Comment s'appelle le spécialiste qui écrit dans l'Antiquité ?",
+          "options": [
+            "Un écrivain",
+            "Un scribe",
+            "Un prophète",
+            "Un druide"
+          ],
+          "reponse": "Un scribe"
+        },
+        {
+          "question": "À quoi servait principalement l'écriture au début ?",
+          "options": [
+            "À envoyer des messages",
+            "À compter les récoltes et impôts",
+            "À dessiner",
+            "À créer des chansons"
+          ],
+          "reponse": "À compter les récoltes et impôts"
+        },
+        {
+          "question": "Où l'écriture est-elle apparue pour la première fois ?",
+          "options": [
+            "En France",
+            "En Amérique",
+            "En Mésopotamie",
+            "En Chine"
+          ],
+          "reponse": "En Mésopotamie"
+        },
+        {
+          "question": "L'Antiquité est la période qui suit immédiatement...",
+          "options": [
+            "Le Moyen Âge",
+            "La Préhistoire",
+            "L'Époque Moderne",
+            "Le Futur"
+          ],
+          "reponse": "La Préhistoire"
+        },
+        {
+          "question": "L'outil utilisé pour écrire dans l'argile s'appelle...",
+          "options": [
+            "Un calame",
+            "Un stylo",
+            "Un pinceau",
+            "Une craie"
+          ],
+          "reponse": "Un calame"
+        }
+      ],
+      "rubrique": "L’Antiquité",
+      "titre": "L’invention de l’écriture",
+      "univers": "Histoire"
+    },
+    {
+      "collectionId": "pbc_activites_01",
+      "collectionName": "activites",
+      "contenu": "<h3>Les Gaulois : de grands inventeurs</h3><p>Les Gaulois étaient des agriculteurs et des artisans très doués.</p><ul><li><b>Inventions :</b> Le <b>tonneau</b> et le <b>savon</b>.</li><li><b>Habitations :</b> Les villes fortifiées s'appellent des <b>oppidums</b>.</li><li><b>Religion :</b> Les <b>druides</b> s'occupaient du culte.</li></ul>",
+      "id": "antiquite_gaulois_001",
+      "quiz_json": [
+        {
+          "question": "Quelle invention célèbre doit-on aux Gaulois ?",
+          "options": [
+            "La roue",
+            "Le tonneau",
+            "Le papier",
+            "Le verre"
+          ],
+          "reponse": "Le tonneau"
+        },
+        {
+          "question": "Comment s'appellent les villes fortifiées des Gaulois ?",
+          "options": [
+            "Les châteaux",
+            "Les oppidums",
+            "Les cités",
+            "Les casernes"
+          ],
+          "reponse": "Les oppidums"
+        },
+        {
+          "question": "Qui s'occupe de la religion chez les Gaulois ?",
+          "options": [
+            "Le roi",
+            "Le druide",
+            "Le centurion",
+            "Le scribe"
+          ],
+          "reponse": "Le druide"
+        },
+        {
+          "question": "En quoi étaient construites les maisons gauloises ?",
+          "options": [
+            "En pierre",
+            "En bois et terre (pisé)",
+            "En briques",
+            "En métal"
+          ],
+          "reponse": "En bois et terre (pisé)"
+        },
+        {
+          "question": "Les Gaulois étaient un peuple de...",
+          "options": [
+            "Marins",
+            "Paysans et artisans",
+            "Chasseurs nomades",
+            "Marchands"
+          ],
+          "reponse": "Paysans et artisans"
+        },
+        {
+          "question": "L'utilité première du savon gaulois était de...",
+          "options": [
+            "Laver le linge",
+            "Se colorer les cheveux",
+            "Nettoyer le sol",
+            "Cuisiner"
+          ],
+          "reponse": "Se colorer les cheveux"
+        },
+        {
+          "question": "Quelle armure les guerriers gaulois ont-ils inventée ?",
+          "options": [
+            "La cotte de mailles",
+            "Le scaphandre",
+            "La toge",
+            "Le bouclier en fer"
+          ],
+          "reponse": "La cotte de mailles"
+        },
+        {
+          "question": "Quelle plante sacrée les druides cueillaient-ils ?",
+          "options": [
+            "Le basilic",
+            "Le gui",
+            "Le trèfle",
+            "La rose"
+          ],
+          "reponse": "Le gui"
+        },
+        {
+          "question": "Les Gaulois appartenaient à la famille des...",
+          "options": [
+            "Celtes",
+            "Romains",
+            "Vikings",
+            "Égyptiens"
+          ],
+          "reponse": "Celtes"
+        },
+        {
+          "question": "Quel animal les Gaulois élevaient-ils beaucoup ?",
+          "options": [
+            "Le lion",
+            "Le porc et le bœuf",
+            "Le chameau",
+            "Le kangourou"
+          ],
+          "reponse": "Le porc et le bœuf"
+        }
+      ],
+      "rubrique": "L’Antiquité",
+      "titre": "Les Gaulois",
+      "univers": "Histoire"
+    },
+    {
+      "collectionId": "pbc_activites_01",
+      "collectionName": "activites",
+      "contenu": "<h3>La Gaule devient romaine</h3><p>En <b>52 av. J.-C.</b>, <b>Vercingétorix</b> est battu par <b>Jules César</b> à Alésia.</p><ul><li><b>Architecture :</b> Construction d'<b>aqueducs</b> et d'<b>amphithéâtres</b>.</li></ul>",
+      "id": "antiquite_romains_001",
+      "quiz_json": [
+        {
+          "question": "En quelle année a eu lieu la bataille d'Alésia ?",
+          "options": [
+            "1515",
+            "52 av. J.-C.",
+            "800",
+            "100 ap. J.-C."
+          ],
+          "reponse": "52 av. J.-C."
+        },
+        {
+          "question": "Qui a gagné la guerre des Gaules ?",
+          "options": [
+            "Vercingétorix",
+            "Jules César",
+            "Napoléon",
+            "Charlemagne"
+          ],
+          "reponse": "Jules César"
+        },
+        {
+          "question": "Quelle langue les Gaulois ont-ils apprise ?",
+          "options": [
+            "L'anglais",
+            "Le latin",
+            "Le grec",
+            "L'allemand"
+          ],
+          "reponse": "Le latin"
+        },
+        {
+          "question": "À quoi servait un aqueduc ?",
+          "options": [
+            "Course de chars",
+            "Transporter l'eau",
+            "Enterrer les morts",
+            "Stocker le blé"
+          ],
+          "reponse": "Transporter l'eau"
+        },
+        {
+          "question": "Où voyait-on les combats de gladiateurs ?",
+          "options": [
+            "À l'église",
+            "À l'amphithéâtre",
+            "Au marché",
+            "Au tribunal"
+          ],
+          "reponse": "À l'amphithéâtre"
+        },
+        {
+          "question": "Comment appelle-t-on le mélange des deux cultures ?",
+          "options": [
+            "Gallo-Romaine",
+            "Franco-Romaine",
+            "Celtique",
+            "Italienne"
+          ],
+          "reponse": "Gallo-Romaine"
+        },
+        {
+          "question": "Nom du chef gaulois qui a résisté à César ?",
+          "options": [
+            "Astérix",
+            "Vercingétorix",
+            "Clovis",
+            "Gégérix"
+          ],
+          "reponse": "Vercingétorix"
+        },
+        {
+          "question": "Qu'ont construit les Romains pour leurs soldats ?",
+          "options": [
+            "Des ponts-levis",
+            "Des routes pavées",
+            "Des aéroports",
+            "Des tunnels"
+          ],
+          "reponse": "Des routes pavées"
+        },
+        {
+          "question": "Où se trouvait la ville d'Alésia ?",
+          "options": [
+            "En Italie",
+            "En Gaule",
+            "En Égypte",
+            "En Espagne"
+          ],
+          "reponse": "En Gaule"
+        },
+        {
+          "question": "Quel vêtement romain les chefs gaulois ont-ils adopté ?",
+          "options": [
+            "Le pantalon",
+            "La toge",
+            "Le kilt",
+            "Le manteau"
+          ],
+          "reponse": "La toge"
+        }
+      ],
+      "rubrique": "L’Antiquité",
+      "titre": "La conquête romaine",
+      "univers": "Histoire"
+    },
+    {
+      "collectionId": "pbc_activites_01",
+      "collectionName": "activites",
+      "contenu": "<h3>Dieux et Héros</h3><p>Les Grecs et Romains étaient <b>polythéistes</b> (plusieurs dieux).</p>",
+      "id": "antiquite_mythologie_001",
+      "quiz_json": [
+        {
+          "question": "Croyance en plusieurs dieux ?",
+          "options": [
+            "Monothéisme",
+            "Polythéisme",
+            "Athéisme",
+            "Mythologie"
+          ],
+          "reponse": "Polythéisme"
+        },
+        {
+          "question": "Où habitaient les dieux grecs ?",
+          "options": [
+            "Mer",
+            "Mont Olympe",
+            "Nuages",
+            "Enfers"
+          ],
+          "reponse": "Mont Olympe"
+        },
+        {
+          "question": "Le maître de la foudre ?",
+          "options": [
+            "Hercule",
+            "Zeus",
+            "Poséidon",
+            "Hadès"
+          ],
+          "reponse": "Zeus"
+        },
+        {
+          "question": "Nom romain de Zeus ?",
+          "options": [
+            "Pluton",
+            "Jupiter",
+            "Vulcain",
+            "Mercure"
+          ],
+          "reponse": "Jupiter"
+        },
+        {
+          "question": "Dieu qui commande aux océans ?",
+          "options": [
+            "Apollon",
+            "Poséidon",
+            "Arès",
+            "Hermès"
+          ],
+          "reponse": "Poséidon"
+        },
+        {
+          "question": "Déesse de la sagesse ?",
+          "options": [
+            "Vénus",
+            "Athéna",
+            "Héra",
+            "Artémis"
+          ],
+          "reponse": "Athéna"
+        },
+        {
+          "question": "Messager des dieux ?",
+          "options": [
+            "Hermès",
+            "Mars",
+            "Éole",
+            "Cupidon"
+          ],
+          "reponse": "Hermès"
+        },
+        {
+          "question": "Attribut du dieu de la mer ?",
+          "options": [
+            "Éclair",
+            "Trident",
+            "Arc",
+            "Casque"
+          ],
+          "reponse": "Trident"
+        },
+        {
+          "question": "Dieu de la guerre ?",
+          "options": [
+            "Arès",
+            "Dionysos",
+            "Héphaïstos",
+            "Ouranos"
+          ],
+          "reponse": "Arès"
+        },
+        {
+          "question": "Demi-dieu des 12 travaux ?",
+          "options": [
+            "Ulysse",
+            "Hercule",
+            "Achille",
+            "Thésée"
+          ],
+          "reponse": "Hercule"
+        }
+      ],
+      "rubrique": "L’Antiquité",
+      "titre": "Les dieux de l'Olympe",
+      "univers": "Histoire"
+    },
+    {
+      "collectionId": "pbc_activites_01",
+      "collectionName": "activites",
+      "contenu": "<h3>Les Dieux de Rome</h3><p>Les Romains ont adopté les dieux grecs en leur donnant des noms latins.</p>",
+      "id": "antiquite_dieux_romains_001",
+      "quiz_json": [
+        {
+          "question": "Le plus puissant des dieux romains ?",
+          "options": [
+            "Mars",
+            "Jupiter",
+            "Pluton",
+            "Mercure"
+          ],
+          "reponse": "Jupiter"
+        },
+        {
+          "question": "Quelle déesse représente la beauté et l'amour chez les Romains ?",
+          "options": [
+            "Héra",
+            "Vénus",
+            "Minerve",
+            "Diane"
+          ],
+          "reponse": "Vénus"
+        },
+        {
+          "question": "Comment s'appelle le dieu romain de la mer ?",
+          "options": [
+            "Poséidon",
+            "Neptune",
+            "Vulcain",
+            "Bacchus"
+          ],
+          "reponse": "Neptune"
+        },
+        {
+          "question": "Quel dieu romain a donné son nom à la 'planète rouge' ?",
+          "options": [
+            "Jupiter",
+            "Saturne",
+            "Mars",
+            "Uranus"
+          ],
+          "reponse": "Mars"
+        },
+        {
+          "question": "Quelle déesse représente la sagesse et la stratégie ?",
+          "options": [
+            "Vénus",
+            "Minerve",
+            "Junon",
+            "Diane"
+          ],
+          "reponse": "Minerve"
+        },
+        {
+          "question": "Qui est le dieu messager aux pieds ailés chez les Romains ?",
+          "options": [
+            "Mercure",
+            "Apollon",
+            "Cupidon",
+            "Pluton"
+          ],
+          "reponse": "Mercure"
+        },
+        {
+          "question": "Comment s'appelle le dieu du feu et des forgerons ?",
+          "options": [
+            "Vulcain",
+            "Neptune",
+            "Mars",
+            "Jupiter"
+          ],
+          "reponse": "Vulcain"
+        },
+        {
+          "question": "Quelle est la fonction de la déesse Diane ?",
+          "options": [
+            "Déesse de la chasse",
+            "Déesse de la mer",
+            "Déesse du foyer",
+            "Déesse des fleurs"
+          ],
+          "reponse": "Déesse de la chasse"
+        },
+        {
+          "question": "Qui est le dieu romain des enfers ?",
+          "options": [
+            "Jupiter",
+            "Pluton",
+            "Mars",
+            "Saturne"
+          ],
+          "reponse": "Pluton"
+        },
+        {
+          "question": "Où les Romains allaient-ils pour prier leurs dieux ?",
+          "options": [
+            "À l'amphithéâtre",
+            "Au temple",
+            "Au forum",
+            "Aux thermes"
+          ],
+          "reponse": "Au temple"
+        }
+      ],
+      "rubrique": "L’Antiquité",
+      "titre": "Les dieux romains",
+      "univers": "Histoire"
+    },
+    {
+      "collectionId": "pbc_activites_01",
+      "collectionName": "activites",
+      "contenu": "<h3>Dieux Égyptiens</h3><p>Dieux à têtes d'animaux.</p>",
+      "id": "antiquite_dieux_egyptiens_001",
+      "quiz_json": [
+        {
+          "question": "Dieu du Soleil ?",
+          "options": [
+            "Anubis",
+            "Rê (Râ)",
+            "Thot",
+            "Sobek"
+          ],
+          "reponse": "Rê (Râ)"
+        },
+        {
+          "question": "Tête d'Anubis ?",
+          "options": [
+            "Chat",
+            "Faucon",
+            "Chacal",
+            "Crocodile"
+          ],
+          "reponse": "Le chacal"
+        },
+        {
+          "question": "Femme d'Osiris ?",
+          "options": [
+            "Isis",
+            "Bastet",
+            "Sekhmet",
+            "Néfertiti"
+          ],
+          "reponse": "Isis"
+        },
+        {
+          "question": "Tête de faucon ?",
+          "options": [
+            "Seth",
+            "Horus",
+            "Osiris",
+            "Amon"
+          ],
+          "reponse": "Horus"
+        },
+        {
+          "question": "Rôle de Thot ?",
+          "options": [
+            "Guerre",
+            "Écriture",
+            "Mer",
+            "Moissons"
+          ],
+          "reponse": "Dieu de l'écriture et du savoir"
+        },
+        {
+          "question": "Lieu de vie des dieux ?",
+          "options": [
+            "Olympe",
+            "Temples",
+            "Fond du Nil",
+            "Pyramides"
+          ],
+          "reponse": "Dans les temples et dans le ciel"
+        },
+        {
+          "question": "Dieu crocodile ?",
+          "options": [
+            "Sobek",
+            "Apophis",
+            "Hépi",
+            "Khépri"
+          ],
+          "reponse": "Sobek"
+        },
+        {
+          "question": "Jugement des morts, cœur léger comme ?",
+          "options": [
+            "Pierre",
+            "Plume",
+            "Sable",
+            "Or"
+          ],
+          "reponse": "Une plume"
+        },
+        {
+          "question": "Ennemi d'Osiris ?",
+          "options": [
+            "Seth",
+            "Anubis",
+            "Amon",
+            "Bes"
+          ],
+          "reponse": "Seth"
+        },
+        {
+          "question": "Tête de chat ?",
+          "options": [
+            "Isis",
+            "Bastet",
+            "Hathor",
+            "Nout"
+          ],
+          "reponse": "Bastet"
+        }
+      ],
+      "rubrique": "L’Antiquité",
+      "titre": "Les dieux égyptiens",
+      "univers": "Histoire"
+    }
+  ]
+}

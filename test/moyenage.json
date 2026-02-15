@@ -1,0 +1,670 @@
+{
+    "items": [
+        {
+            "collectionId": "pbc_activites_01",
+            "collectionName": "activites",
+            "contenu": "<h3>Clovis, le premier roi des Francs</h3><p>Il y a très longtemps, après les Romains, un chef de guerre nommé <b>Clovis</b> a réuni les peuples pour créer un grand royaume. Il s'est fait baptiser à Reims pour devenir le premier roi chrétien. Il a choisi <b>Paris</b> comme capitale.</p>",
+            "id": "moyenage_clovis_001",
+            "quiz_json": [
+                {
+                    "question": "Quel grand chef est devenu le premier roi des Francs ?",
+                    "options": [
+                        "Cercle-Vicieux",
+                        "Vercingétorix",
+                        "Clovis",
+                        "Jules César"
+                    ],
+                    "reponse": "Clovis"
+                },
+                {
+                    "question": "Dans quelle ville Clovis a-t-il été baptisé ?",
+                    "options": [
+                        "Reims",
+                        "Paris",
+                        "Saint-Tropez",
+                        "Rome"
+                    ],
+                    "reponse": "Reims"
+                },
+                {
+                    "question": "Quelle ville Clovis a-t-il choisie pour être la capitale ?",
+                    "options": [
+                        "Lyon",
+                        "Marseille",
+                        "Paris",
+                        "Versailles"
+                    ],
+                    "reponse": "Paris"
+                },
+                {
+                    "question": "Comment s'appelait la famille de rois créée par Clovis ?",
+                    "options": [
+                        "Les Mérovingiens",
+                        "Les Carolingiens",
+                        "Les Power Rangers",
+                        "Les Capétiens"
+                    ],
+                    "reponse": "Les Mérovingiens"
+                },
+                {
+                    "question": "Quel peuple a donné son nom à la 'France' ?",
+                    "options": [
+                        "Les Gaulois",
+                        "Les Francs",
+                        "Les frites",
+                        "Les Romains"
+                    ],
+                    "reponse": "Les Francs"
+                },
+                {
+                    "question": "Qui a encouragé Clovis à devenir chrétien ?",
+                    "options": [
+                        "Son conseiller",
+                        "Sa femme Clotilde",
+                        "Sainte Geneviève",
+                        "Le Pape"
+                    ],
+                    "reponse": "Sa femme Clotilde"
+                },
+                {
+                    "question": "Quel objet cassé est resté célèbre dans l'histoire de Clovis ?",
+                    "options": [
+                        "Le vase de Soissons",
+                        "L'assiette de Reims",
+                        "Le casque de Paris",
+                        "Le miroir de Versailles"
+                    ],
+                    "reponse": "Le vase de Soissons"
+                },
+                {
+                    "question": "Quelle était la religion de Clovis après son baptême ?",
+                    "options": [
+                        "Le christianisme",
+                        "Le polythéisme",
+                        "Le boudisme",
+                        "L'islam"
+                    ],
+                    "reponse": "Le christianisme"
+                },
+                {
+                    "question": "Clovis était le chef de quel peuple au début ?",
+                    "options": [
+                        "Les Vikings",
+                        "Les Romains",
+                        "Les Francs",
+                        "Les Grecs"
+                    ],
+                    "reponse": "Les Francs"
+                },
+                {
+                    "question": "À quelle époque vivait Clovis ?",
+                    "options": [
+                        "La Préhistoire",
+                        "L'Antiquité",
+                        "Le Moyen Âge",
+                        "Il y a longtemps"
+                    ],
+                    "reponse": "Le Moyen Âge"
+                }
+            ],
+            "rubrique": "Le Moyen Âge",
+            "titre": "Clovis et les Francs",
+            "univers": "Histoire"
+        },
+        {
+            "collectionId": "pbc_activites_01",
+            "collectionName": "activites",
+            "contenu": "<h3>Charlemagne et l'école</h3><p>Charlemagne était un empereur très puissant. Il aimait beaucoup apprendre et il a demandé que l'on crée des <b>écoles</b> dans tout son empire pour que les enfants sachent mieux lire et écrire.</p>",
+            "id": "moyenage_charlemagne_001",
+            "quiz_json": [
+                {
+                    "question": "Quel grand empereur est célèbre pour avoir développé l'école ?",
+                    "options": [
+                        "Napoléon",
+                        "Charlemagne",
+                        "Jules César",
+                        "Clovis"
+                    ],
+                    "reponse": "Charlemagne"
+                },
+                {
+                    "question": "En quelle année Charlemagne a-t-il été sacré Empereur ?",
+                    "options": [
+                        "L'an 0",
+                        "L'an 800",
+                        "L'an 496",
+                        "L'an 1515"
+                    ],
+                    "reponse": "L'an 800"
+                },
+                {
+                    "question": "Dans quelle ville Charlemagne avait-il son palais préféré ?",
+                    "options": [
+                        "Aix-la-Chapelle",
+                        "Aix-en-Provence",
+                        "Rome",
+                        "Paris"
+                    ],
+                    "reponse": "Aix-la-Chapelle"
+                },
+                {
+                    "question": "Qui a posé la couronne sur la tête de Charlemagne ?",
+                    "options": [
+                        "Le Pape",
+                        "L'évêque de Reims",
+                        "Sa maîtresse d'école",
+                        "Le roi d'Angleterre"
+                    ],
+                    "reponse": "Le Pape"
+                },
+                {
+                    "question": "Quelle langue utilisait-on pour de choses sérieuses à cette époque ?",
+                    "options": [
+                        "Le français",
+                        "Le latin",
+                        "Le gaulois",
+                        "Le grec"
+                    ],
+                    "reponse": "Le latin"
+                },
+                {
+                    "question": "Quelle était la forme de la barbe de Charlemagne dans les chansons ?",
+                    "options": [
+                        "Une barbe fleurie",
+                        "Une barbe courte",
+                        "Une barbe bleue",
+                        "Une moustache"
+                    ],
+                    "reponse": "Une barbe fleurie"
+                },
+                {
+                    "question": "Pourquoi Charlemagne voulait-il des écoles ?",
+                    "options": [
+                        "Pour faire des tournois de billes",
+                        "Pour apprendre à lire et écrire",
+                        "Pour former des chevaliers",
+                        "Pour chanter à la chorale"
+                    ],
+                    "reponse": "Pour apprendre à lire et écrire"
+                },
+                {
+                    "question": "Comment s'appelait sa famille de rois ?",
+                    "options": [
+                        "Les Carolingiens",
+                        "Les Mérovingiens",
+                        "Les Simpson",
+                        "Les Capétiens"
+                    ],
+                    "reponse": "Les Carolingiens"
+                },
+                {
+                    "question": "Où Charlemagne a-t-il été sacré Empereur ?",
+                    "options": [
+                        "À Reims",
+                        "À Rome",
+                        "À Paris",
+                        "À Aix-la-Chapelle"
+                    ],
+                    "reponse": "À Rome"
+                },
+                {
+                    "question": "Quel était le rôle des 'missi dominici' ?",
+                    "options": [
+                        "Envoyer des messages secrets",
+                        "Vérifier les ordres de l'empereur",
+                        "Donner des cours de sport",
+                        "Faire la guerre aux paysans"
+                    ],
+                    "reponse": "Vérifier les ordres de l'empereur"
+                }
+            ],
+            "rubrique": "Le Moyen Âge",
+            "titre": "L'empereur Charlemagne",
+            "univers": "Histoire"
+        },
+        {
+            "collectionId": "pbc_activites_01",
+            "collectionName": "activites",
+            "contenu": "<h3>La vie au château fort</h3><p>Les seigneurs vivaient dans des châteaux avec de gros murs pour se protéger. Les paysans travaillaient dans les champs tout autour. En cas de danger, tout le monde se cachait derrière les remparts.</p>",
+            "id": "moyenage_societe_001",
+            "quiz_json": [
+                {
+                    "question": "Comment s'appelle la tour la plus haute du château ?",
+                    "options": [
+                        "Le donjon",
+                        "La tour de guet",
+                        "Le clocher",
+                        "La tour de garde"
+                    ],
+                    "reponse": "Le donjon"
+                },
+                {
+                    "question": "Comment appelle-t-on l'eau qui entoure parfois le château ?",
+                    "options": [
+                        "le lac",
+                        "Les douves",
+                        "La rivière",
+                        "Les fossés"
+                    ],
+                    "reponse": "Les douves"
+                },
+                {
+                    "question": "Quel pont peut-on remonter pour fermer la porte du château ?",
+                    "options": [
+                        "Le pont d'Avignon",
+                        "Le pont-levis",
+                        "La passerelle",
+                        "Le pont de la rivière"
+                    ],
+                    "reponse": "Le pont-levis"
+                },
+                {
+                    "question": "Qui habitait dans le château fort ?",
+                    "options": [
+                        "Le seigneur et sa famille",
+                        "Le Roi de France uniquement",
+                        "Les chevaliers",
+                        "Les paysans"
+                    ],
+                    "reponse": "Le seigneur et sa famille"
+                },
+                {
+                    "question": "Où allaient les paysans quand il y avait une attaque ?",
+                    "options": [
+                        "Dans la forêt",
+                        "Dans le château fort",
+                        "Dans les champs",
+                        "Dans la ville"
+                    ],
+                    "reponse": "Dans le château fort"
+                },
+                {
+                    "question": "Comment appelle-t-on le travail obligatoire des paysans pour le seigneur ?",
+                    "options": [
+                        "Le salaire",
+                        "La corvée",
+                        "Le stage",
+                        "Le travail à la chaîne"
+                    ],
+                    "reponse": "La corvée"
+                },
+                {
+                    "question": "Avec quoi étaient construits les premiers châteaux ?",
+                    "options": [
+                        "En briques",
+                        "En bois et en terre",
+                        "En béton",
+                        "En pierre de taille"
+                    ],
+                    "reponse": "En bois et en terre"
+                },
+                {
+                    "question": "Comment appelle-t-on les paysans qui appartenaient au seigneur ?",
+                    "options": [
+                        "Les serfs",
+                        "Les escalves",
+                        "Les vilains",
+                        "Les serviteurs"
+                    ],
+                    "reponse": "Les serfs"
+                },
+                {
+                    "question": "Comment s'apelle les petits ouvertures dans les murs pour tirer des flèches ?",
+                    "options": [
+                        "Des gargouilles",
+                        "Des meurtrières",
+                        "Des fenêtres",
+                        "Des créneaux"
+                    ],
+                    "reponse": "Des meurtrières"
+                },
+                {
+                    "question": "Quel était le rôle principal du seigneur ?",
+                    "options": [
+                        "Gérer les finances du royaume",
+                        "Protéger les gens sur sa terre",
+                        "Faire du commerce",
+                        "Faire la guerre"
+                    ],
+                    "reponse": "Protéger les gens sur sa terre"
+                }
+            ],
+            "rubrique": "Le Moyen Âge",
+            "titre": "La vie au château",
+            "univers": "Histoire"
+        },
+        {
+            "collectionId": "pbc_activites_01",
+            "collectionName": "activites",
+            "contenu": "<h3>Les chevaliers</h3><p>Pour devenir chevalier, il fallait apprendre pendant très longtemps. Le chevalier se battait à cheval avec une épée, une lance et un bouclier pour protéger son seigneur.</p>",
+            "id": "moyenage_chevaliers_001",
+            "quiz_json": [
+                {
+                    "question": "Comment s'appelle le bouclier du chevalier ?",
+                    "options": [
+                        "L'écu",
+                        "Le heaume",
+                        "Le bouclier magique",
+                        "La cuirasse"
+                    ],
+                    "reponse": "L'écu"
+                },
+                {
+                    "question": "Quel nom porte le casque du chevalier ?",
+                    "options": [
+                        "La casquette de fer",
+                        "Le heaume",
+                        "La coiffe",
+                        "Le bonnet"
+                    ],
+                    "reponse": "Le heaume"
+                },
+                {
+                    "question": "Comment appelle-t-on la fête où l'on devient officiellement chevalier ?",
+                    "options": [
+                        "Le baptême",
+                        "L'adoubement",
+                        "Le couronnement",
+                        "La remise des diplômes"
+                    ],
+                    "reponse": "L'adoubement"
+                },
+                {
+                    "question": "Sur quel animal le chevalier se battait-il ?",
+                    "options": [
+                        "Un dragon",
+                        "Un cheval",
+                        "Un bœuf",
+                        "Un destrier"
+                    ],
+                    "reponse": "Un cheval"
+                },
+                {
+                    "question": "Comment s'apelle la chemise composée de petit anneaux en fer servait à protéger le corps ?",
+                    "options": [
+                        "Un pull en laine",
+                        "Une cotte de mailles",
+                        "Une armure",
+                        "Une chemise de nuit"
+                    ],
+                    "reponse": "Une cotte de mailles"
+                },
+                {
+                    "question": "Comment s'appelle le jeu où deux chevaliers s'affrontent avec des lances ?",
+                    "options": [
+                        "Un tournoi",
+                        "Une course de chevaux",
+                        "Un combat de gladiateurs",
+                        "Une joute"
+                    ],
+                    "reponse": "Un tournoi"
+                },
+                {
+                    "question": "Le chevalier devait être 'preux'. Ça veut dire quoi ?",
+                    "options": [
+                        "Peur de tout",
+                        "Courageux",
+                        "Très riche",
+                        "Très fort"
+                    ],
+                    "reponse": "Courageux"
+                },
+                {
+                    "question": "Comment appelle-t-on le jeune garçon qui aide le chevalier ?",
+                    "options": [
+                        "Le stagiaire",
+                        "Le page",
+                        "L'écuyer",
+                        "Le frère"
+                    ],
+                    "reponse": "Le page"
+                },
+                {
+                    "question": "Quelle est l'arme préférée du chevalier pour se battre à la main ?",
+                    "options": [
+                        "L'épée",
+                        "La lance",
+                        "Le sabre",
+                        "La dague"
+                    ],
+                    "reponse": "L'épée"
+                },
+                {
+                    "question": "Qui le chevalier devait-il protéger ?",
+                    "options": [
+                        "Le roi d'Angleterre",
+                        "Les faibles et l'Église",
+                        "Les paysans",
+                        "Sa famille"
+                    ],
+                    "reponse": "Les faibles et l'Église"
+                }
+            ],
+            "rubrique": "Le Moyen Âge",
+            "titre": "Les Chevaliers",
+            "univers": "Histoire"
+        },
+        {
+            "collectionId": "pbc_activites_01",
+            "collectionName": "activites",
+            "contenu": "<h3>Les églises et les cathédrales</h3><p>Au Moyen Âge, on a construit de magnifiques églises. Les églises <b>romanes</b> étaient sombres avec des murs épais. Les cathédrales <b>gothiques</b> étaient très hautes avec de grands vitraux colorés.</p>",
+            "id": "moyenage_eglise_001",
+            "quiz_json": [
+                {
+                    "question": "Comment appelle-t-on les vitres colorées qui racontent des histoires ?",
+                    "options": [
+                        "Des mosaïques",
+                        "Des vitraux",
+                        "Des fenêtres",
+                        "Des peintures"
+                    ],
+                    "reponse": "Des vitraux"
+                },
+                {
+                    "question": "Quel style d'église a des murs très épais et de petites fenêtres qui laissent passer peu de lumière ?",
+                    "options": [
+                        "Le style romantique",
+                        "Le style roman",
+                        "Le style gothique",
+                        "Le style moderne"
+                    ],
+                    "reponse": "Le style roman"
+                },
+                {
+                    "question": "Quel style d'église a des murs très haut avec de grandes fenêtres qui laissent passer beaucoup de lumière ?",
+                    "options": [
+                        "Le style roman",
+                        "Le style gothique",
+                        "Le style nuage",
+                        "Le style moderne"
+                    ],
+                    "reponse": "Le style gothique"
+                },
+                {
+                    "question": "Comment appelle-t-on les monstres de pierre qui crachent l'eau ?",
+                    "options": [
+                        "Des gargouilles",
+                        "Des dragons",
+                        "Des statues",
+                        "Des robinets"
+                    ],
+                    "reponse": "Des gargouilles"
+                },
+                {
+                    "question": "Qui s'occupait de diriger la cathédrale ?",
+                    "options": [
+                        "Le maire",
+                        "L'évêque",
+                        "Le curé",
+                        "Le Pape"
+                    ],
+                    "reponse": "L'évêque"
+                },
+                {
+                    "question": "Quelle est la forme du plan de la plupart des églises ?",
+                    "options": [
+                        "Un rond",
+                        "Une croix",
+                        "Un triangle",
+                        "Une étoile"
+                    ],
+                    "reponse": "Une croix"
+                },
+                {
+                    "question": "Comment s'appelle la très grande fenêtre ronde en vitrail ?",
+                    "options": [
+                        "Une rosace",
+                        "Une roue",
+                        "Une tulipe",
+                        "Un hublot"
+                    ],
+                    "reponse": "Une rosace"
+                },
+                {
+                    "question": "Qui vivait dans les abbayes pour prier ?",
+                    "options": [
+                        "Les soldats",
+                        "Les moines",
+                        "Les marchands",
+                        "Les paysans"
+                    ],
+                    "reponse": "Les moines"
+                },
+                {
+                    "question": "Quel livre les moines recopiaient-ils souvent à la main ?",
+                    "options": [
+                        "Le dictionnaire",
+                        "La Bible",
+                        "Le livre de cuisine",
+                        "Un grimoire"
+                    ],
+                    "reponse": "La Bible"
+                },
+                {
+                    "question": "Avec quoi construisait-on les églises au Moyen Âge ?",
+                    "options": [
+                        "En terre",
+                        "En pierre",
+                        "En bois",
+                        "En briques"
+                    ],
+                    "reponse": "En pierre"
+                }
+            ],
+            "rubrique": "Le Moyen Âge",
+            "titre": "Églises et Cathédrales",
+            "univers": "Histoire"
+        },
+        {
+            "collectionId": "pbc_activites_01",
+            "collectionName": "activites",
+            "contenu": "<h3>Jeanne d'Arc</h3><p>Pendant la guerre contre les Anglais, une jeune fille nommée <b>Jeanne d'Arc</b> a aidé le roi de France à gagner. Elle a délivré la ville d'Orléans avant d'être capturée.</p>",
+            "id": "moyenage_jeannedarc_001",
+            "quiz_json": [
+                {
+                    "question": "Quelle jeune fille a aidé le roi de France monter sur le trône?",
+                    "options": [
+                        "Cendrillon",
+                        "Jeanne d'Arc",
+                        "Blanche-Neige",
+                        "Jeanne d'Eau"
+                    ],
+                    "reponse": "Jeanne d'Arc"
+                },
+                {
+                    "question": "Contre quel pays la France faisait-elle la guerre à cette époque?",
+                    "options": [
+                        "L'Espagne",
+                        "L'Angleterre",
+                        "L'Italie",
+                        "L'Australie"
+                    ],
+                    "reponse": "L'Angleterre"
+                },
+                {
+                    "question": "Quelle ville Jeanne d'Arc a-t-elle libérée ?",
+                    "options": [
+                        "Paris",
+                        "Orléans",
+                        "Lyon",
+                        "Rouen"
+                    ],
+                    "reponse": "Orléans"
+                },
+                {
+                    "question": "Quel était le métier de Jeanne d'Arc au début ?",
+                    "options": [
+                        "Princesse",
+                        "Paysanne",
+                        "Soldat",
+                        "Reine"
+                    ],
+                    "reponse": "Paysanne"
+                },
+                {
+                    "question": "Comment Jeanne d'Arc est-elle morte ?",
+                    "options": [
+                        "De vieillesse",
+                        "Brûlée sur un bûcher",
+                        "Au combat",
+                        "En prison"
+                    ],
+                    "reponse": "Brûlée sur un bûcher"
+                },
+                {
+                    "question": "Comment s'appelait le roi que Jeanne a aidé ?",
+                    "options": [
+                        "Charles VII",
+                        "Louis XIV",
+                        "César",
+                        "Clovis"
+                    ],
+                    "reponse": "Charles VII"
+                },
+                {
+                    "question": "Dans quelle ville le roi a-t-il été sacré roi grâce à elle ?",
+                    "options": [
+                        "Paris",
+                        "Reims",
+                        "Rouen",
+                        "Aix-la-Chapelle"
+                    ],
+                    "reponse": "Reims"
+                },
+                {
+                    "question": "Quelle maladie a fait mourir beaucoup de gens à cette époque ?",
+                    "options": [
+                        "La grippe",
+                        "La Peste noire",
+                        "Le rhume",
+                        "La varicelle"
+                    ],
+                    "reponse": "La Peste noire"
+                },
+                {
+                    "question": "Combien de temps a duré cette longue guerre environ ?",
+                    "options": [
+                        "10 ans",
+                        "100 ans",
+                        "2 ans",
+                        "Une éternité"
+                    ],
+                    "reponse": "100 ans"
+                },
+                {
+                    "question": "Sur quel animal Jeanne d'Arc voyageait-elle ?",
+                    "options": [
+                        "Un dragon",
+                        "Un cheval",
+                        "Un âne",
+                        "Un boeuf"
+                    ],
+                    "reponse": "Un cheval"
+                }
+            ],
+            "rubrique": "Le Moyen Âge",
+            "titre": "Jeanne d'Arc",
+            "univers": "Histoire"
+        }
+    ]
+}

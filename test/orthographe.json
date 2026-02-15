@@ -1,0 +1,1614 @@
+{
+  "items": [
+    {
+      "collectionId": "pbc_orthographe_02",
+      "collectionName": "activites",
+      "contenu": "<h3>1. Homophones a / à</h3><p><b>a</b> est le verbe avoir conjugué au présent. On peut le remplacer par <b>avait</b>.<br><b>à</b> est une préposition. On ne peut pas le remplacer par avait.</p><p>Ressource : <a href='https://www.lumni.fr/video/a-ou-a'>Lumni - Homophones a/à</a></p>",
+      "id": "ortho_101",
+      "quiz_json": [
+        {
+          "question": "Il ... fini ses devoirs.",
+          "options": [
+            "a",
+            "à",
+            "as",
+            "ah"
+          ],
+          "reponse": "a"
+        },
+        {
+          "question": "Nous allons ... la plage.",
+          "options": [
+            "a",
+            "à",
+            "ah",
+            "as"
+          ],
+          "reponse": "à"
+        },
+        {
+          "question": "Elle ... mal ... la gorge.",
+          "options": [
+            "a / à",
+            "à / a",
+            "a / a",
+            "à / à"
+          ],
+          "reponse": "a / à"
+        },
+        {
+          "question": "L'enfant ... peur du noir.",
+          "options": [
+            "a",
+            "à",
+            "as",
+            "ah"
+          ],
+          "reponse": "a"
+        },
+        {
+          "question": "Pense ... prendre tes clés.",
+          "options": [
+            "a",
+            "à",
+            "as",
+            "at"
+          ],
+          "reponse": "à"
+        },
+        {
+          "question": "Le chat ... attrapé une souris.",
+          "options": [
+            "a",
+            "à",
+            "ah",
+            "as"
+          ],
+          "reponse": "a"
+        },
+        {
+          "question": "C'est un gâteau ... la fraise.",
+          "options": [
+            "a",
+            "à",
+            "as",
+            "ah"
+          ],
+          "reponse": "à"
+        },
+        {
+          "question": "Mon frère ... une nouvelle voiture.",
+          "options": [
+            "a",
+            "à",
+            "as",
+            "ah"
+          ],
+          "reponse": "a"
+        },
+        {
+          "question": "Rendez-vous ... huit heures.",
+          "options": [
+            "a",
+            "à",
+            "as",
+            "ah"
+          ],
+          "reponse": "à"
+        },
+        {
+          "question": "Julie ... oublié son sac ... l'école.",
+          "options": [
+            "a / à",
+            "à / a",
+            "a / a",
+            "à / à"
+          ],
+          "reponse": "a / à"
+        },
+        {
+          "question": "Il commence ... pleuvoir.",
+          "options": [
+            "a",
+            "à",
+            "as",
+            "ah"
+          ],
+          "reponse": "à"
+        },
+        {
+          "question": "Le peintre ... utilisé du bleu.",
+          "options": [
+            "a",
+            "à",
+            "as",
+            "ah"
+          ],
+          "reponse": "a"
+        },
+        {
+          "question": "On a réussi ... gagner.",
+          "options": [
+            "a",
+            "à",
+            "as",
+            "ah"
+          ],
+          "reponse": "à"
+        },
+        {
+          "question": "Il ... beaucoup de chance.",
+          "options": [
+            "a",
+            "à",
+            "as",
+            "ah"
+          ],
+          "reponse": "a"
+        },
+        {
+          "question": "Elle habite ... Paris.",
+          "options": [
+            "a",
+            "à",
+            "as",
+            "ah"
+          ],
+          "reponse": "à"
+        }
+      ],
+      "rubrique": "Orthographe",
+      "titre": "Homophones a / à",
+      "univers": "Français"
+    },
+    {
+      "collectionId": "pbc_orthographe_02",
+      "collectionName": "activites",
+      "contenu": "<h3>2. Homophones et / est</h3><p><b>est</b> est le verbe être. On peut le remplacer par <b>était</b>.<br><b>et</b> est une conjonction de coordination. On peut le remplacer par <b>et puis</b>.</p><p>Ressource : <a href='https://www.lumni.fr/video/et-ou-est'>Lumni - Homophones et/est</a></p>",
+      "id": "ortho_102",
+      "quiz_json": [
+        {
+          "question": "Le ciel ... bleu.",
+          "options": [
+            "et",
+            "est",
+            "es",
+            "ai"
+          ],
+          "reponse": "est"
+        },
+        {
+          "question": "Toi ... moi sommes amis.",
+          "options": [
+            "et",
+            "est",
+            "es",
+            "ai"
+          ],
+          "reponse": "et"
+        },
+        {
+          "question": "Il ... tard ... il pleut.",
+          "options": [
+            "est / et",
+            "et / est",
+            "est / est",
+            "et / et"
+          ],
+          "reponse": "est / et"
+        },
+        {
+          "question": "C' ... magnifique.",
+          "options": [
+            "et",
+            "est",
+            "es",
+            "ai"
+          ],
+          "reponse": "est"
+        },
+        {
+          "question": "Un chien ... un chat dorment.",
+          "options": [
+            "et",
+            "est",
+            "es",
+            "ai"
+          ],
+          "reponse": "et"
+        },
+        {
+          "question": "Elle ... très gentille.",
+          "options": [
+            "et",
+            "est",
+            "es",
+            "ai"
+          ],
+          "reponse": "est"
+        },
+        {
+          "question": "Prends ton manteau ... tes gants.",
+          "options": [
+            "et",
+            "est",
+            "es",
+            "ai"
+          ],
+          "reponse": "et"
+        },
+        {
+          "question": "Le vent ... fort.",
+          "options": [
+            "et",
+            "est",
+            "es",
+            "ai"
+          ],
+          "reponse": "est"
+        },
+        {
+          "question": "Il court ... il saute.",
+          "options": [
+            "et",
+            "est",
+            "es",
+            "ai"
+          ],
+          "reponse": "et"
+        },
+        {
+          "question": "L'exercice ... facile ... rapide.",
+          "options": [
+            "est / et",
+            "et / est",
+            "est / est",
+            "et / et"
+          ],
+          "reponse": "est / et"
+        },
+        {
+          "question": "Le repas ... servi.",
+          "options": [
+            "et",
+            "est",
+            "es",
+            "ai"
+          ],
+          "reponse": "est"
+        },
+        {
+          "question": "Du sel ... du poivre.",
+          "options": [
+            "et",
+            "est",
+            "es",
+            "ai"
+          ],
+          "reponse": "et"
+        },
+        {
+          "question": "Qui ... là ?",
+          "options": [
+            "et",
+            "est",
+            "es",
+            "ai"
+          ],
+          "reponse": "est"
+        },
+        {
+          "question": "Elle chante ... elle danse.",
+          "options": [
+            "et",
+            "est",
+            "es",
+            "ai"
+          ],
+          "reponse": "et"
+        },
+        {
+          "question": "La porte ... ouverte.",
+          "options": [
+            "et",
+            "est",
+            "es",
+            "ai"
+          ],
+          "reponse": "est"
+        }
+      ],
+      "rubrique": "Orthographe",
+      "titre": "Homophones et / est",
+      "univers": "Français"
+    },
+    {
+      "collectionId": "pbc_orthographe_02",
+      "collectionName": "activites",
+      "contenu": "<h3>3. Homophones son / sont</h3><p><b>son</b> est un déterminant possessif. On peut le remplacer par <b>le sien</b>.<br><b>sont</b> est le verbe être au pluriel. On peut le remplacer par <b>étaient</b>.</p><p>Ressource : <a href='https://www.lumni.fr/video/son-ou-sont'>Lumni - Homophones son/sont</a></p>",
+      "id": "ortho_103",
+      "quiz_json": [
+        {
+          "question": "Ils ... partis en voyage.",
+          "options": [
+            "son",
+            "sont",
+            "sons",
+            "sond"
+          ],
+          "reponse": "sont"
+        },
+        {
+          "question": "Il a perdu ... stylo.",
+          "options": [
+            "son",
+            "sont",
+            "sons",
+            "sond"
+          ],
+          "reponse": "son"
+        },
+        {
+          "question": "Les élèves ... calmes.",
+          "options": [
+            "son",
+            "sont",
+            "sons",
+            "sond"
+          ],
+          "reponse": "sont"
+        },
+        {
+          "question": "Elle appelle ... chien.",
+          "options": [
+            "son",
+            "sont",
+            "sons",
+            "sond"
+          ],
+          "reponse": "son"
+        },
+        {
+          "question": "Où ... mes clés ?",
+          "options": [
+            "son",
+            "sont",
+            "sons",
+            "sond"
+          ],
+          "reponse": "sont"
+        },
+        {
+          "question": "C'est ... anniversaire.",
+          "options": [
+            "son",
+            "sont",
+            "sons",
+            "sond"
+          ],
+          "reponse": "son"
+        },
+        {
+          "question": "Ils ... très contents.",
+          "options": [
+            "son",
+            "sont",
+            "sons",
+            "sond"
+          ],
+          "reponse": "sont"
+        },
+        {
+          "question": "Il cherche ... chemin.",
+          "options": [
+            "son",
+            "sont",
+            "sons",
+            "sond"
+          ],
+          "reponse": "son"
+        },
+        {
+          "question": "Ses parents ... fiers.",
+          "options": [
+            "son",
+            "sont",
+            "sons",
+            "sond"
+          ],
+          "reponse": "sont"
+        },
+        {
+          "question": "Il a fini ... assiette.",
+          "options": [
+            "son",
+            "sont",
+            "sons",
+            "sond"
+          ],
+          "reponse": "son"
+        },
+        {
+          "question": "Ils ... en retard.",
+          "options": [
+            "son",
+            "sont",
+            "sons",
+            "sond"
+          ],
+          "reponse": "sont"
+        },
+        {
+          "question": "Le musicien range ... instrument.",
+          "options": [
+            "son",
+            "sont",
+            "sons",
+            "sond"
+          ],
+          "reponse": "son"
+        },
+        {
+          "question": "Ces livres ... passionnants.",
+          "options": [
+            "son",
+            "sont",
+            "sons",
+            "sond"
+          ],
+          "reponse": "sont"
+        },
+        {
+          "question": "Elle soigne ... chat.",
+          "options": [
+            "son",
+            "sont",
+            "sons",
+            "sond"
+          ],
+          "reponse": "son"
+        },
+        {
+          "question": "Les résultats ... bons.",
+          "options": [
+            "son",
+            "sont",
+            "sons",
+            "sond"
+          ],
+          "reponse": "sont"
+        }
+      ],
+      "rubrique": "Orthographe",
+      "titre": "Homophones son / sont",
+      "univers": "Français"
+    },
+    {
+      "collectionId": "pbc_orthographe_02",
+      "collectionName": "activites",
+      "contenu": "<h3>4. Homophones on / ont</h3><p><b>on</b> est un pronom sujet. On peut le remplacer par <b>il</b>.<br><b>ont</b> est le verbe avoir au pluriel. On peut le remplacer par <b>avaient</b>.</p><p>Ressource : <a href='https://www.lumni.fr/video/on-ou-ont'>Lumni - Homophones on/ont</a></p>",
+      "id": "ortho_104",
+      "quiz_json": [
+        {
+          "question": "... frappe à la porte.",
+          "options": [
+            "On",
+            "Ont",
+            "Ond",
+            "Onte"
+          ],
+          "reponse": "On"
+        },
+        {
+          "question": "Ils ... un grand jardin.",
+          "options": [
+            "on",
+            "ont",
+            "ond",
+            "ont-ils"
+          ],
+          "reponse": "ont"
+        },
+        {
+          "question": "Ici, ... mange bien.",
+          "options": [
+            "on",
+            "ont",
+            "on-t",
+            "ont-ils"
+          ],
+          "reponse": "on"
+        },
+        {
+          "question": "Elles ... réussi l'examen.",
+          "options": [
+            "on",
+            "ont",
+            "ond",
+            "ont-ils"
+          ],
+          "reponse": "ont"
+        },
+        {
+          "question": "... a gagné !",
+          "options": [
+            "On",
+            "Ont",
+            "Ond",
+            "On-t"
+          ],
+          "reponse": "On"
+        },
+        {
+          "question": "Les enfants ... faim.",
+          "options": [
+            "on",
+            "ont",
+            "ond",
+            "ont-ils"
+          ],
+          "reponse": "ont"
+        },
+        {
+          "question": "... part en vacances.",
+          "options": [
+            "On",
+            "Ont",
+            "Ond",
+            "Ont-ils"
+          ],
+          "reponse": "On"
+        },
+        {
+          "question": "Ils ... peur de l'orage.",
+          "options": [
+            "on",
+            "ont",
+            "ond",
+            "ont-ils"
+          ],
+          "reponse": "ont"
+        },
+        {
+          "question": "Quand ... court, ... transpire.",
+          "options": [
+            "on / on",
+            "ont / ont",
+            "on / ont",
+            "ont / on"
+          ],
+          "reponse": "on / on"
+        },
+        {
+          "question": "Les chiens ... soif.",
+          "options": [
+            "on",
+            "ont",
+            "ond",
+            "ont-ils"
+          ],
+          "reponse": "ont"
+        },
+        {
+          "question": "... peut entrer ?",
+          "options": [
+            "On",
+            "Ont",
+            "Ond",
+            "Ont-ils"
+          ],
+          "reponse": "On"
+        },
+        {
+          "question": "Ils ... acheté du pain.",
+          "options": [
+            "on",
+            "ont",
+            "ond",
+            "ont-ils"
+          ],
+          "reponse": "ont"
+        },
+        {
+          "question": "... écoute la musique.",
+          "options": [
+            "On",
+            "Ont",
+            "Ond",
+            "Ont-ils"
+          ],
+          "reponse": "On"
+        },
+        {
+          "question": "Mes amis ... un vélo.",
+          "options": [
+            "on",
+            "ont",
+            "ond",
+            "ont-ils"
+          ],
+          "reponse": "ont"
+        },
+        {
+          "question": "... voit la mer.",
+          "options": [
+            "On",
+            "Ont",
+            "Ond",
+            "Ont-ils"
+          ],
+          "reponse": "On"
+        }
+      ],
+      "rubrique": "Orthographe",
+      "titre": "Homophones on / ont",
+      "univers": "Français"
+    },
+    {
+      "collectionId": "pbc_orthographe_02",
+      "collectionName": "activites",
+      "contenu": "<h3>5. Homophones ou / où</h3><p><b>ou</b> indique un choix. On peut le remplacer par <b>ou bien</b>.<br><b>où</b> indique un lieu ou un moment.</p>",
+      "id": "ortho_105",
+      "quiz_json": [
+        {
+          "question": "Tu préfères le thé ... le café ?",
+          "options": [
+            "ou",
+            "où",
+            "hou",
+            "houe"
+          ],
+          "reponse": "ou"
+        },
+        {
+          "question": "... habites-tu ?",
+          "options": [
+            "Ou",
+            "Où",
+            "Hou",
+            "Houx"
+          ],
+          "reponse": "Où"
+        },
+        {
+          "question": "C'est à gauche ... à droite ?",
+          "options": [
+            "ou",
+            "où",
+            "hou",
+            "houe"
+          ],
+          "reponse": "ou"
+        },
+        {
+          "question": "L'endroit ... je travaille.",
+          "options": [
+            "ou",
+            "où",
+            "hou",
+            "houe"
+          ],
+          "reponse": "où"
+        },
+        {
+          "question": "On mange ... on dort ?",
+          "options": [
+            "ou",
+            "où",
+            "hou",
+            "houe"
+          ],
+          "reponse": "ou"
+        },
+        {
+          "question": "Le jour ... nous sommes nés.",
+          "options": [
+            "ou",
+            "où",
+            "hou",
+            "houe"
+          ],
+          "reponse": "où"
+        },
+        {
+          "question": "Un chat ... un chien ?",
+          "options": [
+            "ou",
+            "où",
+            "hou",
+            "houe"
+          ],
+          "reponse": "ou"
+        },
+        {
+          "question": "D' ... viens-tu ?",
+          "options": [
+            "ou",
+            "où",
+            "hou",
+            "houe"
+          ],
+          "reponse": "où"
+        },
+        {
+          "question": "Prends celui-ci ... celui-là.",
+          "options": [
+            "ou",
+            "où",
+            "hou",
+            "houe"
+          ],
+          "reponse": "ou"
+        },
+        {
+          "question": "La ville ... il habite.",
+          "options": [
+            "ou",
+            "où",
+            "hou",
+            "houe"
+          ],
+          "reponse": "où"
+        },
+        {
+          "question": "Bleu ... rouge ?",
+          "options": [
+            "ou",
+            "où",
+            "hou",
+            "houe"
+          ],
+          "reponse": "ou"
+        },
+        {
+          "question": "Je ne sais pas ... il est.",
+          "options": [
+            "ou",
+            "où",
+            "hou",
+            "houe"
+          ],
+          "reponse": "où"
+        },
+        {
+          "question": "Il rit ... il pleure.",
+          "options": [
+            "ou",
+            "où",
+            "hou",
+            "houe"
+          ],
+          "reponse": "ou"
+        },
+        {
+          "question": "Le moment ... elle arrive.",
+          "options": [
+            "ou",
+            "où",
+            "hou",
+            "houe"
+          ],
+          "reponse": "où"
+        },
+        {
+          "question": "Lundi ... mardi ?",
+          "options": [
+            "ou",
+            "où",
+            "hou",
+            "houe"
+          ],
+          "reponse": "ou"
+        }
+      ],
+      "rubrique": "Orthographe",
+      "titre": "Homophones ou / où",
+      "univers": "Français"
+    },
+    {
+      "collectionId": "pbc_orthographe_02",
+      "collectionName": "activites",
+      "contenu": "<h3>6. L'accord dans le groupe nominal</h3><p>L'adjectif s'accorde en <b>genre</b> (masculin/féminin) et en <b>nombre</b> (singulier/pluriel) avec le nom.</p>",
+      "id": "ortho_106",
+      "quiz_json": [
+        {
+          "question": "Une ... fleur.",
+          "options": [
+            "joli",
+            "jolie",
+            "jolis",
+            "jolies"
+          ],
+          "reponse": "jolie"
+        },
+        {
+          "question": "Des chiens ...",
+          "options": [
+            "noir",
+            "noire",
+            "noirs",
+            "noires"
+          ],
+          "reponse": "noirs"
+        },
+        {
+          "question": "Une pomme ...",
+          "options": [
+            "vert",
+            "verte",
+            "verts",
+            "vertes"
+          ],
+          "reponse": "verte"
+        },
+        {
+          "question": "Des voitures ...",
+          "options": [
+            "rapide",
+            "rapides",
+            "rapide-s",
+            "rapidos"
+          ],
+          "reponse": "rapides"
+        },
+        {
+          "question": "Un garçon ...",
+          "options": [
+            "grand",
+            "grande",
+            "grands",
+            "grandes"
+          ],
+          "reponse": "grand"
+        },
+        {
+          "question": "Des histoires ...",
+          "options": [
+            "amusant",
+            "amusante",
+            "amusants",
+            "amusantes"
+          ],
+          "reponse": "amusantes"
+        },
+        {
+          "question": "Une mer ...",
+          "options": [
+            "bleu",
+            "bleue",
+            "bleus",
+            "bleues"
+          ],
+          "reponse": "bleue"
+        },
+        {
+          "question": "Des fruits ...",
+          "options": [
+            "mûr",
+            "mûre",
+            "mûrs",
+            "mûres"
+          ],
+          "reponse": "mûrs"
+        },
+        {
+          "question": "Une ... maison.",
+          "options": [
+            "petit",
+            "petite",
+            "petits",
+            "petites"
+          ],
+          "reponse": "petite"
+        },
+        {
+          "question": "Des feuilles ...",
+          "options": [
+            "sec",
+            "sèche",
+            "secs",
+            "sèches"
+          ],
+          "reponse": "sèches"
+        },
+        {
+          "question": "Un vent ...",
+          "options": [
+            "froid",
+            "froide",
+            "froids",
+            "froides"
+          ],
+          "reponse": "froid"
+        },
+        {
+          "question": "Des chaussures ...",
+          "options": [
+            "neuf",
+            "neuve",
+            "neufs",
+            "neuves"
+          ],
+          "reponse": "neuves"
+        },
+        {
+          "question": "Une lumière ...",
+          "options": [
+            "vif",
+            "vive",
+            "vifs",
+            "vives"
+          ],
+          "reponse": "vive"
+        },
+        {
+          "question": "Des chemins ...",
+          "options": [
+            "étroit",
+            "étroite",
+            "étroits",
+            "étroites"
+          ],
+          "reponse": "étroits"
+        },
+        {
+          "question": "Une ... amie.",
+          "options": [
+            "grand",
+            "grande",
+            "grands",
+            "grandes"
+          ],
+          "reponse": "grande"
+        }
+      ],
+      "rubrique": "Orthographe",
+      "titre": "Le groupe nominal",
+      "univers": "Français"
+    },
+    {
+      "collectionId": "pbc_orthographe_02",
+      "collectionName": "activites",
+      "contenu": "<h3>7. L'accord sujet-verbe</h3><p>Le verbe s'accorde toujours avec son sujet. Si le sujet est au pluriel, le verbe prend souvent la terminaison <b>-ent</b>.</p>",
+      "id": "ortho_107",
+      "quiz_json": [
+        {
+          "question": "Les enfants ... au parc.",
+          "options": [
+            "joue",
+            "jouent",
+            "joues",
+            "jouant"
+          ],
+          "reponse": "jouent"
+        },
+        {
+          "question": "Le chat ... sur le canapé.",
+          "options": [
+            "dort",
+            "dorment",
+            "dors",
+            "dormant"
+          ],
+          "reponse": "dort"
+        },
+        {
+          "question": "Les oiseaux ... dans le ciel.",
+          "options": [
+            "vole",
+            "volent",
+            "voles",
+            "volant"
+          ],
+          "reponse": "volent"
+        },
+        {
+          "question": "Ma sœur ... un livre.",
+          "options": [
+            "lit",
+            "lisent",
+            "lis",
+            "lisant"
+          ],
+          "reponse": "lit"
+        },
+        {
+          "question": "Mes parents ... la télé.",
+          "options": [
+            "regarde",
+            "regardent",
+            "regardes",
+            "regardant"
+          ],
+          "reponse": "regardent"
+        },
+        {
+          "question": "Tu ... ton vélo.",
+          "options": [
+            "répare",
+            "réparent",
+            "répares",
+            "réparant"
+          ],
+          "reponse": "répares"
+        },
+        {
+          "question": "Le vent ... fort.",
+          "options": [
+            "souffle",
+            "soufflent",
+            "souffles",
+            "soufflant"
+          ],
+          "reponse": "souffle"
+        },
+        {
+          "question": "Les fleurs ... au printemps.",
+          "options": [
+            "pousse",
+            "poussent",
+            "pousses",
+            "poussant"
+          ],
+          "reponse": "poussent"
+        },
+        {
+          "question": "Nous ... du pain.",
+          "options": [
+            "mange",
+            "mangent",
+            "mangeons",
+            "manges"
+          ],
+          "reponse": "mangeons"
+        },
+        {
+          "question": "Vous ... la route.",
+          "options": [
+            "connaît",
+            "connaissent",
+            "connaissez",
+            "connais"
+          ],
+          "reponse": "connaissez"
+        },
+        {
+          "question": "Elles ... une chanson.",
+          "options": [
+            "chante",
+            "chantent",
+            "chantes",
+            "chantant"
+          ],
+          "reponse": "chantent"
+        },
+        {
+          "question": "La pluie ... sur le toit.",
+          "options": [
+            "tombe",
+            "tombent",
+            "tombes",
+            "tombant"
+          ],
+          "reponse": "tombe"
+        },
+        {
+          "question": "Les voitures ... vite.",
+          "options": [
+            "roule",
+            "roulent",
+            "roules",
+            "roulant"
+          ],
+          "reponse": "roulent"
+        },
+        {
+          "question": "Je ... un dessin.",
+          "options": [
+            "fait",
+            "font",
+            "fais",
+            "faisons"
+          ],
+          "reponse": "fais"
+        },
+        {
+          "question": "Tout le monde ... content.",
+          "options": [
+            "est",
+            "sont",
+            "es",
+            "ai"
+          ],
+          "reponse": "est"
+        }
+      ],
+      "rubrique": "Orthographe",
+      "titre": "Accord Sujet-Verbe",
+      "univers": "Français"
+    },
+    {
+      "collectionId": "pbc_orthographe_02",
+      "collectionName": "activites",
+      "contenu": "<h3>8. Pluriel des noms en -al et -ou</h3><p>Les noms en <b>-al</b> font leur pluriel en <b>-aux</b> (sauf : bal, carnaval...). Les noms en <b>-ou</b> prennent un <b>-s</b> (sauf : bijou, caillou, chou, genou, hibou, joujou, pou).</p>",
+      "id": "ortho_108",
+      "quiz_json": [
+        {
+          "question": "Le pluriel de 'animal' :",
+          "options": [
+            "animals",
+            "animaux",
+            "animales",
+            "animau"
+          ],
+          "reponse": "animaux"
+        },
+        {
+          "question": "Le pluriel de 'caillou' :",
+          "options": [
+            "caillous",
+            "cailloux",
+            "caillou",
+            "cailloux-s"
+          ],
+          "reponse": "cailloux"
+        },
+        {
+          "question": "Le pluriel de 'journal' :",
+          "options": [
+            "journals",
+            "journaux",
+            "journale",
+            "journau"
+          ],
+          "reponse": "journaux"
+        },
+        {
+          "question": "Le pluriel de 'clou' :",
+          "options": [
+            "clous",
+            "cloux",
+            "clou",
+            "clous-s"
+          ],
+          "reponse": "clous"
+        },
+        {
+          "question": "Le pluriel de 'cheval' :",
+          "options": [
+            "chevals",
+            "chevaux",
+            "chevau",
+            "chevales"
+          ],
+          "reponse": "chevaux"
+        },
+        {
+          "question": "Le pluriel de 'bijou' :",
+          "options": [
+            "bijous",
+            "bijoux",
+            "bijou",
+            "bijoux-x"
+          ],
+          "reponse": "bijoux"
+        },
+        {
+          "question": "Le pluriel de 'bocal' :",
+          "options": [
+            "bocals",
+            "bocaux",
+            "bocau",
+            "bocale"
+          ],
+          "reponse": "bocaux"
+        },
+        {
+          "question": "Le pluriel de 'trou' :",
+          "options": [
+            "trous",
+            "troux",
+            "trou",
+            "trous-s"
+          ],
+          "reponse": "trous"
+        },
+        {
+          "question": "Le pluriel de 'canal' :",
+          "options": [
+            "canals",
+            "canaux",
+            "canau",
+            "canale"
+          ],
+          "reponse": "canaux"
+        },
+        {
+          "question": "Le pluriel de 'genou' :",
+          "options": [
+            "genous",
+            "genoux",
+            "genou",
+            "genou-x"
+          ],
+          "reponse": "genoux"
+        },
+        {
+          "question": "Le pluriel de 'festival' :",
+          "options": [
+            "festivals",
+            "festivaux",
+            "festival",
+            "festivo"
+          ],
+          "reponse": "festivals"
+        },
+        {
+          "question": "Le pluriel de 'hibou' :",
+          "options": [
+            "hibous",
+            "hiboux",
+            "hibou",
+            "hiboux-x"
+          ],
+          "reponse": "hiboux"
+        },
+        {
+          "question": "Le pluriel de 'carnaval' :",
+          "options": [
+            "carnavals",
+            "carnavaux",
+            "carnaval",
+            "carnavo"
+          ],
+          "reponse": "carnavals"
+        },
+        {
+          "question": "Le pluriel de 'chou' :",
+          "options": [
+            "chous",
+            "choux",
+            "chou",
+            "choux-x"
+          ],
+          "reponse": "choux"
+        },
+        {
+          "question": "Le pluriel de 'signal' :",
+          "options": [
+            "signals",
+            "signaux",
+            "signau",
+            "signale"
+          ],
+          "reponse": "signaux"
+        }
+      ],
+      "rubrique": "Orthographe",
+      "titre": "Pluriels en -al et -ou",
+      "univers": "Français"
+    },
+    {
+      "collectionId": "pbc_orthographe_02",
+      "collectionName": "activites",
+      "contenu": "<h3>9. Participe passé (-é) ou Infinitif (-er)</h3><p>Remplacement : si on peut dire <b>vendre</b>, on écrit <b>-er</b>. Si on peut dire <b>vendu</b>, on écrit <b>-é</b>.</p>",
+      "id": "ortho_109",
+      "quiz_json": [
+        {
+          "question": "Il a ... un gâteau.",
+          "options": [
+            "manger",
+            "mangé",
+            "mangez",
+            "manges"
+          ],
+          "reponse": "mangé"
+        },
+        {
+          "question": "Je vais ... un livre.",
+          "options": [
+            "acheter",
+            "acheté",
+            "achetez",
+            "achète"
+          ],
+          "reponse": "acheter"
+        },
+        {
+          "question": "Elle est ... à l'heure.",
+          "options": [
+            "arriver",
+            "arrivé",
+            "arrivée",
+            "arrivez"
+          ],
+          "reponse": "arrivée"
+        },
+        {
+          "question": "Tu dois ... ton travail.",
+          "options": [
+            "finir",
+            "fini",
+            "finie",
+            "finis"
+          ],
+          "reponse": "finir"
+        },
+        {
+          "question": "Il a ... la porte.",
+          "options": [
+            "fermer",
+            "fermé",
+            "fermez",
+            "ferme"
+          ],
+          "reponse": "fermé"
+        },
+        {
+          "question": "Nous voulons ... au foot.",
+          "options": [
+            "jouer",
+            "joué",
+            "jouez",
+            "joues"
+          ],
+          "reponse": "jouer"
+        },
+        {
+          "question": "J'ai ... mon vélo.",
+          "options": [
+            "casser",
+            "cassé",
+            "cassez",
+            "casse"
+          ],
+          "reponse": "cassé"
+        },
+        {
+          "question": "Il faut ... la consigne.",
+          "options": [
+            "écouter",
+            "écouté",
+            "écoutez",
+            "écoute"
+          ],
+          "reponse": "écouter"
+        },
+        {
+          "question": "Elle a ... son ami.",
+          "options": [
+            "appeler",
+            "appelé",
+            "appelez",
+            "appelle"
+          ],
+          "reponse": "appelé"
+        },
+        {
+          "question": "Tu as ... ta leçon.",
+          "options": [
+            "apprendre",
+            "appris",
+            "apprise",
+            "apprit"
+          ],
+          "reponse": "appris"
+        },
+        {
+          "question": "Voulez-vous ... ?",
+          "options": [
+            "chanter",
+            "chanté",
+            "chantez",
+            "chantes"
+          ],
+          "reponse": "chanter"
+        },
+        {
+          "question": "Le chat est ... par la fenêtre.",
+          "options": [
+            "entrer",
+            "entré",
+            "entrez",
+            "entre"
+          ],
+          "reponse": "entré"
+        },
+        {
+          "question": "Il va ... son manteau.",
+          "options": [
+            "chercher",
+            "cherché",
+            "cherchez",
+            "cherche"
+          ],
+          "reponse": "chercher"
+        },
+        {
+          "question": "Elle a ... la vérité.",
+          "options": [
+            "dire",
+            "dit",
+            "dite",
+            "dis"
+          ],
+          "reponse": "dit"
+        },
+        {
+          "question": "On peut ... ensemble.",
+          "options": [
+            "travailler",
+            "travaillé",
+            "travaillez",
+            "travailles"
+          ],
+          "reponse": "travailler"
+        }
+      ],
+      "rubrique": "Orthographe",
+      "titre": "-é ou -er ?",
+      "univers": "Français"
+    },
+    {
+      "collectionId": "pbc_orthographe_02",
+      "collectionName": "activites",
+      "contenu": "<h3>10. Homophones ce / se et ces / ses</h3><p><b>se</b> et <b>s'</b> se trouvent devant un verbe. <b>ce</b> accompagne un nom ou le verbe être.<br><b>ses</b> (les siens), <b>ces</b> (ceux-là).</p>",
+      "id": "ortho_110",
+      "quiz_json": [
+        {
+          "question": "Il ... lave les mains.",
+          "options": [
+            "ce",
+            "se",
+            "ceux",
+            "ceux-ci"
+          ],
+          "reponse": "se"
+        },
+        {
+          "question": "... chien est beau.",
+          "options": [
+            "Ce",
+            "Se",
+            "Ceux",
+            "Ses"
+          ],
+          "reponse": "Ce"
+        },
+        {
+          "question": "Elle range ... jouets.",
+          "options": [
+            "ces",
+            "ses",
+            "s'est",
+            "c'est"
+          ],
+          "reponse": "ses"
+        },
+        {
+          "question": "Regarde ... fleurs !",
+          "options": [
+            "ces",
+            "ses",
+            "s'est",
+            "c'est"
+          ],
+          "reponse": "ces"
+        },
+        {
+          "question": "Ils ... parlent doucement.",
+          "options": [
+            "ce",
+            "se",
+            "ceux",
+            "ses"
+          ],
+          "reponse": "se"
+        },
+        {
+          "question": "... n'est pas vrai.",
+          "options": [
+            "Ce",
+            "Se",
+            "C'est",
+            "Sait"
+          ],
+          "reponse": "Ce"
+        },
+        {
+          "question": "Il prend ... clés.",
+          "options": [
+            "ces",
+            "ses",
+            "c'est",
+            "sait"
+          ],
+          "reponse": "ses"
+        },
+        {
+          "question": "... garçon est poli.",
+          "options": [
+            "Ce",
+            "Se",
+            "Ces",
+            "Ses"
+          ],
+          "reponse": "Ce"
+        },
+        {
+          "question": "Elle ... demande pourquoi.",
+          "options": [
+            "ce",
+            "se",
+            "ceux",
+            "ces"
+          ],
+          "reponse": "se"
+        },
+        {
+          "question": "... chaussures sont rouges.",
+          "options": [
+            "Ces",
+            "Ses",
+            "C'est",
+            "Sait"
+          ],
+          "reponse": "Ces"
+        },
+        {
+          "question": "Il ... promène.",
+          "options": [
+            "ce",
+            "se",
+            "ses",
+            "ces"
+          ],
+          "reponse": "se"
+        },
+        {
+          "question": "... livre est génial.",
+          "options": [
+            "Ce",
+            "Se",
+            "Ces",
+            "Ses"
+          ],
+          "reponse": "Ce"
+        },
+        {
+          "question": "Elle a perdu ... lunettes.",
+          "options": [
+            "ces",
+            "ses",
+            "c'est",
+            "sait"
+          ],
+          "reponse": "ses"
+        },
+        {
+          "question": "Ils ... dépêchent.",
+          "options": [
+            "ce",
+            "se",
+            "ces",
+            "ses"
+          ],
+          "reponse": "se"
+        },
+        {
+          "question": "... arbres sont vieux.",
+          "options": [
+            "Ces",
+            "Ses",
+            "Ce",
+            "Se"
+          ],
+          "reponse": "Ces"
+        }
+      ],
+      "rubrique": "Orthographe",
+      "titre": "Ce/Se et Ces/Ses",
+      "univers": "Français"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "items": [
+    {
+      "collectionId": "pbc_activites_01",
+      "collectionName": "activites",
+      "contenu": "<h3>1. La Révolution française (1789)</h3><p>En 1789, le peuple de Paris se révolte contre l'injustice. Le <b>14 juillet</b>, ils prennent la prison de la <b>Bastille</b>. C'est la fin de la monarchie absolue et la naissance de la <b>Déclaration des Droits de l'Homme et du Citoyen</b>.</p><p>Ressource : <a href='https://www.lumni.fr/video/la-revolution-francaise-les-fondamentaux'>Lumni - La Révolution française</a></p>",
+      "id": "contemporaine_001",
+      "quiz_json": [
+        { "question": "Quel événement fête-t-on chaque année le 14 juillet ?", "options": ["La prise de la Bastille", "L'anniversaire du Roi", "La victoire de 1918", "La fête des voisins"], "reponse": "La prise de la Bastille" },
+        { "question": "Quel texte célèbre dit que 'les hommes naissent libres et égaux' ?", "options": ["Le Code Civil", "La Déclaration des Droits de l'Homme", "Le règlement de l'école", "L'Encyclopédie"], "reponse": "La Déclaration des Droits de l'Homme" },
+        { "question": "Quel roi a été renversé pendant la Révolution ?", "options": ["Louis XIV", "Louis XVI", "Henri IV", "Le Roi Lion"], "reponse": "Louis XVI" },
+        { "question": "Comment s'appelait la prison symbolisant le pouvoir du roi à Paris ?", "options": ["Le Louvre", "La Bastille", "Alcatraz", "Le château d'If"], "reponse": "La Bastille" },
+        { "question": "Quelles sont les trois couleurs du drapeau né pendant la Révolution ?", "options": ["Bleu, Blanc, Rouge", "Rouge, Jaune, Vert", "Noir et Blanc", "Bleu, Jaune, Rouge"], "reponse": "Bleu, Blanc, Rouge" },
+        { "question": "Quelle était la devise de la République française ?", "options": ["Liberté, Égalité, Fraternité", "Travail, Famille, Patrie", "Vite, Fort, Loin", "Paix et Amour"], "reponse": "Liberté, Égalité, Fraternité" },
+        { "question": "Comment s'appelait l'assemblée des représentants du peuple en 1789 ?", "options": ["Le Sénat", "Les États généraux", "Le Conseil municipal", "La Cour royale"], "reponse": "Les États généraux" },
+        { "question": "Quel instrument servait à exécuter les condamnés pendant la Terreur ?", "options": ["L'épée", "La guillotine", "Le canon", "La catapulte"], "reponse": "La guillotine" },
+        { "question": "Quel serment les députés ont-ils prêté pour rester unis ?", "options": ["Le serment du Jeu de Paume", "Le serment d'allégeance", "La promesse de Paris", "Le pacte des loups"], "reponse": "Le serment du Jeu de Paume" },
+        { "question": "Comment appelle-t-on la période qui suit la chute de la Royauté ?", "options": ["L'Empire", "La République", "Le Consulat", "La Préhistoire"], "reponse": "La République" }
+      ],
+      "rubrique": "L'Époque Contemporaine",
+      "titre": "La Révolution française",
+      "univers": "Histoire"
+    },
+    {
+      "collectionId": "pbc_activites_01",
+      "collectionName": "activites",
+      "contenu": "<h3>2. Napoléon et l'Empire</h3><p>Napoléon Bonaparte prend le pouvoir et se fait sacrer <b>Empereur</b> en 1804. Il réorganise la France en créant le <b>Code civil</b>, les lycées et les départements. Il gagne de nombreuses batailles avant d'être battu à Waterloo.</p><p>Ressource : <a href='https://www.napoleon.org/jeunes-historiens/napoleon-bonaparte/'>Fondation Napoléon - Jeunesse</a></p>",
+      "id": "contemporaine_002",
+      "quiz_json": [
+        { "question": "En quelle année Napoléon est-il devenu Empereur ?", "options": ["1789", "1804", "1815", "L'an 2000"], "reponse": "1804" },
+        { "question": "Quelle célèbre bataille Napoléon a-t-il remportée en 1805 ?", "options": ["Waterloo", "Austerlitz", "Marignan", "La bataille navale"], "reponse": "Austerlitz" },
+        { "question": "Quel livre de lois Napoléon a-t-il créé ?", "options": ["La Constitution", "Le Code civil", "Le dictionnaire", "Le Code de la route"], "reponse": "Le Code civil" },
+        { "question": "Quelle récompense a-t-il créée pour les citoyens méritants ?", "options": ["La Médaille d'or", "La Légion d'honneur", "Le César", "Le diplôme royal"], "reponse": "La Légion d'honneur" },
+        { "question": "Dans quelle cathédrale Napoléon a-t-il été sacré ?", "options": ["Notre-Dame de Paris", "La cathédrale de Reims", "Le Vatican", "La mairie"], "reponse": "Notre-Dame de Paris" },
+        { "question": "Quelle était la dernière bataille perdue par Napoléon ?", "options": ["Waterloo", "Alésia", "Verdun", "La guerre des étoiles"], "reponse": "Waterloo" },
+        { "question": "Comment appelle-t-on les représentants de l'État dans les départements ?", "options": ["Les maires", "Les préfets", "Les députés", "Les espions"], "reponse": "Les préfets" },
+        { "question": "Où Napoléon a-t-il fini sa vie en exil ?", "options": ["En Corse", "À Sainte-Hélène", "À Paris", "En Australie"], "reponse": "À Sainte-Hélène" },
+        { "question": "Quel monument a-t-il fait construire à Paris pour ses victoires ?", "options": ["La Tour Eiffel", "L'Arc de Triomphe", "La Pyramide du Louvre", "L'Obélisque"], "reponse": "L'Arc de Triomphe" },
+        { "question": "Quel était son nom avant de devenir Empereur ?", "options": ["Louis-Napoléon", "Napoléon Bonaparte", "Le petit caporal", "Napoléon le Grand"], "reponse": "Napoléon Bonaparte" }
+      ],
+      "rubrique": "L'Époque Contemporaine",
+      "titre": "Napoléon et l'Empire",
+      "univers": "Histoire"
+    },
+    {
+      "collectionId": "pbc_activites_01",
+      "collectionName": "activites",
+      "contenu": "<h3>3. La Révolution industrielle au XIXe siècle</h3><p>Grâce à la <b>vapeur</b> et au charbon, les usines et les mines se développent. Le <b>chemin de fer</b> permet de voyager plus vite. C'est une période de grands progrès techniques, mais la vie des ouvriers et des enfants au travail est très difficile.</p><p>Ressource : <a href='https://www.lumni.fr/dossier/la-revolution-industrielle-en-france'>Lumni - La Révolution industrielle</a></p>",
+      "id": "contemporaine_003",
+      "quiz_json": [
+        { "question": "Quelle énergie fait avancer les premières locomotives ?", "options": ["L'électricité", "La vapeur d'eau", "L'essence", "La force des chevaux"], "reponse": "La vapeur d'eau" },
+        { "question": "Quel minerai extrait-on dans les mines pour alimenter les machines ?", "options": ["L'or", "Le charbon", "Le fer", "Le chocolat"], "reponse": "Le charbon" },
+        { "question": "Comment appelle-t-on les personnes qui travaillent à l'usine ?", "options": ["Les seigneurs", "Les ouvriers", "Les serfs", "Les managers"], "reponse": "Les ouvriers" },
+        { "question": "Quel nouveau moyen de transport révolutionne le voyage ?", "options": ["L'avion", "Le train (chemin de fer)", "La charrette", "La trottinette"], "reponse": "Le train (chemin de fer)" },
+        { "question": "Au 19ème siècle, les enfants avaient-ils le droit de travailler ?", "options": ["Non, jamais", "Oui, ils travaillaient souvent à la mine ou à l'usine", "Seulement le dimanche", "Oui, mais au bureau"], "reponse": "Oui, ils travaillaient souvent à la mine ou à l'usine" },
+        { "question": "Qui a inventé le vaccin contre la rage à cette époque ?", "options": ["Napoléon", "Louis Pasteur", "Marie Curie", "Albert Einstein"], "reponse": "Louis Pasteur" },
+        { "question": "Quel monument en fer a été construit pour l'Exposition Universelle ?", "options": ["L'Arc de Triomphe", "La Tour Eiffel", "Le Sacré-Cœur", "La Statue de la Liberté"], "reponse": "La Tour Eiffel" },
+        { "question": "Où les ouvriers vivaient-ils ?", "options": ["Dans des châteaux", "Dans des cités ouvrières près des usines", "À la ferme", "À l'hôtel"], "reponse": "Dans des cités ouvrières près des usines" },
+        { "question": "Quelle invention a permis de s'éclairer la nuit à la fin du siècle ?", "options": ["La bougie", "L'ampoule électrique", "La lampe à huile", "La lampe de poche"], "reponse": "L'ampoule électrique" },
+        { "question": "Comment appelle-t-on le regroupement de travailleurs pour se défendre ?", "options": ["Une équipe", "Un syndicat", "Un club", "Une bande"], "reponse": "Un syndicat" }
+      ],
+      "rubrique": "L'Époque Contemporaine",
+      "titre": "Le temps des usines",
+      "univers": "Histoire"
+    },
+    {
+      "collectionId": "pbc_activites_01",
+      "collectionName": "activites",
+      "contenu": "<h3>4. La IIIe République et Jules Ferry</h3><p>La République s'installe durablement. En 1881-1882, <b>Jules Ferry</b> fait voter des lois pour que l'école devienne <b>gratuite, laïque et obligatoire</b> pour tous les enfants.</p><p>Ressource : <a href='https://www.lumni.fr/video/jules-ferry-et-l-ecole-gratuite-laique-et-obligatoire'>Lumni - Jules Ferry</a></p>",
+      "id": "contemporaine_004",
+      "quiz_json": [
+        { "question": "Qui a rendu l'école gratuite, laïque et obligatoire ?", "options": ["Charlemagne", "Jules Ferry", "Napoléon", "Le directeur"], "reponse": "Jules Ferry" },
+        { "question": "Que signifie 'école laïque' ?", "options": ["Qu'on ne paie pas", "Qu'on n'apprend pas la religion à l'école", "Qu'il n'y a que des garçons", "Qu'on travaille dehors"], "reponse": "Qu'on n'apprend pas la religion à l'école" },
+        { "question": "Quel symbole de la République voit-on dans toutes les mairies ?", "options": ["Le Roi", "Marianne", "Le Pape", "Un chat"], "reponse": "Marianne" },
+        { "question": "Quel est l'hymne national de la France ?", "options": ["La Marseillaise", "Le Chant des Partisans", "Au clair de la lune", "Le temps des cerises"], "reponse": "La Marseillaise" },
+        { "question": "En quelle année l'école est-elle devenue obligatoire ?", "options": ["1789", "1882", "1945", "Hier"], "reponse": "1882" },
+        { "question": "Quelles étaient les trois matières principales à l'époque ?", "options": ["Lire, écrire, compter", "Anglais, Sport, Musique", "Informatique et Arts", "Cuisine et Jardinage"], "reponse": "Lire, écrire, compter" },
+        { "question": "Comment s'appelait le maître d'école sous la IIIe République ?", "options": ["Le professeur", "L'instituteur (Hussard noir)", "Le précepteur", "Le coach"], "reponse": "L'instituteur (Hussard noir)" },
+        { "question": "Quelle grande loi sépare l'Église et l'État en 1905 ?", "options": ["La loi sur l'école", "La loi sur la laïcité", "La loi sur le sport", "La loi sur la presse"], "reponse": "La loi sur la laïcité" },
+        { "question": "À quel âge les enfants pouvaient-ils quitter l'école à l'époque ?", "options": ["18 ans", "13 ans (certificat d'études)", "25 ans", "5 ans"], "reponse": "13 ans (certificat d'études)" },
+        { "question": "Où se trouve la devise 'Liberté, Égalité, Fraternité' ?", "options": ["Sur les églises", "Sur le fronton des mairies", "Dans les supermarchés", "Sur les bus"], "reponse": "Sur le fronton des mairies" }
+      ],
+      "rubrique": "L'Époque Contemporaine",
+      "titre": "L'école de la République",
+      "univers": "Histoire"
+    },
+    {
+      "collectionId": "pbc_activites_01",
+      "collectionName": "activites",
+      "contenu": "<h3>5. La Première Guerre mondiale (1914-1918)</h3><p>La 'Grande Guerre' oppose la France et ses alliés à l'Allemagne. Les soldats, appelés les <b>Poilus</b>, vivent dans les <b>tranchées</b>. Le conflit se termine par l'Armistice le <b>11 novembre 1918</b>.</p><p>Ressource : <a href='https://www.cheminsdememoire.gouv.fr/fr/enfants/la-premiere-guerre-mondiale-1914-1918'>Chemins de mémoire - 14-18</a></p>",
+      "id": "contemporaine_005",
+      "quiz_json": [
+        { "question": "Comment appelait-on les soldats français de 1914 ?", "options": ["Les Chevaliers", "Les Poilus", "Les Grognards", "Les Gladiateurs"], "reponse": "Les Poilus" },
+        { "question": "Où les soldats vivaient-ils et combattaient-ils ?", "options": ["Dans des hôtels", "Dans des tranchées", "Dans des bateaux", "Dans les arbres"], "reponse": "Dans des tranchées" },
+        { "question": "En quelle année la guerre a-t-elle commencé ?", "options": ["1914", "1918", "1939", "2024"], "reponse": "1914" },
+        { "question": "Que fête-t-on le 11 novembre ?", "options": ["Le début de la guerre", "L'Armistice (fin de la guerre)", "Noël", "La fête du Roi"], "reponse": "L'Armistice (fin de la guerre)" },
+        { "question": "Quelle ville a connu une bataille terrible de plusieurs mois en 1916 ?", "options": ["Paris", "Verdun", "Lyon", "Marseille"], "reponse": "Verdun" },
+        { "question": "Comment appelait-on les femmes qui travaillaient dans les usines d'armement ?", "options": ["Les infirmières", "Les munitionnettes", "Les institutrices", "Les ouvrières"], "reponse": "Les munitionnettes" },
+        { "question": "Quel animal servait à envoyer des messages secrets ?", "options": ["Le chien", "Le pigeon voyageur", "Le chat", "Le corbeau"], "reponse": "Le pigeon voyageur" },
+        { "question": "Quel pays était le principal ennemi de la France en 1914 ?", "options": ["L'Espagne", "L'Allemagne", "L'Italie", "Le Canada"], "reponse": "L'Allemagne" },
+        { "question": "Quel vêtement bleu portaient les soldats français ?", "options": ["La toge", "Le pantalon garance", "L'uniforme bleu horizon", "Un pyjama"], "reponse": "L'uniforme bleu horizon" },
+        { "question": "Comment s'appelle le monument construit dans chaque village après la guerre ?", "options": ["L'église", "Le monument aux morts", "La fontaine", "Le stade"], "reponse": "Le monument aux morts" }
+      ],
+      "rubrique": "L'Époque Contemporaine",
+      "titre": "La Grande Guerre",
+      "univers": "Histoire"
+    },
+    {
+      "collectionId": "pbc_activites_01",
+      "collectionName": "activites",
+      "contenu": "<h3>6. La Seconde Guerre mondiale (1939-1945)</h3><p>L'Allemagne nazie envahit la France. Le général <b>de Gaulle</b> appelle à résister. Des héros comme <b>Jean Moulin</b> luttent dans l'ombre. La guerre finit avec la libération de la France et la victoire des Alliés en 1945.</p><p>Ressource : <a href='https://www.lumni.fr/dossier/la-seconde-guerre-mondiale'>Lumni - 39-45</a></p>",
+      "id": "contemporaine_006",
+      "quiz_json": [
+        { "question": "Qui a lancé l'Appel du 18 juin depuis Londres ?", "options": ["Napoléon", "Le général de Gaulle", "Jules Ferry", "Jean Moulin"], "reponse": "Le général de Gaulle" },
+        { "question": "Comment appelle-t-on ceux qui luttaient en secret contre les Allemands ?", "options": ["Les collaborateurs", "Les résistants", "Les soldats", "Les ninjas"], "reponse": "Les résistants" },
+        { "question": "Quel grand héros de la Résistance a été capturé ?", "options": ["Vercingétorix", "Jean Moulin", "Charlemagne", "Astérix"], "reponse": "Jean Moulin" },
+        { "question": "Que s'est-il passé le 6 juin 1944 ?", "options": ["Le début de la guerre", "Le débarquement en Normandie", "La fin de la guerre", "Le Noël des soldats"], "reponse": "Le débarquement en Normandie" },
+        { "question": "En quelle année la guerre s'est-elle terminée ?", "options": ["1918", "1945", "1789", "2000"], "reponse": "1945" },
+        { "question": "Quelle était la capitale de la zone libre du Maréchal Pétain ?", "options": ["Paris", "Vichy", "Lyon", "Bordeaux"], "reponse": "Vichy" },
+        { "question": "Quel droit important les femmes ont-elles obtenu en 1944 ?", "options": ["Le droit de travailler", "Le droit de vote", "Le droit de conduire", "Le droit d'aller au café"], "reponse": "Le droit de vote" },
+        { "question": "Quel pays allié est venu aider les Français à se libérer ?", "options": ["L'Espagne", "Les États-Unis", "L'Italie", "Le Japon"], "reponse": "Les États-Unis" },
+        { "question": "Comment appelle-t-on le badge jaune que les Juifs devaient porter ?", "options": ["La Légion d'honneur", "L'étoile jaune", "La médaille militaire", "Un autocollant"], "reponse": "L'étoile jaune" },
+        { "question": "Quel était le symbole de la Résistance ?", "options": ["Le drapeau blanc", "La Croix de Lorraine", "L'Arc de Triomphe", "Une fleur"], "reponse": "La Croix de Lorraine" }
+      ],
+      "rubrique": "L'Époque Contemporaine",
+      "titre": "La Seconde Guerre mondiale",
+      "univers": "Histoire"
+    }
+  ]
+}

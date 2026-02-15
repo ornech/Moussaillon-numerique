@@ -12,13 +12,13 @@ config = {
 
 def import_data():
     # 1. Vérifier si le fichier existe
-    if not os.path.exists('data.json'):
-        print("Erreur : Le fichier 'data.json' est introuvable dans ce dossier.")
+    if not os.path.exists('alimentation.json'):
+        print("Erreur : Le fichier json' est introuvable dans ce dossier.")
         return
 
     # 2. Lire le fichier JSON
     try:
-        with open('data.json', 'r', encoding='utf-8') as f:
+        with open('alimentation.json', 'r', encoding='utf-8') as f:
             pb_data = json.load(f)
     except json.JSONDecodeError as e:
         print(f"Erreur de lecture du JSON : {e}")
