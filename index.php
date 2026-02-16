@@ -74,7 +74,7 @@ function creerSession(int $id, string $role, string $name): void {
             $url = 'modules/eleve/port.php';
             break;
         case 'teacher':
-            $url = 'modules/teacher/port.php'; // à créer/adapter
+            $url = 'modules/enseignant/dashboard.php'; // à créer/adapter
             break;
         case 'admin':
             $url = 'modules/admin/amirante.php'; // vérifier le nom du fichier

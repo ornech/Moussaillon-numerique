@@ -68,13 +68,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['score'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo htmlspecialchars($activite['title']); ?> - Mission</title>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <style>
         /* Styles extraits de jeu.html pour garantir la cohérence visuelle */
         :root {
             --primary: #10b981; --secondary: #f59e0b; --danger: #ef4444;
             --bg-app: #fefce8; --text: #451a03; --card-bg: #ffffff;
+        }
+
+        @font-face {
+            font-family: 'BelleAllure';
+            /* On remonte de modules/eleve/ vers la racine pour aller dans assets/fonts/ */
+            src: url('../../assets/fonts/belleallure.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
         }
 
         body {
@@ -128,6 +135,32 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['score'])) {
         .btn-reponse.wrong { background: var(--danger); color: white; box-shadow: 0 6px 0 0 #991b1b; }
 
         .hidden { display: none; }
+        
+        /* Appliquer à la question du quiz */
+        #question-texte {
+            font-family: 'BelleAllure', cursive !important;
+            font-size: 2rem; /* Augmenté car Belle Allure est souvent fine */
+            margin-bottom: 20px;
+        }
+
+        /* Appliquer aux boutons de réponse */
+        .btn-reponse {
+            background: #f3f4f6; 
+            color: var(--text); 
+            border: none; 
+            padding: 10px;
+            border-radius: 20px; 
+            
+            /* MODIFICATION ICI */
+            font-family: 'BelleAllure', cursive !important;
+            font-size: 2rem; 
+            font-weight: normal; /* La police cursive n'a souvent pas de gras */
+            
+            cursor: pointer;
+            box-shadow: 0 6px 0 0 #d1d5db; 
+            transition: transform 0.1s;
+        }
+
         button#btn-start { background: var(--secondary); color: white; border: none; border-radius: 20px; font-weight: bold; cursor: pointer; }
     </style>
 </head>
