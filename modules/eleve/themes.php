@@ -301,94 +301,109 @@ if ($theme_selectionne) {
         </g>`;
     }
 
-    function renderWorld() {
+    function generatePalmTree(x, y, scale = 1) {
+    const s = scale * (0.6 + Math.random() * 0.4); 
+    const flip = Math.random() > 0.5 ? 1 : -1;
+    const rotation = (Math.random() * 40) - 20;
+
+    return `
+    <g transform="translate(${x}, ${y}) scale(${s})">
+        <g transform="rotate(${rotation}) scale(${flip}, 1)">
+            <path d="m-4.5098-0.63619c-1.5715-14.26 2.3051-23.229 9.0527-39.167l2.9757 0.38139c-5.4251 16.108-7.7431 22.272-6.3983 38.716z" fill="#885e2b"/>
+            <g transform="rotate(15 4.7657 -34.7)" fill="#0cca45">
+                <g transform="matrix(1.1461 -.033637 -.033637 .96126 5.4262 -40.066)">
+                    <path d="m0 0c-9.4034-4.3349-15.776 3.2799-16.22 10.563 4.8488-4.6017 7.194-8.289 14.225-5.7306z"/>
+                    <path d="m-0.13625-0.60444c8.6355-2.7377 13.046-0.5722 14.59 13.971-4.5751-8.4127-5.0993-10.305-13.847-8.2537z"/>
+                    <path d="m-4.5498-0.046379q5-13 10 0z"/>
+                </g>
+            </g>
+        </g>
+    </g>`;
+}
+
+function renderWorld() {
     let svgContent = "";
 
-    // 1. GÉNÉRATION DES VAGUES (ARRIÈRE-PLAN)
+    // 1. GÉNÉRATION DES VAGUES DE FOND
     const waveCount = 150; 
     svgContent += generateWaves(waveCount);
 
-    // 2. GÉNÉRATION DES ÎLES
+    // 2. GÉNÉRATION DES ARCHIPELS
     mapData.forEach(item => {
-        let localLagoon = "", localSand = "", localJungle = "", localDecor = "";
+        let localLagoon = "", localSand = "", localJungle = "", localDecor = "", localFoam = "";
         const chaos = 25;
 
         item.archipel.forEach(isl => {
-            // Chemins de base
-            localLagoon += createPath(isl.x, isl.y, isl.size * 2.8, 8, chaos, isl.seed, 0.35);
+            // Calcul des tracés
+            localLagoon += createPath(isl.x, isl.y, isl.size * 2.5, 8, chaos, isl.seed, 0.35);
             localSand += createPath(isl.x, isl.y, isl.size * 1.1 + 18, 10, chaos, isl.seed + 10, 0.2);
             localJungle += createPath(isl.x, isl.y, isl.size * 1.1, 10, chaos * 1.1, isl.seed + 20, 0.18);
             
+            // ÉCUME : Tracé légèrement plus large que le sable pour l'animation
+            localFoam += createPath(isl.x, isl.y, isl.size * 1.2 + 22, 10, chaos, isl.seed + 10, 0.2);
+
             let thisDecor = "";
             const isAtoll = isl.size > 50 && (isl.seed % 10 > 3);
             
             if (isAtoll) {
-                // Lac central
                 const hole = createPath(isl.x, isl.y, isl.size * 0.5, 8, 5, isl.seed + 30, 0.2);
                 thisDecor += `<path d="${hole}" fill="${CONFIG.colors.LAGOON}" stroke="${CONFIG.colors.STROKE}" stroke-width="2"/>`;
             } else {
-                // Montagne centrale
                 const mount = createPath(isl.x, isl.y, isl.size * 0.4, 7, 5, isl.seed + 40, 0.2);
                 thisDecor += `<path d="${mount}" fill="${CONFIG.colors.MOUNTAIN}" opacity="0.6"/>`;
             }
 
-            // --- PLACEMENT DES PALMIERS (STRATÉGIE ANTI-LAC) ---
-            const nbPalmiers = Math.floor(Math.random() * 2) + 0; // 2 à 4 palmiers
+            // AJOUT DES PALMIERS (uniquement sur la zone jungle)
+            const nbPalmiers = Math.floor(Math.random() * 2) + 1; // Entre 1 et 2 palmiers
             for (let p = 0; p < nbPalmiers; p++) {
                 const angle = Math.random() * Math.PI * 2;
                 let dist;
-
                 if (isAtoll) {
-                    // Pour les atolls, on place les palmiers sur la couronne (entre 60% et 90% du rayon)
-                    // Cela évite le trou (0% à 50%) et le sable/mer (> 100%)
+                    // Force les palmiers sur la couronne verte de l'atoll
                     dist = isl.size * (0.65 + Math.random() * 0.25);
                 } else {
-                    // Pour les îles pleines, on évite juste de trop déborder (0% à 85%)
                     dist = Math.random() * (isl.size * 0.85);
                 }
-
                 const px = isl.x + Math.cos(angle) * dist;
                 const py = isl.y + Math.sin(angle) * dist;
-                
-                // Le scale est proportionnel à la taille de l'île
-                const scaleBase = isl.size / 30; 
+                const scaleBase = isl.size / 65; 
                 thisDecor += generatePalmTree(px, py, scaleBase);
             }
-
             localDecor += `<g>${thisDecor}</g>`;
         });
 
         const clickAction = `handleClick(event, '${item.info.url}')`;
 
-        svgContent += `
+    svgContent += `
             <g class="archipel-group" onclick="${clickAction}">
-                
                 <g filter="url(#goo)"><path d="${localLagoon}" fill="${CONFIG.colors.LAGOON}" opacity="0.85"/></g>
-                <g>
-                    <path d="${localSand}" fill="white" opacity="0.1">
-                        <animate 
-                            attributeName="opacity" 
-                            values="0.1; 1; 0.1" 
-                            dur="4s" 
-                            repeatCount="indefinite" />
-                        
-                        <animateTransform 
-                            attributeName="transform" 
-                            type="translate" 
-                            values="-12,-12; -2,-2; -12,-12" 
-                            dur="4s" 
-                            repeatCount="indefinite" />
-                    </path>
-                </g>
+                
+            <g filter="blur(5px)">
+                <path d="${localFoam}" fill="white">
+                    <animate 
+                        attributeName="opacity" 
+                        values="0; 0.2; 1; 1; 0" 
+                        keyTimes="0; 0.3; 0.8; 0.9; 1"
+                        dur="6s" 
+                        repeatCount="indefinite" />
+                    
+                    <animateTransform 
+                        attributeName="transform" 
+                        type="translate" 
+                        values="-30,-30; -5,-5; 2,2" 
+                        keyTimes="0; 0.8; 1"
+                        dur="6s" 
+                        repeatCount="indefinite" />
+                </path>
+            </g>
+
                 <g filter="url(#goo)" transform="translate(6, 6)">
                     <path d="${localSand}" fill="white" opacity="0.5" />
                 </g>
                 <g filter="url(#goo)"><path d="${localSand}" fill="${CONFIG.colors.SAND}" /></g>
                 <g filter="url(#goo)"><path d="${localJungle}" fill="${CONFIG.colors.JUNGLE}" /></g>
                 <g>${localDecor}</g>
-                <text x="${item.main.x}" y="${item.main.y}" class="island-label">
-                    ${item.info.title}
-                </text>
+                <text x="${item.main.x}" y="${item.main.y}" class="island-label">${item.info.title}</text>
             </g>
         `;
     });
