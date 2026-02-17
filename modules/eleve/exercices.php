@@ -233,7 +233,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['score'])) {
                 btn.className = 'btn-reponse';
                 btn.innerText = opt;
                 // On vérifie par rapport à l'index de la réponse correcte ou le texte selon ta structure JSON
-                btn.onclick = () => verifier(btn, opt, q.reponse || q.options[q.answer]);
+                btn.onclick = () => {
+                    // On cherche la réponse soit dans 'reponse', soit dans 'answer'
+                    let solution = q.reponse || q.answer;
+
+                    // Si 'answer' est un index numérique (0, 1, 2...), on récupère le texte correspondant
+                    if (typeof solution === 'number' && q.options[solution]) {
+                        solution = q.options[solution];
+                    }
+
+                    verifier(btn, opt, solution);
+                };
                 grid.appendChild(btn);
             });
         }
@@ -254,7 +264,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['score'])) {
             setTimeout(() => {
                 if (indexQ < quizData.length) poserQuestion();
                 else terminerMission();
-            }, 1200);
+            }, 2500);
         }
 
         async function terminerMission() {

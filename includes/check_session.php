@@ -11,7 +11,7 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'eleve') {
 // 2. Chargement automatique des données de l'élève
 // On prépare la variable $user qui sera disponible partout
 $stmt = $pdo->prepare("
-    SELECT u.id, u.points, s.range_level, s.name as ship_name, s.img_url 
+    SELECT u.*, u.points, s.name as ship_name, s.img_url, s.size 
     FROM users u 
     JOIN ships s ON u.current_ship_id = s.id 
     WHERE u.id = ?

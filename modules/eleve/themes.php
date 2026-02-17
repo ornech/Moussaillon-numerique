@@ -282,20 +282,79 @@ if ($theme_selectionne) {
     }
 
     function generatePalmTree(x, y, scale = 1) {
-        const s = scale * (0.6 + Math.random() * 0.4);
+        const s = scale * (1.8 + Math.random() * 1.9);
         const flip = Math.random() > 0.5 ? 1 : -1;
-        const rotation = (Math.random() * 40) - 20;
+        const rotation = (Math.random() * 25) - 12;
 
         return `
         <g transform="translate(${x}, ${y}) scale(${s})">
             <g transform="rotate(${rotation}) scale(${flip}, 1)">
-                <path d="m-4.5098-0.63619c-1.5715-14.26 2.3051-23.229 9.0527-39.167l2.9757 0.38139c-5.4251 16.108-7.7431 22.272-6.3983 38.716z" fill="#885e2b"/>
-                <g transform="rotate(15 4.7657 -34.7)" fill="#0cca45">
-                    <g transform="matrix(1.1461 -.033637 -.033637 .96126 5.4262 -40.066)">
-                        <path d="m0 0c-9.4034-4.3349-15.776 3.2799-16.22 10.563 4.8488-4.6017 7.194-8.289 14.225-5.7306z"/>
-                        <path d="m-0.13625-0.60444c8.6355-2.7377 13.046-0.5722 14.59 13.971-4.5751-8.4127-5.0993-10.305-13.847-8.2537z"/>
-                        <path d="m-4.5498-0.046379q5-13 10 0z"/>
-                    </g>
+                <!-- Tronc courbé avec segments -->
+                <path d="M-3.5,0 Q-4,-12 -2,-24 Q0,-36 2,-40 Q3,-36 3.5,-24 Q4,-12 3,0 Z" 
+                      fill="#D4A24C" stroke="#5D4022" stroke-width="1.2"/>
+                <!-- Segments du tronc -->
+                <path d="M-3.2,-4 Q0,-5.5 2.8,-4" fill="none" stroke="#B8863C" stroke-width="1.5"/>
+                <path d="M-3.5,-9 Q0,-11 3.2,-9" fill="none" stroke="#B8863C" stroke-width="1.5"/>
+                <path d="M-3.2,-14 Q0,-16 3,-14" fill="none" stroke="#B8863C" stroke-width="1.5"/>
+                <path d="M-2.5,-19 Q0,-21 2.5,-19" fill="none" stroke="#B8863C" stroke-width="1.3"/>
+                <path d="M-1.8,-24 Q0,-26 2,-24" fill="none" stroke="#B8863C" stroke-width="1.2"/>
+                <path d="M-1,-29 Q0.5,-31 1.5,-29" fill="none" stroke="#B8863C" stroke-width="1"/>
+                <path d="M-0.3,-34 Q1,-35.5 1.2,-34" fill="none" stroke="#B8863C" stroke-width="0.8"/>
+
+                <!-- Feuillage -->
+                <g transform="translate(1.5, -40)">
+                    
+                    <!-- Palme arrière gauche -->
+                    <path d="M0,0 C-6,-2 -12,-2 -22,4
+                             C-18,2 -16,3 -13,1 C-10,3 -8,2 -5,0 C-3,1 -1,0 0,0 Z" 
+                          fill="#3EA63E" stroke="#2D7D2D" stroke-width="1.2" stroke-linejoin="round"/>
+                    
+                    <!-- Palme arrière droite -->
+                    <path d="M0,0 C6,-2 12,-2 22,4
+                             C18,2 16,3 13,1 C10,3 8,2 5,0 C3,1 1,0 0,0 Z" 
+                          fill="#3EA63E" stroke="#2D7D2D" stroke-width="1.2" stroke-linejoin="round"/>
+                    
+                    <!-- Grande palme gauche tombante -->
+                    <path d="M0,0 C-4,2 -10,6 -24,14
+                             C-20,12 -18,14 -14,11 C-11,14 -9,12 -6,9 C-4,11 -2,8 0,0 Z" 
+                          fill="#4CBD4C" stroke="#2D7D2D" stroke-width="1.2" stroke-linejoin="round"/>
+                    
+                    <!-- Grande palme droite tombante -->
+                    <path d="M0,0 C4,2 10,6 24,14
+                             C20,12 18,14 14,11 C11,14 9,12 6,9 C4,11 2,8 0,0 Z" 
+                          fill="#4CBD4C" stroke="#2D7D2D" stroke-width="1.2" stroke-linejoin="round"/>
+                    
+                    <!-- Palme gauche moyenne -->
+                    <path d="M0,0 C-5,0 -12,2 -20,8
+                             C-16,6 -14,8 -11,5 C-8,8 -6,6 -4,3 C-2,5 -1,2 0,0 Z" 
+                          fill="#5DC55D" stroke="#2D7D2D" stroke-width="1.2" stroke-linejoin="round"/>
+                    
+                    <!-- Palme droite moyenne -->
+                    <path d="M0,0 C5,0 12,2 20,8
+                             C16,6 14,8 11,5 C8,8 6,6 4,3 C2,5 1,2 0,0 Z" 
+                          fill="#5DC55D" stroke="#2D7D2D" stroke-width="1.2" stroke-linejoin="round"/>
+                    
+                    <!-- Palme gauche haute -->
+                    <path d="M0,0 C-4,-3 -10,-4 -18,-2
+                             C-14,-3 -12,-1 -9,-3 C-6,-1 -4,-2 -2,-1 C-1,-1 0,0 0,0 Z" 
+                          fill="#6EE46E" stroke="#2D7D2D" stroke-width="1.2" stroke-linejoin="round"/>
+                    
+                    <!-- Palme droite haute -->
+                    <path d="M0,0 C4,-3 10,-4 18,-2
+                             C14,-3 12,-1 9,-3 C6,-1 4,-2 2,-1 C1,-1 0,0 0,0 Z" 
+                          fill="#6EE46E" stroke="#2D7D2D" stroke-width="1.2" stroke-linejoin="round"/>
+                    
+                    <!-- Palme centrale haute -->
+                    <path d="M0,0 C-1,-4 -1,-8 0,-14
+                             C-2,-10 -3,-8 -2,-6 C-3,-4 -2,-2 0,0
+                             M0,0 C1,-4 1,-8 0,-14
+                             C2,-10 3,-8 2,-6 C3,-4 2,-2 0,0 Z" 
+                          fill="#7DF27D" stroke="#2D7D2D" stroke-width="1.2" stroke-linejoin="round"/>
+                    
+                    <!-- Noix de coco -->
+                    <circle cx="-2.5" cy="3" r="2.8" fill="#8B5A2B" stroke="#5D3A1A" stroke-width="1"/>
+                    <circle cx="2" cy="2.5" r="2.5" fill="#A0673C" stroke="#5D3A1A" stroke-width="1"/>
+                    <circle cx="0" cy="4.5" r="2.3" fill="#7A4A22" stroke="#5D3A1A" stroke-width="1"/>
                 </g>
             </g>
         </g>`;

@@ -394,14 +394,19 @@ body.layout-grid {
     z-index: 10;
     bottom: 5%;
     left: 50%;
-    width: 85%;
-    height: 55%;
     /* Zone de sécurité pour tous types de bateaux */
     object-fit: contain;
     object-position: bottom center;
     transform: translateX(-50%);
     animation: tangage 4s ease-in-out infinite;
     pointer-events: none;
+}
+
+.navire-actuel img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: bottom center;
 }
 
 .sidebar-navires {
@@ -464,17 +469,7 @@ body.layout-grid {
 }
 
 /* 5. ANIMATIONS */
-@keyframes tangage {
 
-    0%,
-    100% {
-        transform: translateX(-50%) rotate(1deg) translateY(0);
-    }
-
-    50% {
-        transform: translateX(-50%) rotate(-0.5deg) translateY(2px);
-    }
-}
 
 @keyframes defilementNuages {
     from {
