@@ -1,0 +1,7 @@
+# Racine web recommandée pour Les Moussaillons Numériques
+# Configurer le serveur (Apache/Nginx) pour que la racine document soit ce dossier.
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # Interdire l'accès aux fichiers sensibles du parent si quelqu'un tente ../includes/
+    RewriteRule ^\.\./ - [F,L]
+</IfModule>

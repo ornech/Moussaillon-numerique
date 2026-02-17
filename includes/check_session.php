@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once 'config.php'; // On s'assure que la connexion DB est là
+require_once __DIR__ . '/config.php';
 
 // 1. Vérification de l'accès
 if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'eleve') {

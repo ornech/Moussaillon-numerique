@@ -1,0 +1,18 @@
+{
+    "name": "jf/moussaillons",
+    "description": "Plateforme SaaS de gamification pédagogique pour le projet Moussaillon Numérique.",
+    "type": "project",
+    "license": "Copyright",
+    "autoload": {
+        "psr-4": {
+            "Jf\\Moussaillons\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jean-François ORNECH",
+            "email": "jean-francois.ornech@ac-poitiers.fr"
+        }
+    ],
+    "require": {}
+}

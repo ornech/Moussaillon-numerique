@@ -1,5 +1,5 @@
 <?php
-require_once '../../includes/check_session.php'; 
+require_once __DIR__ . '/../../../includes/check_session.php'; 
 
 $matiere = $_GET['matiere'] ?? '';
 $theme_selectionne = $_GET['theme'] ?? '';
