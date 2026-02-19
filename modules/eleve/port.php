@@ -217,7 +217,8 @@ $boutique_ships = $stmt->fetchAll();
     <main class="main-container"> 
         <div class="viewport" id="ciel"> 
             <img src="../../assets/img/port_fond.png" class="img-fond"> 
-            <img src="../../assets/img/nuages.png" class="img-nuages-animes"> 
+            <img src="../../assets/img/nuages1.svg" class="img-nuages-animes">
+            <img src="../../assets/img/nuages.png" class="img-nuages-proches">
             <div class="limiteur-espace"></div> 
             <img src="../../assets/img/port_fond_reflets1.png" class="img-mer-reflets"> 
 

@@ -97,20 +97,9 @@ button:active {
 }
 
 /* 3. LE PORT : PHYSIQUE & Z-INDEX */
-/* #ciel {
-    position: relative;
-    width: 100vw;
-    height: 70vh;
-    background: linear-gradient(#00a2e2, #ffffff 50%);
-    overflow: hidden;
-    z-index: 1;
-} */
-
-/* Modifiez cette section aux alentours de la ligne 74 */
 #ciel {
     position: relative;
     width: 100vw;
-    /* Supprimez height: 70vh; */
     background: linear-gradient(#00a2e2, #ffffff 50%);
     overflow: hidden;
     z-index: 1;
@@ -186,17 +175,6 @@ body.layout-grid {
     height: 60px;
 }
 
-/* .main-container {
-    flex: 1;
-    display: flex;
-    gap: 20px;
-    padding: 20px;
-    margin-top: 80px;
-    box-sizing: border-box;
-    min-height: 0;
-} */
-
-/* Applique ces réglages pour stabiliser l'ensemble */
 .main-container {
     flex: 1;
     display: flex;
@@ -211,12 +189,7 @@ body.layout-grid {
 }
 
 
-.viewport {
-    flex: 2;
-    /* Le port prendra 2 fois plus de place que la sidebar */
-    position: relative;
-    /* ... supprime le height: 90% ici ... */
-}
+/* .viewport est défini plus bas dans la section VIEWPORT DU PORT */
 
 /* --- UNIVERS --- */
 .universe-container {
@@ -313,52 +286,13 @@ body.layout-grid {
 
 /* --- VIEWPORT DU PORT --- */
 .viewport {
-    flex: 1 1 auto ;
-    position: relative;
-    background: linear-gradient(to bottom, #2680d4ff 0%, #ffffff 50%);
-    border: 10px solid var(--bois);
-    border-radius: 40px;
-    overflow: hidden;
-    height: 95%;
-}
-
-.img-fond,
-.img-nuages-animes,
-.img-mer-reflets {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.img-fond {
-    z-index: 2;
-}
-
-.img-nuages-animes {
-    z-index: 1;
-    opacity: 0.5;
-    animation: defilementNuages 400s linear infinite;
-    animation-delay: -90s;
-}
-
-/* .img-mer-reflets {
-    z-index: 3;
-    animation: fonduReflets 4s ease-in-out infinite;
-} */
-
-/* --- VIEWPORT DU PORT --- */
-.viewport {
     flex: 2;
-    /* Ratio de largeur */
     position: relative;
     background: linear-gradient(to bottom, #2680d4ff 0%, #ffffff 50%);
     border: 10px solid var(--bois);
     border-radius: 40px;
     overflow: hidden;
-    /* On ne met PAS de height ici, Flexbox gère ! */
+    /* Flexbox gère la hauteur automatiquement */
 }
 
 .img-fond,
@@ -371,17 +305,10 @@ body.layout-grid {
     height: 100%;
     object-fit: cover;
     object-position: bottom center;
-    /* Garde la mer visible en bas */
 }
 
 .img-fond {
     z-index: 2;
-}
-
-.img-nuages-animes {
-    z-index: 1;
-    opacity: 0.5;
-    animation: defilementNuages 400s linear infinite;
 }
 
 .img-mer-reflets {
@@ -470,17 +397,57 @@ body.layout-grid {
 
 /* 5. ANIMATIONS */
 
+/* --- COUCHE 1 : nuages lointains, lents, transparents --- */
+.img-nuages-animes {
+    z-index: 1;
+    top: 32%;
+    transform: translateY(-100%);
+    opacity: 0.35;
+    height: 20%;
+    width: auto;
+    object-fit: contain;
+    animation: nuagesLointains 180s linear infinite;
+    will-change: transform;
+}
 
-@keyframes defilementNuages {
-    from {
-        transform: translateX(-100%);
+/* --- COUCHE 2 : nuages proches, plus rapides, plus opaques --- */
+.img-nuages-proches {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0.5;
+    width: 200%;
+    height: 60%;
+    /* Seulement la partie haute du ciel */
+    object-fit: cover;
+    animation: nuagesProches 90s linear infinite;
+    will-change: transform;
+}
+
+/* Boucle seamless : on ne déplace que de 50% car l'image fait 200% */
+/* 2. L'animation qui préserve le décalage vertical */
+@keyframes nuagesLointains {
+    0% {
+        /* Le nuage commence à 200px du bord gauche de son parent */
+        transform: translateY(-100%) translateX(0px);
     }
 
-    to {
-        transform: translateX(100%);
+    100% {
+        /* Il finit sa course à l'autre bout */
+        transform: translateY(-100%) translateX(100vw);
     }
 }
 
+@keyframes nuagesProches {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
 @keyframes fonduReflets {
 
     0%,
