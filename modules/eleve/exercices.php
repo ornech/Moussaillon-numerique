@@ -4,68 +4,26 @@ require_once '../../includes/check_session.php';
 
 // 1. RÉCUPÉRATION DES PARAMÈTRES
 $activite_id = isset($_GET['id']) ? (int)$_GET['id'] : 0;
-$user_id = $_SESSION['user_id']; 
-
-// exercices.php
-$activite_id = isset($_GET['id']) ? (int)$_GET['id'] : 0;
-$user_id = $_SESSION['user_id']; // Déjà disponible via check_session.php
-
 
 if ($activite_id <= 0) {
     die("Mission introuvable.");
 }
 
 // 2. RÉCUPÉRATION DE L'ACTIVITÉ
-$stmt = $pdo->prepare("SELECT * FROM activities WHERE id = ? AND is_validated = 1");
+// Le quiz (questions, correction, points) est géré par l'API : api/index.php/quiz/{id}/...
+$stmt = $pdo->prepare("SELECT id, title, content_html FROM activities WHERE id = ? AND is_validated = 1");
 $stmt->execute([$activite_id]);
 $activite = $stmt->fetch();
 
 if (!$activite) {
     die("Mission introuvable ou non validée.");
 }
-
-// 3. TRAITEMENT AJAX DU SCORE
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['score'])) {
-    $score = (int)$_POST['score'];
-    $total = (int)$_POST['total'];
-
-    // Récupérer le score de la DERNIÈRE tentative enregistrée
-    $stmt = $pdo->prepare("SELECT score_max, nbr_question FROM history WHERE user_id = ? AND activity_id = ?");
-    $stmt->execute([$user_id, $activite_id]);
-    $last_attempt = $stmt->fetch();
-
-    $points_a_ajouter = 0;
-
-    // LOGIQUE : On crédite si aucune tentative n'existe OU si la dernière n'était pas un 100%
-    if (!$last_attempt || ($last_attempt['score_max'] < $last_attempt['nbr_question'])) {
-        // Ici on crédite l'intégralité du score réalisé lors de cette nouvelle tentative
-        $points_a_ajouter = $score;
-        
-        $stmt = $pdo->prepare("UPDATE users SET points = points + ? WHERE id = ?");
-        $stmt->execute([$points_a_ajouter, $user_id]);
-    }
-
-    // MISE À JOUR SYSTÉMATIQUE DE LA TABLE HISTORY (Dernier score et nombre de questions)
-    if ($last_attempt) {
-        $stmt = $pdo->prepare("UPDATE history SET score_max = ?, nbr_question = ?, date_completion = NOW() WHERE user_id = ? AND activity_id = ?");
-        $stmt->execute([$score, $total, $user_id, $activite_id]);
-    } else {
-        $stmt = $pdo->prepare("INSERT INTO history (user_id, activity_id, score_max, nbr_question, date_completion) VALUES (?, ?, ?, ?, NOW())");
-        $stmt->execute([$user_id, $activite_id, $score, $total]);
-    }
-
-    echo json_encode([
-        'status' => 'success', 
-        'points_gagnes' => $points_a_ajouter,
-        'new_total' => ($user['points'] + $points_a_ajouter)
-    ]);
-    exit;
-}
 ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <?php echo \Jf\Moussaillons\Infrastructure\Security\Csrf::metaTag(); ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo htmlspecialchars($activite['title']); ?> - Mission</title>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
@@ -207,11 +165,36 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['score'])) {
     </div>
 
     <script>
-        const quizData = <?php echo $activite['quiz_json']; ?>;
-        let indexQ = 0;
-        let etoilesGagnees = 0;
+        // Le serveur tire les questions, corrige chaque réponse et calcule les points.
+        const API_QUIZ = '../../api/index.php/quiz/<?php echo (int)$activite['id']; ?>';
+        const CSRF_TOKEN = document.querySelector('meta[name="csrf-token"]').content;
 
-        document.getElementById('btn-start').onclick = () => {
+        let quizData = [];
+        let indexQ = 0;
+
+        async function appelApi(action, donnees = {}) {
+            const response = await fetch(`${API_QUIZ}/${action}`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json', 'X-CSRF-Token': CSRF_TOKEN },
+                body: JSON.stringify(donnees)
+            });
+            const result = await response.json();
+            if (!response.ok || !result.success) throw new Error(result.message || 'Erreur de liaison');
+            return result;
+        }
+
+        function afficherErreur(err) {
+            document.getElementById('feedback').innerText = "⚠️ " + err.message;
+        }
+
+        document.getElementById('btn-start').onclick = async () => {
+            try {
+                quizData = (await appelApi('start')).questions;
+            } catch (err) {
+                alert(err.message);
+                return;
+            }
+            indexQ = 0;
             document.getElementById('ecran-cours').classList.add('hidden');
             document.getElementById('ecran-quiz').classList.remove('hidden');
             document.getElementById('p-container').style.visibility = 'visible';
@@ -227,64 +210,50 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['score'])) {
             const grid = document.getElementById('options-grid');
             grid.innerHTML = '';
 
-            const options = [...q.options].sort(() => Math.random() - 0.5);
-            options.forEach(opt => {
+            // Les options arrivent déjà mélangées par le serveur
+            q.options.forEach(opt => {
                 const btn = document.createElement('button');
                 btn.className = 'btn-reponse';
                 btn.innerText = opt;
-                // On vérifie par rapport à l'index de la réponse correcte ou le texte selon ta structure JSON
-                btn.onclick = () => {
-                    // On cherche la réponse soit dans 'reponse', soit dans 'answer'
-                    let solution = q.reponse || q.answer;
-
-                    // Si 'answer' est un index numérique (0, 1, 2...), on récupère le texte correspondant
-                    if (typeof solution === 'number' && q.options[solution]) {
-                        solution = q.options[solution];
-                    }
-
-                    verifier(btn, opt, solution);
-                };
+                btn.onclick = () => verifier(btn, opt);
                 grid.appendChild(btn);
             });
         }
 
-        function verifier(btn, choix, correct) {
+        async function verifier(btn, choix) {
             document.querySelectorAll('.btn-reponse').forEach(b => b.style.pointerEvents = 'none');
 
-            if (choix == correct) {
+            let result;
+            try {
+                result = await appelApi('answer', { choix });
+            } catch (err) {
+                afficherErreur(err);
+                return;
+            }
+
+            if (result.correct) {
                 btn.classList.add('correct');
-                etoilesGagnees++;
                 document.getElementById('feedback').innerText = "Génial ! 🌟";
             } else {
                 btn.classList.add('wrong');
-                document.getElementById('feedback').innerText = "Oups ! C'était : " + correct;
+                document.getElementById('feedback').innerText = "Oups ! C'était : " + result.solution + (result.aide ? "\n💡 " + result.aide : "");
             }
 
             indexQ++;
             setTimeout(() => {
-                if (indexQ < quizData.length) poserQuestion();
-                else terminerMission();
+                if (!result.termine) poserQuestion();
+                else terminerMission(result);
             }, 2500);
         }
 
-        async function terminerMission() {
-            // Sauvegarde AJAX vers la même page (PHP en haut)
-            const formData = new FormData();
-            formData.append('score', etoilesGagnees);
-            formData.append('total', quizData.length);
-
-            const response = await fetch(window.location.href, {
-                method: 'POST',
-                body: formData
-            });
-            const result = await response.json();
-            if(result.new_total) document.getElementById('points-eleve').innerText = result.new_total;
+        function terminerMission(result) {
+            document.getElementById('points-eleve').innerText = result.new_total;
 
             document.getElementById('ecran-quiz').classList.add('hidden');
             document.getElementById('ecran-victoire').classList.remove('hidden');
-            document.getElementById('etoiles-finales').innerText = etoilesGagnees;
+            document.getElementById('etoiles-finales').innerText = result.score;
 
-            lancerAnimations(etoilesGagnees / quizData.length);
+            lancerAnimations(result.score / result.total);
         }
 
         // CÉLÉBRATIONS identiques à jeu.html

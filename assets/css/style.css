@@ -6,7 +6,7 @@
 @font-face {
     font-family: 'BelleAllure';
     /* Un nom simple et clair */
-    src: url('../fonts/font.otf') format('opentype');
+    src: url('../fonts/belleallure.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }

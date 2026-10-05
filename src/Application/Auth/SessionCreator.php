@@ -19,7 +19,7 @@ final class SessionCreator
         $_SESSION['role'] = $role;
         $_SESSION['username'] = $name;
 
-        $url = self::getRedirectUrl($role);
+        $url = self::accueil($role);
 
         if (!headers_sent()) {
             header('Location: ' . $url);
@@ -30,7 +30,10 @@ final class SessionCreator
         exit;
     }
 
-    private static function getRedirectUrl(string $role): string
+    /**
+     * Page d'accueil de chaque rôle (chemin relatif à la racine du projet).
+     */
+    public static function accueil(string $role): string
     {
         switch ($role) {
             case 'eleve':

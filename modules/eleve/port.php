@@ -1,37 +1,11 @@
 <?php 
 require_once '../../includes/check_session.php';  
 
-$message = '';
-$message_type = '';
-
-if (isset($_GET['action']) && $_GET['action'] === 'acheter' && isset($_GET['ship_id'])) { 
-    $ship_id = (int)$_GET['ship_id']; 
-
-    $stmt = $pdo->prepare("SELECT name, price FROM ships WHERE id = ?"); 
-    $stmt->execute([$ship_id]); 
-    $nouveau_bateau = $stmt->fetch(); 
-
-    if ($nouveau_bateau) {
-        if ($user['points'] >= $nouveau_bateau['price']) { 
-            $stmt = $pdo->prepare("UPDATE users SET points = points - ?, current_ship_id = ? WHERE id = ?"); 
-            $stmt->execute([$nouveau_bateau['price'], $ship_id, $user['id']]); 
-            
-            $message = "Félicitations ! Vous avez acheté le " . htmlspecialchars($nouveau_bateau['name']) . " !";
-            $message_type = 'success';
-            
-            // Recharger avec la colonne size
-            $stmt = $pdo->prepare("SELECT u.*, s.name as ship_name, s.img_url, s.size FROM users u JOIN ships s ON u.current_ship_id = s.id WHERE u.id = ?");
-            $stmt->execute([$user['id']]);
-            $user = $stmt->fetch();
-        } else {
-            $message = "Points insuffisants pour acheter ce navire.";
-            $message_type = 'error';
-        }
-    } else {
-        $message = "Navire introuvable.";
-        $message_type = 'error';
-    }
-} 
+// Résultat d'un achat (fait via l'API : api/index.php/port/ships/{id}/buy), affiché une seule fois
+$flash = $_SESSION['flash'] ?? null;
+unset($_SESSION['flash']);
+$message = $flash ? htmlspecialchars($flash['message']) : '';
+$message_type = $flash['type'] ?? '';
 
 // Récupération avec la colonne size
 $stmt = $pdo->prepare("SELECT id, name, img_url, price, size FROM ships WHERE id != (SELECT current_ship_id FROM users WHERE id = ?)"); 
@@ -43,6 +17,7 @@ $boutique_ships = $stmt->fetchAll();
 <html lang="fr"> 
 <head> 
     <meta charset="UTF-8"> 
+    <?php echo \Jf\Moussaillons\Infrastructure\Security\Csrf::metaTag(); ?>
     <title>Le Port - <?php echo htmlspecialchars($user['ship_name']); ?></title> 
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="../../assets/css/style.css"> 
@@ -297,9 +272,18 @@ $boutique_ships = $stmt->fetchAll();
             achatEnCours = null;
         }
         
-        document.getElementById('btnConfirmerAchat').addEventListener('click', () => {
-            if (achatEnCours) {
-                window.location.href = `?action=acheter&ship_id=${achatEnCours}`;
+        document.getElementById('btnConfirmerAchat').addEventListener('click', async () => {
+            if (!achatEnCours) return;
+            const btn = document.getElementById('btnConfirmerAchat');
+            btn.disabled = true;
+            try {
+                // Le résultat est affiché par la page après rechargement (message "flash")
+                await fetch(`../../api/index.php/port/ships/${achatEnCours}/buy`, {
+                    method: 'POST',
+                    headers: { 'X-CSRF-Token': document.querySelector('meta[name="csrf-token"]').content }
+                });
+            } finally {
+                window.location.reload();
             }
         });
         

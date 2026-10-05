@@ -18,16 +18,16 @@ final class EligibilitePoints
 
     /**
      * Vérifie si l'élève est encore éligible au gain de points pour cette activité.
-     * Éligible si : pas d'historique OU score précédent strictement inférieur à 100%.
+     * Éligible si : pas d'historique OU dernier essai qui n'était pas un sans-faute.
      */
     public function estEligible(int $userId, int $activityId): bool
     {
         $stmt = $this->pdo->prepare(
-            'SELECT score_max FROM history WHERE user_id = ? AND activity_id = ?'
+            'SELECT score_max, nbr_question FROM history WHERE user_id = ? AND activity_id = ?'
         );
         $stmt->execute([$userId, $activityId]);
         $historique = $stmt->fetch(PDO::FETCH_ASSOC);
 
-        return !$historique || (int) $historique['score_max'] < 100;
+        return !$historique || (int) $historique['score_max'] < (int) $historique['nbr_question'];
     }
 }

@@ -14,5 +14,8 @@
             "email": "jean-francois.ornech@ac-poitiers.fr"
         }
     ],
-    "require": {}
+    "require": {
+        "slim/slim": "^4",
+        "slim/psr7": "^1"
+    }
 }

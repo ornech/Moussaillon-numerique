@@ -2,7 +2,9 @@
 require_once 'auth_check.php';
 
 $student_id = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
-if (!$student_id) { header("Location: dashboard.php"); exit; }
+$peutVoir = $student_id && (new \Jf\Moussaillons\Application\Equipage\EquipageService($pdo))
+    ->peutGererMoussaillon($student_id, $staffId, $estAdmin);
+if (!$peutVoir) { header("Location: dashboard.php"); exit; }
 
 try {
     // 1. Infos de l'élève

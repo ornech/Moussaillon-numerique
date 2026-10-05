@@ -10,6 +10,12 @@ $message = "";
 
 if (!$id) { header("Location: manage_activities.php"); exit; }
 
+$stmtAuteur = $pdo->prepare("SELECT author_id FROM activities WHERE id = ?");
+$stmtAuteur->execute([$id]);
+$auteur = $stmtAuteur->fetchColumn();
+if ($auteur === false) { header("Location: manage_activities.php"); exit; }
+if (!$estAdmin && (int)$auteur !== $staffId) { header("Location: preview_activity.php?id=" . $id); exit; }
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $questions_posted = [];
     if (isset($_POST['qs'])) {

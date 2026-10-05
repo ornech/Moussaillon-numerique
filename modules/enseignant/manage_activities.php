@@ -248,9 +248,11 @@ try {
                                 </div>
                             </div>
                             <div>
-                                <a href="edit_activity.php?id=<?= $a['id'] ?>" class="btn-edit">
-                                    MODIFIER
-                                </a>
+                                <?php if ($estAdmin || (int)$a['author_id'] === $staffId): ?>
+                                    <a href="edit_activity.php?id=<?= $a['id'] ?>" class="btn-edit">MODIFIER</a>
+                                <?php else: ?>
+                                    <a href="preview_activity.php?id=<?= $a['id'] ?>" class="btn-edit">VOIR</a>
+                                <?php endif; ?>
                             </div>
                         </div>
                     <?php endforeach; ?>

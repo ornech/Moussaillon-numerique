@@ -39,4 +39,25 @@ final class Config
     {
         return filter_var(getenv('MAINTENANCE_MODE'), FILTER_VALIDATE_BOOLEAN);
     }
+
+    /**
+     * URL racine de l'application (ex. https://moussaillons.fr ou http://localhost/moussaillons),
+     * pour fabriquer les liens à partager. APP_URL en production, sinon déduite de la requête.
+     */
+    public static function appUrl(): string
+    {
+        $url = getenv('APP_URL');
+        if ($url) {
+            return rtrim($url, '/');
+        }
+
+        $https = ($_SERVER['HTTPS'] ?? 'off') !== 'off';
+        $racineProjet = realpath(__DIR__ . '/../..');
+        $racineWeb = realpath($_SERVER['DOCUMENT_ROOT'] ?? '') ?: '';
+        $chemin = $racineWeb !== '' && str_starts_with($racineProjet, $racineWeb)
+            ? substr($racineProjet, strlen($racineWeb))
+            : '';
+
+        return ($https ? 'https' : 'http') . '://' . ($_SERVER['HTTP_HOST'] ?? 'localhost') . $chemin;
+    }
 }
